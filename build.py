@@ -331,6 +331,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_5"),
         "dest_name": "Stewart_Seccion_1_5_Continuidad.pdf",
         "description": "Capítulo 1 Sección 1.5 Standalone"
+    },
+    "seccion_1_6": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_6/seccion_01_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_6"),
+        "dest_name": "Stewart_Seccion_1_6_Tangentes_Velocidades_y_Otras_Razones_de_Cambio.pdf",
+        "description": "Capítulo 1 Sección 1.6 Standalone"
+    },
+    "repaso_1": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/repaso"),
+        "dest_name": "Stewart_Capitulo_1_Repaso.pdf",
+        "description": "Capítulo 1 Repaso de Conceptos Standalone"
     }
 }
 

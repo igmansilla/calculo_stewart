@@ -1,2 +1,39 @@
-\setcounter{enumi}{22}
-\item Verifique qué otra posible opción de $\delta$ para demostrar que $\lim_{x \to 3} x^2 = 9$ en el Ejemplo 4 es $\delta = \min(2, \varepsilon/8)$.
+\item (a) A partir de la gráfica de $f$, determine los números en los que $f$ es discontinua.\\
+(b) Para cada uno de los números mencionados en la parte (a), diga si $f$ es continua por la derecha o por la izquierda, o ninguna de las dos cosas.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    \begin{axis}[
+        axis lines = middle,
+        xmin=-7, xmax=12,
+        ymin=-5, ymax=5,
+        xtick={-7,-6,-5,-3,-2,-1,1,2,3,4,5,7,8,9,10,11,12},
+        ytick=\empty,
+        width=14cm, height=8cm,
+        every axis x label/.style={at={(ticklabel* cs:1.05)}, anchor=west,},
+        every axis y label/.style={at={(ticklabel* cs:1.05)}, anchor=south,}
+    ]
+    % Asymptotes
+    \draw[dashed, thin] (axis cs:-3,-5) -- (axis cs:-3,5);
+    \draw[dashed, thin] (axis cs:5,-5) -- (axis cs:5,5);
+
+    % Curves (Approximations of the image)
+    \addplot [thick, domain=-7:-3.1, samples=100] {-1/(x+3) - 2};
+    \addplot [thick, domain=-2.9:-1.1, samples=50] {1/(x+3) + 1};
+    \addplot [thick, domain=-0.9:3, samples=100] {-0.5*(x-1)^2 + 2};
+    \addplot [thick, domain=3:4.9, samples=50] {-1/(x-5) - 1};
+    \addplot [thick, domain=5.1:8, samples=50] {1/(x-5) - 2};
+    \addplot [thick, domain=8:11, samples=50] {0.5*(x-9)^2 + 1};
+
+    % Holes and Points
+    \filldraw[fill=white, draw=black, thick] (axis cs:-1, 1.5) circle (2.5pt);
+    \filldraw[fill=black, draw=black, thick] (axis cs:-1, -1) circle (2.5pt);
+    
+    \filldraw[fill=white, draw=black, thick] (axis cs:3, 0) circle (2.5pt);
+    \filldraw[fill=black, draw=black, thick] (axis cs:3, 2.5) circle (2.5pt);
+    
+    \filldraw[fill=white, draw=black, thick] (axis cs:8, -0.6) circle (2.5pt);
+    \filldraw[fill=white, draw=black, thick] (axis cs:8, 1.5) circle (2.5pt);
+    \end{axis}
+\end{tikzpicture}
+\end{center}

@@ -21,8 +21,9 @@ calculo_stewart/
     ├── capitulo_0/                         # PDFs de Conceptos Preliminares (Capítulo 0)
     │   └── Stewart_Seccion_0_1_Conceptos_Preliminares.pdf
     ├── capitulo_1/                         # PDFs de Límites y Continuidad (Capítulo 1)
-    │   ├── Stewart_Seccion_1_1_El_Problema_de_la_Tangente_y_de_la_Velocidad.pdf
-    │   ├── ... (secciones 1.2 a 1.5)
+    │   ├── ... (secciones 1.1 a 1.5)
+    │   ├── Stewart_Seccion_1_6_Tangentes_Velocidades_y_Otras_Razones_de_Cambio.pdf
+    │   └── Stewart_Capitulo_1_Repaso.pdf
     ├── capitulo_12/                         # PDFs de Derivadas Parciales (Capítulo 12)
 │   │   ├── Stewart_Seccion_12_1_Funciones_de_Varias_Variables.pdf
 │   │   └── ... (secciones 12.2 a 12.8, repaso y problemas adicionales)
@@ -64,6 +65,14 @@ calculo_stewart/
 │   │   ├── seccion_01_1.tex             # Lista modularizada de ejercicios
 │   │   ├── seccion_01_1_standalone.tex  # Documento independiente para compilar solo esta sección
 │   │   └── ejercicio_01/                # Ejercicios de pendientes y secantes
+│   ├── seccion_01_6/                    # Sección 1.6: Tangentes, Velocidades y Otras Razones de Cambio
+│   │   ├── seccion_01_6.tex             # Lista modularizada de ejercicios
+│   │   ├── seccion_01_6_standalone.tex  # Documento independiente para compilar solo esta sección
+│   │   └── ejercicio_01/                # Ejercicios de tangentes y razones de cambio
+│   ├── repaso/                          # Ejercicios de Repaso de Capítulo 1
+│   │   ├── repaso.tex                   # Lista modularizada de ejercicios
+│   │   ├── repaso_standalone.tex        # Documento independiente de repaso
+│   │   └── ejercicio_01/ a ejercicio_04/ # Ejercicios de repaso
 │   └── ... (secciones 01.2 a 01.5)
 ├── derivadas_parciales/                 # Bloque de Derivadas Parciales
 │   ├── capitulo_12.tex                  # Índice de secciones del Capítulo 12
@@ -439,6 +448,14 @@ Puedes ver los objetivos disponibles dentro de `build.py` y compilar solo uno:
 - **Sección 1.5 independiente (`seccion_01_5_standalone.tex` en `limites_y_continuidad/seccion_01_5/`)**:
   ```bash
   ./build.py --target seccion_1_5
+  ```
+- **Sección 1.6 independiente (`seccion_01_6_standalone.tex` en `limites_y_continuidad/seccion_01_6/`)**:
+  ```bash
+  ./build.py --target seccion_1_6
+  ```
+- **Repaso Capítulo 1 independiente (`repaso_standalone.tex` en `limites_y_continuidad/repaso/`)**:
+  ```bash
+  ./build.py --target repaso_1
   ```
 - **Sección 15.8 independiente (`seccion_15_8_standalone.tex` en `ecuaciones_diferenciales/seccion_15_8/`)**:
   ```bash
