@@ -265,6 +265,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "ecuaciones_diferenciales/aplicaciones_adicionales"),
         "dest_name": "Stewart_Capitulo_15_Aplicaciones_Adicionales.pdf",
         "description": "Capítulo 15 Aplicaciones Adicionales Standalone"
+    },
+    "seccion_0_1": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_1/seccion_0_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_1"),
+        "dest_name": "Stewart_Seccion_0_1_Conceptos_Preliminares.pdf",
+        "description": "Capítulo 0 Sección 1 Standalone"
     }
 }
 
@@ -295,7 +301,10 @@ def compile_latex(tex_path, working_dir, dest_name):
     
     if os.path.exists(generated_pdf):
         # Determinar la carpeta de destino basada en la ruta del archivo TeX
-        if "derivadas_parciales" in tex_path:
+        if "capitulo_0" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_0")
+            rel_path = f"pdfs/capitulo_0/{dest_name}"
+        elif "derivadas_parciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_12")
             rel_path = f"pdfs/capitulo_12/{dest_name}"
         elif "integrales_multiples" in tex_path:
