@@ -361,6 +361,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/seccion_02_3"),
         "dest_name": "Stewart_Seccion_2_3_Razones_de_Cambio_en_las_Ciencias_Fisicas_y_Sociales.pdf",
         "description": "Capítulo 2 Sección 2.3 Standalone"
+    },
+    "seccion_2_4": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_4/seccion_02_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_4"),
+        "dest_name": "Stewart_Seccion_2_4_Derivadas_de_Funciones_Trigonometricas.pdf",
+        "description": "Capítulo 2 Sección 2.4 Standalone"
     }
 }
 

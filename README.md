@@ -27,7 +27,8 @@ calculo_stewart/
     ├── capitulo_2/                         # PDFs de Derivadas (Capítulo 2)
     │   ├── Stewart_Seccion_2_1_La_Derivada_y_la_Razon_de_Cambio.pdf
     │   ├── Stewart_Seccion_2_2_Reglas_de_Derivacion.pdf
-    │   └── Stewart_Seccion_2_3_Razones_de_Cambio_en_las_Ciencias_Fisicas_y_Sociales.pdf
+    │   ├── Stewart_Seccion_2_3_Razones_de_Cambio_en_las_Ciencias_Fisicas_y_Sociales.pdf
+    │   └── Stewart_Seccion_2_4_Derivadas_de_Funciones_Trigonometricas.pdf
     ├── capitulo_12/                         # PDFs de Derivadas Parciales (Capítulo 12)
 │   │   ├── Stewart_Seccion_12_1_Funciones_de_Varias_Variables.pdf
 │   │   └── ... (secciones 12.2 a 12.8, repaso y problemas adicionales)
@@ -478,6 +479,10 @@ Puedes ver los objetivos disponibles dentro de `build.py` y compilar solo uno:
 - **Sección 2.3 independiente (`seccion_02_3_standalone.tex` en `derivadas/seccion_02_3/`)**:
   ```bash
   ./build.py --target seccion_2_3
+  ```
+- **Sección 2.4 independiente (`seccion_02_4_standalone.tex` en `derivadas/seccion_02_4/`)**:
+  ```bash
+  ./build.py --target seccion_2_4
   ```
 - **Sección 15.8 independiente (`seccion_15_8_standalone.tex` en `ecuaciones_diferenciales/seccion_15_8/`)**:
   ```bash
