@@ -349,6 +349,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/seccion_02_1"),
         "dest_name": "Stewart_Seccion_2_1_La_Derivada_y_la_Razon_de_Cambio.pdf",
         "description": "Capítulo 2 Sección 2.1 Standalone"
+    },
+    "seccion_2_2": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_2/seccion_02_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_2"),
+        "dest_name": "Stewart_Seccion_2_2_Reglas_de_Derivacion.pdf",
+        "description": "Capítulo 2 Sección 2.2 Standalone"
     }
 }
 
