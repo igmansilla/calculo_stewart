@@ -301,6 +301,36 @@ targets = {
         "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_6"),
         "dest_name": "Stewart_Seccion_0_6_Repaso_General_de_Conceptos.pdf",
         "description": "Capítulo 0 Sección 6 Standalone"
+    },
+    "seccion_1_1": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_1/seccion_01_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_1"),
+        "dest_name": "Stewart_Seccion_1_1_El_Problema_de_la_Tangente_y_de_la_Velocidad.pdf",
+        "description": "Capítulo 1 Sección 1.1 Standalone"
+    },
+    "seccion_1_2": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_2/seccion_01_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_2"),
+        "dest_name": "Stewart_Seccion_1_2_Limite_de_una_Funcion.pdf",
+        "description": "Capítulo 1 Sección 1.2 Standalone"
+    },
+    "seccion_1_3": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_3/seccion_01_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_3"),
+        "dest_name": "Stewart_Seccion_1_3_Calculo_de_Limites_Aplicando_sus_Leyes_Fundamentales.pdf",
+        "description": "Capítulo 1 Sección 1.3 Standalone"
+    },
+    "seccion_1_4": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_4/seccion_01_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_4"),
+        "dest_name": "Stewart_Seccion_1_4_La_Definicion_Precisa_de_Limite.pdf",
+        "description": "Capítulo 1 Sección 1.4 Standalone"
+    },
+    "seccion_1_5": {
+        "tex_path": os.path.join(base_dir, "limites_y_continuidad/seccion_01_5/seccion_01_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "limites_y_continuidad/seccion_01_5"),
+        "dest_name": "Stewart_Seccion_1_5_Continuidad.pdf",
+        "description": "Capítulo 1 Sección 1.5 Standalone"
     }
 }
 
@@ -334,6 +364,9 @@ def compile_latex(tex_path, working_dir, dest_name):
         if "capitulo_0" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_0")
             rel_path = f"pdfs/capitulo_0/{dest_name}"
+        elif "limites_y_continuidad" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_1")
+            rel_path = f"pdfs/capitulo_1/{dest_name}"
         elif "derivadas_parciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_12")
             rel_path = f"pdfs/capitulo_12/{dest_name}"

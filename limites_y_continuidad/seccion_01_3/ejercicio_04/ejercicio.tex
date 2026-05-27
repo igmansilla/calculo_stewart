@@ -1,0 +1,29 @@
+\setcounter{enumi}{16}
+\item $\lim_{x \to -3} \frac{x^2 - x + 12}{x + 3}$
+\vspace{0.5cm}
+\begin{center}
+\textbf{Teorema de Compresión (Figura 1.20)}\\
+\vspace{0.3cm}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = {$x$},
+    ylabel = {$y$},
+    xmin=-0.5, xmax=0.5,
+    ymin=-0.5, ymax=0.5,
+    domain=-0.5:0.5,
+    samples=500,
+    width=10cm,
+    height=8cm,
+    xtick=\empty, ytick=\empty
+]
+% Envelopes
+\addplot [blue, domain=-0.5:0.5] {abs(x)} node[pos=0.8, above right] {$y = |x|$};
+\addplot [blue, domain=-0.5:0.5] {-abs(x)} node[pos=0.8, below right] {$y = -|x|$};
+% The oscillating function
+\addplot [red, thick, domain=-0.5:-0.01] {x * sin(deg(1/x))};
+\addplot [red, thick, domain=0.01:0.5] {x * sin(deg(1/x))};
+\node at (0.2, 0.4) {$y = x \sin(1/x)$};
+\end{axis}
+\end{tikzpicture}
+\end{center}

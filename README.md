@@ -20,6 +20,9 @@ calculo_stewart/
 │    ├── Stewart_Calculo_Completo.pdf
     ├── capitulo_0/                         # PDFs de Conceptos Preliminares (Capítulo 0)
     │   └── Stewart_Seccion_0_1_Conceptos_Preliminares.pdf
+    ├── capitulo_1/                         # PDFs de Límites y Continuidad (Capítulo 1)
+    │   ├── Stewart_Seccion_1_1_El_Problema_de_la_Tangente_y_de_la_Velocidad.pdf
+    │   ├── ... (secciones 1.2 a 1.5)
     ├── capitulo_12/                         # PDFs de Derivadas Parciales (Capítulo 12)
 │   │   ├── Stewart_Seccion_12_1_Funciones_de_Varias_Variables.pdf
 │   │   └── ... (secciones 12.2 a 12.8, repaso y problemas adicionales)
@@ -55,6 +58,13 @@ calculo_stewart/
 │       ├── seccion_0_1.tex              # Lista modularizada de ejercicios
 │       ├── seccion_0_1_standalone.tex   # Documento independiente para compilar solo esta sección
 │       └── ejercicio_01/ a ejercicio_82/ # Enunciados individuales de los ejercicios
+├── limites_y_continuidad/               # Límites y Continuidad (Capítulo 1)
+│   ├── capitulo_01.tex                  # Índice de secciones del Capítulo 1
+│   ├── seccion_01_1/                    # Sección 1.1: El Problema de la Tangente y de la Velocidad
+│   │   ├── seccion_01_1.tex             # Lista modularizada de ejercicios
+│   │   ├── seccion_01_1_standalone.tex  # Documento independiente para compilar solo esta sección
+│   │   └── ejercicio_01/                # Ejercicios de pendientes y secantes
+│   └── ... (secciones 01.2 a 01.5)
 ├── derivadas_parciales/                 # Bloque de Derivadas Parciales
 │   ├── capitulo_12.tex                  # Índice de secciones del Capítulo 12
 │   ├── seccion_12_1/                    # Sección 12.1: Funciones de Varias Variables
@@ -410,6 +420,26 @@ Puedes ver los objetivos disponibles dentro de `build.py` y compilar solo uno:
   ```bash
   ./build.py --target seccion_0_1
   ```
+- **Sección 1.1 independiente (`seccion_01_1_standalone.tex` en `limites_y_continuidad/seccion_01_1/`)**:
+  ```bash
+  ./build.py --target seccion_1_1
+  ```
+- **Sección 1.2 independiente (`seccion_01_2_standalone.tex` en `limites_y_continuidad/seccion_01_2/`)**:
+  ```bash
+  ./build.py --target seccion_1_2
+  ```
+- **Sección 1.3 independiente (`seccion_01_3_standalone.tex` en `limites_y_continuidad/seccion_01_3/`)**:
+  ```bash
+  ./build.py --target seccion_1_3
+  ```
+- **Sección 1.4 independiente (`seccion_01_4_standalone.tex` en `limites_y_continuidad/seccion_01_4/`)**:
+  ```bash
+  ./build.py --target seccion_1_4
+  ```
+- **Sección 1.5 independiente (`seccion_01_5_standalone.tex` en `limites_y_continuidad/seccion_01_5/`)**:
+  ```bash
+  ./build.py --target seccion_1_5
+  ```
 - **Sección 15.8 independiente (`seccion_15_8_standalone.tex` en `ecuaciones_diferenciales/seccion_15_8/`)**:
   ```bash
   ./build.py --target seccion_15_8
@@ -433,7 +463,7 @@ Si deseas hacer una limpieza manual de los archivos auxiliares sin compilar:
 
 ## ✏️ Personalización del Espacio de Resolución
 
-Cada documento (`main.tex`, `seccion_0_1_standalone.tex`, `seccion_12_1_standalone.tex`, `seccion_12_2_standalone.tex`, `seccion_12_3_standalone.tex`, `seccion_12_4_standalone.tex`, `seccion_12_5_standalone.tex`, `seccion_12_6_standalone.tex`, `seccion_12_7_standalone.tex`, `seccion_12_8_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_13_1_standalone.tex`, `seccion_13_2_standalone.tex`, `seccion_13_3_standalone.tex`, `seccion_13_4_standalone.tex`, `seccion_13_5_standalone.tex`, `seccion_13_6_standalone.tex`, `seccion_13_7_standalone.tex`, `seccion_13_8_standalone.tex`, `seccion_13_9_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_14_1_standalone.tex`, `seccion_14_2_standalone.tex`, `seccion_14_3_standalone.tex`, `seccion_14_4_standalone.tex`, `seccion_14_5_standalone.tex`, `seccion_14_6_standalone.tex`, `seccion_14_7_standalone.tex`, `seccion_14_8_standalone.tex`, `seccion_14_9_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_15_1_standalone.tex`, `seccion_15_2_standalone.tex`, `seccion_15_3_standalone.tex`, `seccion_15_4_standalone.tex`, `seccion_15_5_standalone.tex`, `seccion_15_6_standalone.tex`, `seccion_15_7_standalone.tex`, `seccion_15_8_standalone.tex`, `repaso_standalone.tex` y `aplicaciones_adicionales_standalone.tex` en sus respectivas carpetas) incluye una variable para ajustar el espacio vertical asignado a la resolución manual de cada ejercicio. 
+Cada documento (`main.tex`, `seccion_01_1_standalone.tex`, `seccion_01_2_standalone.tex`, `seccion_01_3_standalone.tex`, `seccion_01_4_standalone.tex`, `seccion_01_5_standalone.tex`, `seccion_0_1_standalone.tex`, `seccion_12_1_standalone.tex`, `seccion_12_2_standalone.tex`, `seccion_12_3_standalone.tex`, `seccion_12_4_standalone.tex`, `seccion_12_5_standalone.tex`, `seccion_12_6_standalone.tex`, `seccion_12_7_standalone.tex`, `seccion_12_8_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_13_1_standalone.tex`, `seccion_13_2_standalone.tex`, `seccion_13_3_standalone.tex`, `seccion_13_4_standalone.tex`, `seccion_13_5_standalone.tex`, `seccion_13_6_standalone.tex`, `seccion_13_7_standalone.tex`, `seccion_13_8_standalone.tex`, `seccion_13_9_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_14_1_standalone.tex`, `seccion_14_2_standalone.tex`, `seccion_14_3_standalone.tex`, `seccion_14_4_standalone.tex`, `seccion_14_5_standalone.tex`, `seccion_14_6_standalone.tex`, `seccion_14_7_standalone.tex`, `seccion_14_8_standalone.tex`, `seccion_14_9_standalone.tex`, `repaso_standalone.tex`, `problemas_adicionales_standalone.tex`, `seccion_15_1_standalone.tex`, `seccion_15_2_standalone.tex`, `seccion_15_3_standalone.tex`, `seccion_15_4_standalone.tex`, `seccion_15_5_standalone.tex`, `seccion_15_6_standalone.tex`, `seccion_15_7_standalone.tex`, `seccion_15_8_standalone.tex`, `repaso_standalone.tex` y `aplicaciones_adicionales_standalone.tex` en sus respectivas carpetas) incluye una variable para ajustar el espacio vertical asignado a la resolución manual de cada ejercicio. 
 
 Puedes buscar la siguiente línea en los encabezados TeX:
 ```latex
