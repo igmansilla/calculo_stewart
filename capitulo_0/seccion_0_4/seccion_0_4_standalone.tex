@@ -1,0 +1,30 @@
+\documentclass[11pt,spanish,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm}
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Cálculo: Varias Variables - James Stewart} \\ \Large Capítulo 0: Álgebra y Composición de Funciones}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subimport{./}{seccion_0_4.tex}
+
+\end{document}

@@ -271,6 +271,36 @@ targets = {
         "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_1"),
         "dest_name": "Stewart_Seccion_0_1_Conceptos_Preliminares.pdf",
         "description": "Capítulo 0 Sección 1 Standalone"
+    },
+    "seccion_0_2": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_2/seccion_0_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_2"),
+        "dest_name": "Stewart_Seccion_0_2_Geometria_Analitica_y_Secciones_Conicas.pdf",
+        "description": "Capítulo 0 Sección 2 Standalone"
+    },
+    "seccion_0_3": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_3/seccion_0_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_3"),
+        "dest_name": "Stewart_Seccion_0_3_Funciones_Dominios_y_Modelado.pdf",
+        "description": "Capítulo 0 Sección 3 Standalone"
+    },
+    "seccion_0_4": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_4/seccion_0_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_4"),
+        "dest_name": "Stewart_Seccion_0_4_Algebra_y_Composicion_de_Funciones.pdf",
+        "description": "Capítulo 0 Sección 4 Standalone"
+    },
+    "seccion_0_5": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_5/seccion_0_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_5"),
+        "dest_name": "Stewart_Seccion_0_5_Graficas_y_Transformaciones_de_Funciones.pdf",
+        "description": "Capítulo 0 Sección 5 Standalone"
+    },
+    "seccion_0_6": {
+        "tex_path": os.path.join(base_dir, "capitulo_0/seccion_0_6/seccion_0_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "capitulo_0/seccion_0_6"),
+        "dest_name": "Stewart_Seccion_0_6_Repaso_General_de_Conceptos.pdf",
+        "description": "Capítulo 0 Sección 6 Standalone"
     }
 }
 
