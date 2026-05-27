@@ -32,7 +32,11 @@ calculo_stewart/
     │   ├── Stewart_Seccion_2_5_La_Regla_de_la_Cadena.pdf
     │   ├── Stewart_Seccion_2_6_Derivacion_Implicita.pdf
     │   ├── Stewart_Seccion_2_7_Derivadas_de_Orden_Superior.pdf
-    │   └── Stewart_Seccion_2_8_Razones_de_Cambio_Relacionadas.pdf
+    │   ├── Stewart_Seccion_2_8_Razones_de_Cambio_Relacionadas.pdf
+    │   ├── Stewart_Seccion_2_9_Linealizacion_y_Diferenciales.pdf
+    │   ├── Stewart_Seccion_2_10_Metodo_de_Newton.pdf
+    │   ├── Stewart_Capitulo_2_Repaso.pdf
+    │   └── Stewart_Capitulo_2_Problemas_Adicionales.pdf
     ├── capitulo_12/                         # PDFs de Derivadas Parciales (Capítulo 12)
 │   │   ├── Stewart_Seccion_12_1_Funciones_de_Varias_Variables.pdf
 │   │   └── ... (secciones 12.2 a 12.8, repaso y problemas adicionales)
@@ -503,6 +507,22 @@ Puedes ver los objetivos disponibles dentro de `build.py` y compilar solo uno:
 - **Sección 2.8 independiente (`seccion_02_8_standalone.tex` en `derivadas/seccion_02_8/`)**:
   ```bash
   ./build.py --target seccion_2_8
+  ```
+- **Sección 2.9 independiente (`seccion_02_9_standalone.tex` en `derivadas/seccion_02_9/`)**:
+  ```bash
+  ./build.py --target seccion_2_9
+  ```
+- **Sección 2.10 independiente (`seccion_02_10_standalone.tex` en `derivadas/seccion_02_10/`)**:
+  ```bash
+  ./build.py --target seccion_2_10
+  ```
+- **Repaso del Capítulo 2 independiente (`repaso_standalone.tex` en `derivadas/repaso/`)**:
+  ```bash
+  ./build.py --target repaso_2
+  ```
+- **Problemas Adicionales del Capítulo 2 independientes (`problemas_adicionales_standalone.tex` en `derivadas/problemas_adicionales/`)**:
+  ```bash
+  ./build.py --target problemas_adicionales_2
   ```
 - **Sección 15.8 independiente (`seccion_15_8_standalone.tex` en `ecuaciones_diferenciales/seccion_15_8/`)**:
   ```bash

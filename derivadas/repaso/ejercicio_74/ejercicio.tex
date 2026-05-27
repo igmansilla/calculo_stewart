@@ -1,0 +1,11 @@
+\item Una esquiadora pasa sobre la rampa mostrada en la figura a una velocidad de $30 \text{ pies/s}$. ¿Con qué velocidad se eleva la esquiadora cuando deja la rampa?
+\begin{center}
+\begin{tikzpicture}[scale=0.4]
+    \draw[thick, fill=gray!30] (0,0) -- (15,0) -- (15,4) -- cycle;
+    \draw[stealth-stealth] (0,-1) -- (15,-1) node[midway, below] {$15 \text{ pies}$};
+    \draw[stealth-stealth] (16,0) -- (16,4) node[midway, right] {$4 \text{ pies}$};
+    \filldraw (7.5, 2) circle (4pt) node[above left] {esquiadora};
+    \draw[thick, blue] (-2, 0) -- (0, 0); % Water/ground indicator
+    \draw[thick, blue] (-2, -0.5) -- (0, -0.5);
+\end{tikzpicture}
+\end{center}

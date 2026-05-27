@@ -1,0 +1,18 @@
+\item Encuentre los puntos $P$ y $Q$ de la parábola $y = 1 - x^2$, tales que el triángulo $ABC$ formado por el eje $x$ y las rectas tangentes en $P$ y $Q$ sea equilátero.
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    \draw[-stealth] (-2,0) -- (2,0) node[right] {$x$};
+    \draw[-stealth] (0,-0.5) -- (0,2.5) node[above] {$y$};
+    \draw[thick, domain=-1.2:1.2, samples=100] plot (\x, {1 - \x*\x});
+    
+    % Triángulo y tangentes aproximadas para que sea equilátero (ángulos de 60 grados)
+    \draw[thick] (-1.75/1.732, 0) -- (0, 1.75) -- (1.75/1.732, 0);
+    
+    \filldraw (-0.866, 0.25) circle (1pt) node[left] {$P$};
+    \filldraw (0.866, 0.25) circle (1pt) node[right] {$Q$};
+    \node[above right] at (0, 1.75) {$A$};
+    \node[below] at (-1.75/1.732, 0) {$B$};
+    \node[below] at (1.75/1.732, 0) {$C$};
+    \node[below left] at (0,0) {$0$};
+\end{tikzpicture}
+\end{center}

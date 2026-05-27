@@ -391,6 +391,30 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/seccion_02_8"),
         "dest_name": "Stewart_Seccion_2_8_Razones_de_Cambio_Relacionadas.pdf",
         "description": "Capítulo 2 Sección 2.8 Standalone"
+    },
+    "seccion_2_9": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_9/seccion_02_9_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_9"),
+        "dest_name": "Stewart_Seccion_2_9_Linealizacion_y_Diferenciales.pdf",
+        "description": "Capítulo 2 Sección 2.9 Standalone"
+    },
+    "seccion_2_10": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_10/seccion_02_10_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_10"),
+        "dest_name": "Stewart_Seccion_2_10_Metodo_de_Newton.pdf",
+        "description": "Capítulo 2 Sección 2.10 Standalone"
+    },
+    "repaso_2": {
+        "tex_path": os.path.join(base_dir, "derivadas/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/repaso"),
+        "dest_name": "Stewart_Capitulo_2_Repaso.pdf",
+        "description": "Capítulo 2 Repaso Standalone"
+    },
+    "problemas_adicionales_2": {
+        "tex_path": os.path.join(base_dir, "derivadas/problemas_adicionales/problemas_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/problemas_adicionales"),
+        "dest_name": "Stewart_Capitulo_2_Problemas_Adicionales.pdf",
+        "description": "Capítulo 2 Problemas Adicionales Standalone"
     }
 }
 
