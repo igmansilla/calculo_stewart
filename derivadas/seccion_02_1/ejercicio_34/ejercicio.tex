@@ -1,0 +1,71 @@
+\item Establezca la correspondencia entre la gráfica de cada una de las funciones dadas en (a) a (d) con la gráfica de sus derivadas dadas en (i) a (iv).
+
+\begin{center}
+\begin{tabular}{cc}
+    (a) & (b) \\
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,3) node[above] {$y$};
+        \draw[thick, domain=-2.5:2.5, samples=100] plot (\x, {sin(\x r * 1.5)});
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,3) node[above] {$y$};
+        \draw[thick] (-2,-1) -- (-1,2) -- (1,-1) -- (2,1);
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture} \\
+    
+    (c) & (d) \\
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-3) -- (0,2) node[above] {$y$};
+        \draw[thick, domain=-2.5:2.5, samples=100] plot (\x, {-1/(1+\x*\x)});
+        \node[above left] at (0,0) {$0$};
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-3) -- (0,2) node[above] {$y$};
+        \draw[thick, domain=-2.5:2.5, samples=100] plot (\x, {-\x*\x + 1});
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture} \\
+    
+    (i) & (ii) \\
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,2) node[above] {$y$};
+        \draw[thick, domain=-2.5:2.5, samples=100] plot (\x, {2*\x/((1+\x*\x)^2)});
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-3) -- (0,2) node[above] {$y$};
+        \draw[thick, domain=-2:2, samples=100] plot (\x, {-1.5*\x*\x + 1.5});
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture} \\
+    
+    (iii) & (iv) \\
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,3) node[above] {$y$};
+        \draw[thick, domain=-2.5:2.5, samples=100] plot (\x, {1.5*cos(\x r * 1.5)});
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}[scale=0.6]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,2) node[above] {$y$};
+        \draw[thick] (-2.5,1) -- (-1,1);
+        \draw[thick] (-1,-1.5) -- (1,-1.5);
+        \draw[thick] (1,1) -- (2.5,1);
+        \filldraw[fill=white] (-1,1) circle (2pt);
+        \filldraw[fill=white] (-1,-1.5) circle (2pt);
+        \filldraw[fill=white] (1,-1.5) circle (2pt);
+        \filldraw[fill=white] (1,1) circle (2pt);
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+\end{tabular}
+\end{center}

@@ -343,6 +343,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "limites_y_continuidad/repaso"),
         "dest_name": "Stewart_Capitulo_1_Repaso.pdf",
         "description": "Capítulo 1 Repaso de Conceptos Standalone"
+    },
+    "seccion_2_1": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_1/seccion_02_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_1"),
+        "dest_name": "Stewart_Seccion_2_1_La_Derivada_y_la_Razon_de_Cambio.pdf",
+        "description": "Capítulo 2 Sección 2.1 Standalone"
     }
 }
 
@@ -382,6 +388,9 @@ def compile_latex(tex_path, working_dir, dest_name):
         elif "derivadas_parciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_12")
             rel_path = f"pdfs/capitulo_12/{dest_name}"
+        elif "derivadas" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_2")
+            rel_path = f"pdfs/capitulo_2/{dest_name}"
         elif "integrales_multiples" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_13")
             rel_path = f"pdfs/capitulo_13/{dest_name}"

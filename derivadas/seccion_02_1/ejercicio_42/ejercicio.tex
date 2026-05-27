@@ -1,0 +1,10 @@
+\item Trace o copie la gráfica de la función $f$ dada a continuación. Luego, trace la gráfica de su derivada $f'$ justo debajo de ella.
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,3) node[above] {$y$};
+        \draw[thick, domain=-2:1.5, samples=100] plot (\x, {0.5*(\x+1)*(\x-1)*(\x-2)});
+        \draw[thick] (1.5,0.3125) -- (2.5, 2);
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+\end{center}

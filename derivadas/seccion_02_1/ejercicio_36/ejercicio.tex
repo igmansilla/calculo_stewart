@@ -1,0 +1,9 @@
+\item Trace o copie la gráfica de la función $f$ dada a continuación. Luego, trace la gráfica de su derivada $f'$ justo debajo de ella.
+\begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw[-stealth] (-3,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-1) -- (0,3) node[above] {$y$};
+        \draw[thick, domain=-2:2] plot (\x, {0.6*\x*\x});
+        \node[below] at (0,0) {$0$};
+    \end{tikzpicture}
+\end{center}

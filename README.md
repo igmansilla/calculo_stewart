@@ -24,6 +24,8 @@ calculo_stewart/
     │   ├── ... (secciones 1.1 a 1.5)
     │   ├── Stewart_Seccion_1_6_Tangentes_Velocidades_y_Otras_Razones_de_Cambio.pdf
     │   └── Stewart_Capitulo_1_Repaso.pdf
+    ├── capitulo_2/                         # PDFs de Derivadas (Capítulo 2)
+    │   └── Stewart_Seccion_2_1_La_Derivada_y_la_Razon_de_Cambio.pdf
     ├── capitulo_12/                         # PDFs de Derivadas Parciales (Capítulo 12)
 │   │   ├── Stewart_Seccion_12_1_Funciones_de_Varias_Variables.pdf
 │   │   └── ... (secciones 12.2 a 12.8, repaso y problemas adicionales)
@@ -74,6 +76,12 @@ calculo_stewart/
 │   │   ├── repaso_standalone.tex        # Documento independiente de repaso
 │   │   └── ejercicio_01/ a ejercicio_04/ # Ejercicios de repaso
 │   └── ... (secciones 01.2 a 01.5)
+├── derivadas/                           # Derivadas (Capítulo 2)
+│   ├── capitulo_02.tex                  # Índice de secciones del Capítulo 2
+│   └── seccion_02_1/                    # Sección 2.1: La Derivada y la Razón de Cambio
+│       ├── seccion_02_1.tex             # Lista modularizada de ejercicios
+│       ├── seccion_02_1_standalone.tex  # Documento independiente para compilar solo esta sección
+│       └── ejercicio_01/ a ejercicio_53/ # Enunciados individuales de los ejercicios
 ├── derivadas_parciales/                 # Bloque de Derivadas Parciales
 │   ├── capitulo_12.tex                  # Índice de secciones del Capítulo 12
 │   ├── seccion_12_1/                    # Sección 12.1: Funciones de Varias Variables
@@ -456,6 +464,10 @@ Puedes ver los objetivos disponibles dentro de `build.py` y compilar solo uno:
 - **Repaso Capítulo 1 independiente (`repaso_standalone.tex` en `limites_y_continuidad/repaso/`)**:
   ```bash
   ./build.py --target repaso_1
+  ```
+- **Sección 2.1 independiente (`seccion_02_1_standalone.tex` en `derivadas/seccion_02_1/`)**:
+  ```bash
+  ./build.py --target seccion_2_1
   ```
 - **Sección 15.8 independiente (`seccion_15_8_standalone.tex` en `ecuaciones_diferenciales/seccion_15_8/`)**:
   ```bash
