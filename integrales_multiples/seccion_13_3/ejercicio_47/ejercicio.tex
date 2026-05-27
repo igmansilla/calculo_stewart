@@ -1,0 +1,16 @@
+\item $\iint_D x^2 \, dA$
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    \draw[->] (-1.5,0) -- (1.5,0) node[right] {$x$};
+    \draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+    \draw (-1,-1) rectangle (1,1);
+    \node[above right] at (1,1) {$(1, 1)$};
+    \draw[fill=gray!30] (1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
+    \node at (0,0.3) {$D$};
+    \node[below right] at (1,0) {$1$};
+    \node[below left] at (-1,0) {$-1$};
+    \node[above left] at (0,1) {$1$};
+    \node[below left] at (0,-1) {$-1$};
+    \node[below left] at (0,0) {$0$};
+\end{tikzpicture}
+\end{center}

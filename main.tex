@@ -1,0 +1,52 @@
+\documentclass[11pt,spanish,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{tikz}
+\usetikzlibrary{babel, decorations.markings}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm} % <--- Modifica este valor (ej. 3cm, 6cm, 8cm) para ajustar el espacio para escribir
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Cálculo: Varias Variables - James Stewart} \\ \Large Colección de Ejercicios Resueltos}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\part{Derivadas Parciales}
+
+% --- CAPÍTULO 12 ---
+\subimport{derivadas_parciales/}{capitulo_12.tex}
+
+\part{Integrales Múltiples}
+
+% --- CAPÍTULO 13 ---
+\subimport{integrales_multiples/}{capitulo_13.tex}
+
+\part{Cálculo Vectorial}
+
+% --- CAPÍTULO 14 ---
+\subimport{calculo_vectorial/}{capitulo_14.tex}
+
+\part{Ecuaciones Diferenciales}
+
+% --- CAPÍTULO 15 ---
+\subimport{ecuaciones_diferenciales/}{capitulo_15.tex}
+
+\end{document}

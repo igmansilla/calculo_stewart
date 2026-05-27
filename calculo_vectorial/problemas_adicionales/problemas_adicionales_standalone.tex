@@ -1,0 +1,30 @@
+\documentclass[11pt,spanish,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm} % <--- Modifica este valor (ej. 3cm, 6cm, 8cm) para ajustar el espacio para escribir
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Cálculo: Varias Variables - James Stewart} \\ \Large Capítulo 14: Problemas Adicionales de Cálculo Vectorial}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subimport{./}{problemas_adicionales.tex}
+
+\end{document}

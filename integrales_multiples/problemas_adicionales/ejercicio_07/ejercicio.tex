@@ -1,0 +1,18 @@
+\item En el estudio de la formación de cordilleras, los geólogos estiman la cantidad de trabajo que se requiere para que se yerga una montaña desde el nivel del mar. Considere una montaña que tiene esencialmente la forma de un cono circular recto. Suponga que la densidad peso del material en la vecindad de un punto $P$ es $g(P)$ y que la altura es $h(P)$.
+    \begin{enumerate}
+        \item[(a)] Encuentre una integral definida que represente el trabajo total realizado al formarse la montaña.
+        \item[(b)] Suponga que el monte Fujiyama en Japón tiene la forma de un cono circular recto con radio de 62,000 pies, altura 12,400 pies y densidad constante de 200 $\text{lb/pie}^3$. ¿Qué trabajo se realizó al formarse el monte Fujiyama si inicialmente estaba al nivel del mar?
+    \end{enumerate}
+
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        % Contorno de la montaña
+        \draw[thick] (-2.5,0) to[out=70, in=225] (-0.5, 2) to[out=45, in=180] (0, 2.8) to[out=0, in=135] (0.5, 2) to[out=-45, in=110] (2.5,0);
+        % Base
+        \draw[thick] (-2.5,0) to[out=-20, in=180] (0,-0.4) to[out=0, in=200] (2.5,0);
+        \draw[thick, dashed] (-2.5,0) to[out=20, in=180] (0,0.4) to[out=0, in=160] (2.5,0);
+        
+        % Punto P
+        \fill (-0.5, 1.2) circle (1.5pt) node[right] {$P$};
+    \end{tikzpicture}
+    \end{center}

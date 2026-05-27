@@ -1,0 +1,23 @@
+\item Una pieza larga de hoja de metal galvanizado de $w$ pulgadas de ancho se va a doblar en una forma simétrica con tres lados rectos para formar un canal pluvial. La sección transversal se muestra en la figura.
+    \begin{enumerate}
+        \item[(a)] Determine las dimensiones que permitan el máximo flujo posible; esto es, encuentre las dimensiones que proporcionen la máxima área de sección transversal posible.
+        \item[(b)] ¿Sería mejor formar con la hoja de metal un canal de área de sección transversal semicircular que uno de sección transversal de tres lados?
+    \end{enumerate}
+
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Línea superior punteada
+        \draw[dashed] (-2, 1) -- (2, 1);
+        % Canal
+        \draw[thick] (-2, 1) -- (-1, 0) -- (1, 0) -- (2, 1);
+        % Ángulos
+        \draw (-1.5, 1) arc (180:225:0.5);
+        \node at (-1.7, 0.7) {$\theta$};
+        \draw (1.5, 1) arc (0:-45:0.5);
+        \node at (1.7, 0.7) {$\theta$};
+        % Etiquetas
+        \node[below] at (0, 0) {$w - 2x$};
+        \node[below left] at (-1.5, 0.5) {$x$};
+        \node[below right] at (1.5, 0.5) {$x$};
+    \end{tikzpicture}
+    \end{center}

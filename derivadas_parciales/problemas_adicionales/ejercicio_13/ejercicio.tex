@@ -1,0 +1,60 @@
+\item (a) Una partícula se desliza sin fricción bajando por un resorte en espiral que tiene forma de hélice circular. Considerando el eje $z$ positivo en dirección hacia abajo, las coordenadas cilíndricas de la partícula en el tiempo $t$ son $r = a, z = b\theta$, en donde $a$ y $b$ son constantes positivas. Suponga que la partícula empieza en el punto $r = a, \theta = 0$, con velocidad $v_0 = 0$ y que cae bajo la acción de la gravedad. De la ley de la conservación de la energía resulta que la rapidez de la partícula después de que ha caído una distancia vertical $z$ es $|v| = \sqrt{2gz}$.
+\begin{enumerate}
+    \item[(i)] Encuentre la velocidad angular $d\theta/dt$.
+    \item[(ii)] Determine las ecuaciones paramétricas (en términos de $t$) del movimiento de la partícula.
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  % Cilindro
+  \draw (-1.5, 0) -- (-1.5, -5);
+  \draw (1.5, 0) -- (1.5, -5);
+  \draw (0, 0) ellipse (1.5 and 0.4);
+  \draw (-1.5, -5) arc (180:360:1.5 and 0.4);
+  \draw[dashed] (1.5, -5) arc (0:180:1.5 and 0.4);
+  
+  % Eje z
+  \draw[->, dashed] (0, 0) -- (0, -6.5) node[below] {$z$};
+  % Radio a
+  \draw[dashed] (0, 0) -- (-1.5, 0) node[midway, above] {$a$};
+  
+  % Hélice circular
+  \draw[dashed, domain=0:pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+  \draw[domain=pi:2*pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+  
+  \draw[dashed, domain=2*pi:3*pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+  \draw[domain=3*pi:4*pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+  
+  \draw[dashed, domain=4*pi:5*pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+  \draw[domain=5*pi:6*pi, samples=30, smooth, variable=\t] plot ({1.5*cos(\t r)}, {-0.25*\t - 0.4*sin(\t r)});
+\end{tikzpicture}
+\end{center}
+
+(b) Suponga que una partícula se desliza sin fricción bajando por una hélice cónica cuyas ecuaciones en coordenadas cilíndricas son $r = a\theta, z = b\theta$, en donde $a$ y $b$ son constantes positivas y el eje $z$ positivo está dirigido hacia abajo. Como en la parte (a), su rapidez después de haber caído una distancia vertical $z$ es $\sqrt{2gz}$.
+\begin{enumerate}
+    \item[(i)] Encuentre la velocidad angular $d\theta/dt$ en función de $\theta$.
+    \item[(ii)] Determine la distancia que recorre la partícula en función de $\theta$.
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  % Cono
+  \draw (0, 0) -- (-2, -5);
+  \draw (0, 0) -- (2, -5);
+  \draw (-2, -5) arc (180:360:2 and 0.5);
+  \draw[dashed] (2, -5) arc (0:180:2 and 0.5);
+  
+  % Eje z
+  \draw[->, dashed] (0, 0) -- (0, -6.5) node[below] {$z$};
+  
+  % Hélice cónica
+  \draw[dashed, domain=0:pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+  \draw[domain=pi:2*pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+  
+  \draw[dashed, domain=2*pi:3*pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+  \draw[domain=3*pi:4*pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+  
+  \draw[dashed, domain=4*pi:5*pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+  \draw[domain=5*pi:6*pi, samples=30, smooth, variable=\t] plot ({0.106*\t*cos(\t r)}, {-0.265*\t - 0.0265*\t*sin(\t r)});
+\end{tikzpicture}
+\end{center}

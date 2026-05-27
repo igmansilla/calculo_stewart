@@ -1,0 +1,36 @@
+\item Una montaña de "pan de azúcar" tiene la ecuación
+    \[ z = f(x, y) = H - \alpha(x^2 + \mu y^2) \qquad \alpha > 0, \ \mu > 1 \]
+    Empezando en un punto $(x_0, y_0, 0)$ de la base de la montaña, un alpinista desea ascender la montaña a través de una curva de ascensión más pronunciada.
+    \begin{enumerate}
+        \item[(a)] Identifique las curvas de nivel de la superficie $z = f(x, y)$ y grafique algunos miembros de esta familia de curvas.
+        \item[(b)] Calcule el vector gradiente de la superficie en un punto arbitrario $(x, y)$ del dominio de $f$ y determine la ecuación diferencial de la curva de ascensión más pronunciada.
+        \item[(c)] Encuentre la solución de la ecuación diferencial de la parte (b) que satisfaga la condición inicial $y(x_0) = y_0$.
+        \item[(d)] Encuentre las ecuaciones paramétricas $x = x(t), \ y = y(t), \ z = z(t)$ de la curva de ascensión más pronunciada sobre la superficie de la montaña.
+    \end{enumerate}
+
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Ejes
+        \draw[->] (0,0) -- (2.5,0) node[right] {$y$};
+        \draw[->] (0,0) -- (0,2.5) node[above] {$z$};
+        \draw[->] (0,0) -- (-1.5,-1.2) node[below left] {$x$};
+        
+        % Base
+        \draw[thick] (2,0) arc (0:-180:2cm and 0.8cm);
+        \draw[thick, dashed] (2,0) arc (0:180:2cm and 0.8cm);
+        
+        % Superficie de la montaña
+        \draw[thick] (-2,0) to[out=85, in=180] (0,2) to[out=0, in=95] (2,0);
+        
+        % Eje Z interior
+        \draw[dashed] (0,0) -- (0,2);
+        
+        % Trayectoria
+        \draw[thick] (-1.414, -0.56) to[out=60, in=190] (0,2);
+        
+        % Puntos
+        \fill (0,2) circle (1pt) node[above left] {$(0, 0, H)$};
+        \fill (-1.414, -0.56) circle (1pt) node[below right] {$(x_0, y_0, 0)$};
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

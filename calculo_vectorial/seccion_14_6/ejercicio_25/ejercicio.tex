@@ -1,0 +1,46 @@
+\item Encuentre una representación paramétrica del toro que se obtiene haciendo girar en torno al eje $z$ la circunferencia del plano $xz$ con centro en $(b, 0, 0)$ y radio $a < b$. (Sugerencia: Considere como parámetros a los ángulos $\theta$ y $\alpha$ mostrados en la figura).
+
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Ejes 3D
+        \draw[->, thick] (0,0,0) -- (0,2,0) node[above] {$z$};
+        \draw[->, thick] (0,0,0) -- (2.5,0,0) node[right] {$y$};
+        \draw[->, thick] (0,0,0) -- (0,0,3) node[below left] {$x$};
+        
+        % Silueta del toro
+        \draw[thick] (0,0) ellipse (2cm and 0.8cm);
+        \draw[thick] (-0.8,0.1) arc (160:380:0.8cm and 0.3cm);
+        \draw[thick] (-0.6,-0.1) arc (190:350:0.6cm and 0.2cm);
+        
+        % Circunferencia rotando
+        \draw[dashed, thick] (1.3,0) ellipse (0.4cm and 0.8cm);
+        \draw[thick] (1.3,-0.8) arc (-90:90:0.4cm and 0.8cm);
+        
+        % Punto central de la circunferencia (b, 0, 0) y radio a
+        \fill (1.3,0) circle (1pt);
+        \draw[->] (1.3,0) -- (1.55, 0.6) node[midway, right] {$a$};
+        
+        % Punto (x,y,z)
+        \coordinate (P) at (1.55, 0.6);
+        \fill (P) circle (1.5pt);
+        \node[above right] at (P) {$(x, y, z)$};
+        
+        % Vector desde el centro de la sección al punto
+        \draw[dashed] (1.3,0) -- (P);
+        
+        % Ángulo alfa
+        \draw (1.3, 0.3) arc (90:65:0.4);
+        \node at (1.4, 0.4) {$\alpha$};
+        
+        % Proyección en el plano xy
+        \draw[dashed] (0,0) -- (1.5,-0.6);
+        
+        % Centro (b, 0, 0)
+        \node[below] at (1.3, -0.1) {$(b, 0, 0)$};
+        
+        % Ángulo theta
+        \draw (0.4,0) arc (0:-35:0.4);
+        \node at (0.6, -0.1) {$\theta$};
+    \end{tikzpicture}
+    \end{center}

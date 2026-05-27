@@ -1,0 +1,42 @@
+\item Este ejercicio demuestra una relación entre el vector rotacional y las rotaciones. Sea $B$ un cuerpo rígido que gira en torno al eje $z$. La rotación se puede describir por medio del vector $\mathbf{w} = \omega\mathbf{k}$, en donde $\omega$ es la rapidez angular de $B$, esto es, la rapidez tangencial de cualquier punto $P$ de $B$ dividida entre la distancia $d$ al eje de rotación. Sea $\mathbf{r} = \langle x, y, z \rangle$ el vector de posición de $P$.
+    \begin{enumerate}
+        \item[(a)] Considerando el ángulo $\theta$ mostrado en la figura, demuestre que el campo de velocidad de $B$ está dado por $\mathbf{v} = \mathbf{w} \times \mathbf{r}$.
+        \item[(b)] Demuestre que $\mathbf{v} = -\omega y \mathbf{i} + \omega x \mathbf{j}$.
+        \item[(c)] Demuestre que $\operatorname{rot} \mathbf{v} = 2\mathbf{w}$.
+    \end{enumerate}
+
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        % Ejes 3D
+        \draw[->, thick] (0,-1.5) -- (0,4) node[above] {$z$};
+        \draw[->, thick] (0,0) -- (3,0) node[right] {$y$};
+        \draw[->, thick] (0,0) -- (-2,-1.5) node[below left] {$x$};
+        
+        % Disco rígido B
+        \draw[fill=gray!15, thick] (0,2) ellipse (2cm and 0.6cm);
+        
+        % Flechas de rotación en el borde del disco
+        \draw[->, thick] (2,2) arc (0:-60:2cm and 0.6cm);
+        \draw[->, thick] (-2,2) arc (180:120:2cm and 0.6cm);
+        
+        % Vector w (rotación en el eje z)
+        \draw[->, thick] (-0.3, 3.2) arc (150:390:0.3 and 0.1);
+        \node at (0.4, 3.2) {$\mathbf{w}$};
+        
+        % Punto P en el borde y vectores asociados
+        \coordinate (P) at (-1.2, 1.52); 
+        \fill (P) circle (1.5pt) node[above left] {$P$};
+        
+        \draw[->, thick] (0,0) -- (P) node[midway, left] {$\mathbf{r}$};
+        \draw[dashed, thick] (0,2) -- (P) node[midway, below] {$d$};
+        \draw[->, thick] (P) -- (-2, 0.8) node[left] {$\mathbf{v}$};
+        
+        % Ángulo theta
+        \draw (0,0.6) arc (90:128:0.6);
+        \node at (-0.2, 0.9) {$\theta$};
+        
+        % Origen
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

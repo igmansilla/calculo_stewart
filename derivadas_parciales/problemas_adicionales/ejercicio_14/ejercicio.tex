@@ -1,0 +1,29 @@
+\item Un tetraedro es un sólido con cuatro vértices, $A, B, C$ y $D$, y cuatro caras triangulares. (Véase la figura). \\
+(a) Sean $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \mathbf{y}\ \mathbf{v}_4$ vectores con magnitudes iguales a las áreas de las caras opuestas a los vértices $A, B, C$ y $D$, respectivamente, y direcciones paralelas a las normales exteriores de las caras respectivas. Demuestre que
+\[ \mathbf{v}_1 + \mathbf{v}_2 + \mathbf{v}_3 + \mathbf{v}_4 = \mathbf{0} \]
+(b) El volumen $V$ de un tetraedro es igual a un tercio de la distancia de un vértice a la cara opuesta, multiplicada por el área de dicha cara. Encuentre una fórmula para el volumen del tetraedro con vértices $A, B, C$ y $D$. \\
+(c) Determine el volumen del tetraedro cuyos vértices son $A(1, 1, 1), B(1, 2, 3), C(1, 1, 2)$ y $D(3, -1, 2)$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+  % Vértices
+  \coordinate (A) at (0, 2.5);
+  \coordinate (B) at (-2, -1);
+  \coordinate (C) at (0.5, -0.5);
+  \coordinate (D) at (2.5, -1);
+  
+  % Aristas visibles
+  \draw[thick] (A) -- (B) -- (D) -- cycle;
+  \draw[thick] (A) -- (D);
+  
+  % Aristas ocultas
+  \draw[dashed, thick] (A) -- (C);
+  \draw[dashed, thick] (B) -- (C) -- (D);
+  
+  % Etiquetas
+  \node[above] at (A) {$A$};
+  \node[left] at (B) {$B$};
+  \node[below] at (C) {$C$};
+  \node[right] at (D) {$D$};
+\end{tikzpicture}
+\end{center}

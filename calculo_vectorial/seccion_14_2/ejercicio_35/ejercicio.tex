@@ -1,0 +1,24 @@
+\item Los experimentos demuestran que una corriente constante $I$ en un alambre largo produce un campo magnético $\mathbf{B}$ que es tangente a cualquier circunferencia que se encuentre en un plano perpendicular al alambre y cuyo centro sea el eje del alambre (como se ilustra en la figura). La ley de Ampere relaciona la corriente eléctrica con sus efectos magnéticos y establece que
+    \[ \int_C \mathbf{B} \cdot d\mathbf{r} = \mu_0 I \]
+    en donde $I$ es la corriente neta que pasa a través de cualquier superficie limitada por una curva cerrada $C$ y $\mu_0$ es una constante llamada permeabilidad del vacío. Considerando que $C$ es una circunferencia de radio $r$, demuestre que la magnitud $B = |\mathbf{B}|$ del campo magnético a una distancia $r$ del centro del alambre es
+    \[ B = \frac{\mu_0 I}{2\pi r} \]
+
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        % Eje del alambre y corriente
+        \draw[thick, ->, >=stealth] (0,-2) -- (0,2.5) node[right] {$I$};
+        
+        % Circunferencia (C)
+        \draw[dashed, thick] (0,0) circle (1.5cm);
+        \node at (1.5, 0.2) {$C$};
+        
+        % Radio r
+        \draw[->, thick] (0,0) -- (1.5,0) node[midway, below] {$r$};
+        
+        % Campo B tangente
+        \draw[->, thick, blue] (1.5,0) arc (0:60:1.5);
+        \draw[->, thick, blue] (0,1.5) arc (90:150:1.5);
+        \node[blue] at (1.3, 1.3) {$\mathbf{B}$};
+    \end{tikzpicture}
+    \end{center}

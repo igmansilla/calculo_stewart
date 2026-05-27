@@ -1,0 +1,19 @@
+\item Sea
+    \[ \mathbf{F}(x, y) = \frac{(2x^3 + 2xy^2 - 2y)\mathbf{i} + (2y^3 + 2x^2y + 2x)\mathbf{j}}{x^2 + y^2} \]
+    Evalúe $\oint_C \mathbf{F} \cdot d\mathbf{r}$, en donde $C$ se muestra en la figura.
+    
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        % Ejes
+        \draw[->, thick] (-2,0) -- (2.5,0) node[right] {$x$};
+        \draw[->, thick] (0,-2) -- (0,2) node[above] {$y$};
+        \node[below left] at (0,0) {$0$};
+        
+        % Curva C (Forma irregular cerrada)
+        \draw[thick, decoration={markings, mark=at position 0.15 with {\arrow{>}}}, postaction={decorate}] 
+        plot [smooth cycle, tension=1] coordinates { (1,0) (1.5,1) (0.5,1.5) (-0.5,1) (-1,1.5) (-1,0.5) (-1.5,-0.5) (-0.5,-0.5) (0,-1.5) (0.5,-0.5) (1.5,-0.5) };
+        
+        \node at (1.8, 1.2) {$C$};
+    \end{tikzpicture}
+    \end{center}

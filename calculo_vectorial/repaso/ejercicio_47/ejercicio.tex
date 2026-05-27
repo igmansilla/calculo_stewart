@@ -1,0 +1,57 @@
+\item Calcule $\iint_S \mathbf{F} \cdot \mathbf{n} \, dS$, en donde $\mathbf{F}(x, y, z) = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$ y $S$ es la superficie orientada hacia afuera mostrada en la figura (la superficie frontera de un cubo con un cubo unitario eliminado en una esquina).
+
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Ejes 3D
+        \draw[->] (0,0) -- (0,2.5) node[above] {$z$};
+        \draw[->] (0,0) -- (3,0) node[right] {$y$};
+        \draw[->] (0,0) -- (-1.5,-1.5) node[below left] {$x$};
+        
+        % Cubo grande (2x2x2) sin esquina frontal superior derecha (1x1x1)
+        % Vértices principales
+        \coordinate (O) at (0,0);
+        \coordinate (X) at (-1,-1);
+        \coordinate (Y) at (2,0);
+        \coordinate (Z) at (0,2);
+        
+        % Caras visibles base
+        \draw (O) -- (X) -- ++(2,0) -- (Y) -- cycle;
+        
+        % Cara izquierda
+        \draw (X) -- ++(0,2) -- (Z) -- (O) -- cycle;
+        
+        % Corte (cubo faltante)
+        \coordinate (C1) at (1,0);
+        \coordinate (C2) at (1,1);
+        \coordinate (C3) at (2,1);
+        \coordinate (C4) at (2,2);
+        \coordinate (C5) at (1,2);
+        \coordinate (C6) at (0,1);
+        
+        \coordinate (X1) at (-0.5,-0.5); % Proyección de 1 en x
+        \coordinate (X2) at (-1, -1);    % Proyección de 2 en x
+        
+        % Dibujando la forma sólida
+        \draw (X) -- ++(0,2) -- ++(1,0) -- ++(0.5,0.5) -- ++(0,-1) -- ++(-0.5,-0.5) -- cycle; % Cara lateral izq con corte
+        \draw (X) ++(0,2) ++(1,0) -- ++(1,0) -- ++(0.5, 0.5) -- ++(-1,0) -- cycle; % Techo
+        
+        % Completando las caras internas del corte
+        \draw (1, 1) -- ++(0.5, 0.5) -- ++(0,1);
+        \draw (1, 1) ++(0.5, 0.5) -- ++(1,0);
+        
+        \draw (1,0) -- (1,1) -- (2,1);
+        \draw (X) ++(2,0) -- ++(0,1) -- ++(-0.5,-0.5) -- ++(0,-1);
+        
+        % Etiquetas
+        \node[left] at (Z) {$(2, 0, 2)$};
+        \node[right] at (2.5, 2.5) {$(0, 2, 2)$};
+        \node[below right] at (1,-1) {$(2, 2, 0)$};
+        \node[below left] at (-0.5, -0.5) {$S$};
+        
+        % Medida 1 (interior del corte)
+        \node at (0.7, 1.2) {$1$};
+        \node at (1.2, 0.7) {$1$};
+        \node at (1.7, 1.2) {$1$};
+    \end{tikzpicture}
+    \end{center}

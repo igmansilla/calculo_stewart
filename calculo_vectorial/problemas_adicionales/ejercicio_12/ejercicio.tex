@@ -1,0 +1,64 @@
+\item Sea $S$ una superficie paramétrica suave y $P$ un punto tal que cada recta que pasa por $P$ intersecta a $S$ a lo sumo una vez. El \textbf{ángulo sólido} $\Omega(S)$ subtendido por $S$ en $P$ es el conjunto de rectas que empiezan en $P$ y pasan por $S$. Sea $S(a)$ la intersección de $\Omega(S)$ con la superficie de la esfera con centro en $P$ y radio $a$. Entonces la medida del ángulo sólido (en estereorradianes) se define como
+    \[ |\Omega(S)| = \frac{\text{área } S(a)}{a^2} \]
+    Aplique el teorema de la divergencia a la porción de $\Omega(S)$ comprendida entre $S(a)$ y $S$ para demostrar que
+    \[ |\Omega(S)| = \iint_S \frac{\mathbf{r} \cdot \mathbf{n}}{r^3} \, dS \]
+    en donde $\mathbf{r}$ es el radio vector de $P$ a cualquier punto de $S, r = |\mathbf{r}|$, y el vector normal unitario $\mathbf{n}$ está dirigido alejándose de $P$.
+    
+    Esto demuestra que la definición de la medida de un ángulo sólido es independiente del radio $a$ de la esfera. De modo que la medida del ángulo sólido es igual al área determinada sobre una esfera unitaria. (Obsérvese la analogía con la definición de la medida en radianes). El ángulo sólido total subtendido por una esfera en su centro es, por consiguiente, de $4\pi$ estereorradianes.
+
+    \vspace{0.5cm}
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Contorno de la esfera
+        \draw (0,0) circle (1.5);
+        % Ecuador
+        \draw (-1.5,0) arc (180:360:1.5 and 0.3);
+        \draw[dashed] (1.5,0) arc (0:180:1.5 and 0.3);
+
+        % Punto P en el centro
+        \fill (0,0) circle (1pt) node[below left] {$P$};
+        
+        % Radio a (punteado)
+        \draw[dashed] (0,0) -- (1.3, 0.15) node[midway, below] {$a$};
+
+        % Coordenadas para S(a) en la superficie de la esfera
+        \coordinate (sa1) at (40:1.5);
+        \coordinate (sa2) at (65:1.5);
+        \coordinate (sa3) at (75:1.2);
+        \coordinate (sa4) at (50:1.15);
+
+        % Coordenadas para la superficie S más externa
+        \coordinate (s1) at (40:2.6);
+        \coordinate (s2) at (65:2.6);
+        \coordinate (s3) at (75:2.1);
+        \coordinate (s4) at (50:2.0);
+
+        % Rayos desde P hasta S(a) (punteados)
+        \draw[dashed] (0,0) -- (sa1);
+        \draw[dashed] (0,0) -- (sa2);
+        \draw[dashed] (0,0) -- (sa3);
+        \draw[dashed] (0,0) -- (sa4);
+
+        % Rayos continuos desde S(a) hasta S
+        \draw (sa1) -- (s1);
+        \draw (sa2) -- (s2);
+        \draw (sa3) -- (s3);
+        \draw (sa4) -- (s4);
+
+        % Superficie S(a)
+        \draw[thick, fill=white] (sa1) .. controls (52.5:1.55) .. (sa2) 
+                              .. controls (70:1.35) .. (sa3) 
+                              .. controls (62.5:1.1) .. (sa4) 
+                              .. controls (45:1.3) .. (sa1);
+
+        % Superficie S
+        \draw[thick, fill=white] (s1) .. controls (52.5:2.7) .. (s2) 
+                              .. controls (70:2.35) .. (s3) 
+                              .. controls (62.5:2.0) .. (s4) 
+                              .. controls (45:2.3) .. (s1);
+
+        % Etiquetas de las superficies
+        \node[right] at (48:1.6) {$S(a)$};
+        \node[above] at (60:2.6) {$S$};
+    \end{tikzpicture}
+    \end{center}
