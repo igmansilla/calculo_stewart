@@ -1,0 +1,14 @@
+\item $x^2y^2 = (y+1)^2(4-y)^2, \quad (0, -2)$ \quad (concoide de Nicomedes)
+    \par
+    Encuentre la ecuación de la recta tangente a la curva en el punto indicado.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.4]
+        \draw[-stealth] (-8,0) -- (8,0) node[right] {$x$};
+        \draw[-stealth] (0,-4) -- (0,5) node[above] {$y$};
+        \draw[thick, domain=0.6:4, samples=100] plot ({(-(\x*\x) + 3*\x + 4)/\x}, \x);
+        \draw[thick, domain=0.6:4, samples=100] plot ({-(-(\x*\x) + 3*\x + 4)/\x}, \x);
+        \draw[thick, domain=-3:-0.7, samples=100] plot ({(-(\x*\x) + 3*\x + 4)/\x}, \x);
+        \draw[thick, domain=-3:-0.7, samples=100] plot ({-(-(\x*\x) + 3*\x + 4)/\x}, \x);
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

@@ -1,0 +1,12 @@
+\item $x^{2/3} + y^{2/3} = 4, \quad (-3\sqrt{3}, 1)$ \quad (astroide)
+    \par
+    Encuentre la ecuación de la recta tangente a la curva en el punto indicado.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.2]
+        \draw[-stealth] (-10,0) -- (10,0) node[right] {$x$};
+        \draw[-stealth] (0,-10) -- (0,10) node[above] {$y$};
+        \draw[thick, domain=0:360, samples=100] plot ({8*cos(\x)*cos(\x)*cos(\x)}, {8*sin(\x)*sin(\x)*sin(\x)});
+        \node[below left] at (0,0) {$0$};
+        \node[below right] at (8,0) {$8$};
+    \end{tikzpicture}
+    \end{center}

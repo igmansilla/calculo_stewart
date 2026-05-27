@@ -1,0 +1,13 @@
+\item $y^2 = x^3(2 - x), \quad (1, 1)$ \quad (piriforme)
+    \par
+    Encuentre la ecuación de la recta tangente a la curva en el punto indicado.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[-stealth] (-1,0) -- (3,0) node[right] {$x$};
+        \draw[-stealth] (0,-2) -- (0,2) node[above] {$y$};
+        \draw[thick, domain=0:2, samples=100] plot (\x, {sqrt((\x*\x*\x)*(2-\x))});
+        \draw[thick, domain=0:2, samples=100] plot (\x, {-sqrt((\x*\x*\x)*(2-\x))});
+        \node[below left] at (0,0) {$0$};
+        \node[below right] at (2,0) {$2$};
+    \end{tikzpicture}
+    \end{center}

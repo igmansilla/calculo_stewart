@@ -1,0 +1,12 @@
+\item $2(x^2 + y^2)^2 = 25(x^2 - y^2), \quad (3, 1)$ \quad (lemniscata o lemniscato)
+    \par
+    Encuentre la ecuación de la recta tangente a la curva en el punto indicado.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+        \draw[-stealth] (-5,0) -- (5,0) node[right] {$x$};
+        \draw[-stealth] (0,-2.5) -- (0,2.5) node[above] {$y$};
+        \draw[thick, domain=-45:45, samples=100] plot ({sqrt(12.5*cos(2*\x))*cos(\x)}, {sqrt(12.5*cos(2*\x))*sin(\x)});
+        \draw[thick, domain=135:225, samples=100] plot ({sqrt(12.5*cos(2*\x))*cos(\x)}, {sqrt(12.5*cos(2*\x))*sin(\x)});
+        \node[below right] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

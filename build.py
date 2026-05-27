@@ -373,6 +373,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/seccion_02_5"),
         "dest_name": "Stewart_Seccion_2_5_La_Regla_de_la_Cadena.pdf",
         "description": "Capítulo 2 Sección 2.5 Standalone"
+    },
+    "seccion_2_6": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_6/seccion_02_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_6"),
+        "dest_name": "Stewart_Seccion_2_6_Derivacion_Implicita.pdf",
+        "description": "Capítulo 2 Sección 2.6 Standalone"
     }
 }
 
