@@ -1,0 +1,21 @@
+\item De una cinta transportadora se descarga grava a razón de $30 \text{ pies}^3/\text{min}$, y su aspereza es tal que forma una pila cónica cuyo diámetro de la base y altura son siempre iguales. ¿Con qué velocidad aumenta la altura de la pila cuando mide $10 \text{ pies}$?
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    % Cinta transportadora
+    \draw[thick] (-3, 4) -- (0, 5.5);
+    \draw[thick] (-3, 3.5) -- (0, 5);
+    \draw[thick] (0, 5.5) arc (90:-90:0.25);
+    \draw[dashed] (-3,3.75) -- (0,5.25);
+    % Grava cayendo
+    \filldraw (0.1, 4.8) circle (1pt);
+    \filldraw (0.0, 4.4) circle (1pt);
+    \filldraw (0.2, 4.0) circle (1pt);
+    \filldraw (-0.1, 3.5) circle (1pt);
+    \filldraw (0.1, 3.0) circle (1pt);
+    % Cono
+    \draw[thick] (-2,0) -- (0,2.5) -- (2,0);
+    \draw[thick] (0,0) ellipse (2cm and 0.5cm);
+    \draw[dashed] (0,0) -- (0,2.5);
+    \draw[dashed] (-2,0) -- (2,0);
+\end{tikzpicture}
+\end{center}

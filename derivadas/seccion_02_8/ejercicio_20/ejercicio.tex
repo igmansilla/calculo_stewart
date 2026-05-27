@@ -1,0 +1,25 @@
+\item Una alberca tiene $20 \text{ pies}$ de ancho, $40 \text{ pies}$ de largo, $3 \text{ pies}$ de profundidad en un extremo y $9 \text{ pies}$ de profundidad máxima. En la figura se muestra el corte transversal de la alberca. Si la alberca se llena a razón de $0.8 \text{ pies}^3/\text{min}$, ¿con qué velocidad aumenta el nivel del agua cuando la profundidad máxima es de $5 \text{ pies}$?
+\begin{center}
+\begin{tikzpicture}[scale=0.25]
+    % Contorno de la alberca
+    \draw[thick] (0,0) -- (40,0);
+    \draw[thick] (0,0) -- (0,-3) -- (6,-3) -- (18,-9) -- (34,-9) -- (34,0);
+    % Acotaciones horizontales
+    \draw[dashed] (0,-10) -- (0,-11);
+    \draw[dashed] (6,-10) -- (6,-11);
+    \draw[dashed] (18,-10) -- (18,-11);
+    \draw[dashed] (34,-10) -- (34,-11);
+    \draw[dashed] (40,-10) -- (40,-11);
+    \draw[stealth-stealth] (0,-10.5) -- (6,-10.5) node[midway, below] {$6$};
+    \draw[stealth-stealth] (6,-10.5) -- (18,-10.5) node[midway, below] {$12$};
+    \draw[stealth-stealth] (6,-10.5) -- (18,-10.5) node[midway, below] {$12$};
+    \draw[stealth-stealth] (18,-10.5) -- (34,-10.5) node[midway, below] {$16$};
+    \draw[stealth-stealth] (34,-10.5) -- (40,-10.5) node[midway, below] {$6$};
+    % Acotaciones verticales
+    \draw[dashed] (35,0) -- (38,0);
+    \draw[dashed] (35,-3) -- (38,-3);
+    \draw[dashed] (35,-9) -- (38,-9);
+    \draw[stealth-stealth] (36.5,0) -- (36.5,-3) node[midway, right] {$3$};
+    \draw[stealth-stealth] (36.5,-3) -- (36.5,-9) node[midway, right] {$6$};
+\end{tikzpicture}
+\end{center}

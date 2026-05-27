@@ -379,6 +379,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/seccion_02_6"),
         "dest_name": "Stewart_Seccion_2_6_Derivacion_Implicita.pdf",
         "description": "Capítulo 2 Sección 2.6 Standalone"
+    },
+    "seccion_2_7": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_7/seccion_02_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_7"),
+        "dest_name": "Stewart_Seccion_2_7_Derivadas_de_Orden_Superior.pdf",
+        "description": "Capítulo 2 Sección 2.7 Standalone"
+    },
+    "seccion_2_8": {
+        "tex_path": os.path.join(base_dir, "derivadas/seccion_02_8/seccion_02_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "derivadas/seccion_02_8"),
+        "dest_name": "Stewart_Seccion_2_8_Razones_de_Cambio_Relacionadas.pdf",
+        "description": "Capítulo 2 Sección 2.8 Standalone"
     }
 }
 
