@@ -817,6 +817,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/aplicaciones_adicionales"),
         "dest_name": "Stewart_Capitulo_9_Aplicaciones_Adicionales.pdf",
         "description": "Capítulo 9 Aplicaciones Adicionales Standalone"
+    },
+    "seccion_10_1": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_1/seccion_10_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_1"),
+        "dest_name": "Stewart_Seccion_10_1_Ejercicios.pdf",
+        "description": "Capítulo 10 Sección 10.1 Standalone"
+    },
+    "seccion_10_2": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_2/seccion_10_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_2"),
+        "dest_name": "Stewart_Seccion_10_2_Series.pdf",
+        "description": "Capítulo 10 Sección 10.2 Standalone"
     }
 }
 

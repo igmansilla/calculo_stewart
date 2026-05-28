@@ -488,6 +488,22 @@ CONFIGS = {
     "ecuaciones_parametricas_y_coordenadas_polares/aplicaciones_adicionales/aplicaciones_adicionales.tex": [
         # Block 1: 1-12 single
         {"type": "single", "folders": [str(i) for i in range(1, 13)]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_1/seccion_10_1.tex": [
+        # Block 1: Ejercicios 1-10 single
+        {"type": "single", "folders": [str(i) for i in range(1, 11)]},
+        # Block 2: Ejercicios 11-18 single
+        {"type": "single", "folders": [str(i) for i in range(11, 19)]},
+        # Block 3: Ejercicios 19-20 single
+        {"type": "single", "folders": [str(i) for i in range(19, 21)]},
+        # Block 4: Ejercicios 21-56 single
+        {"type": "single", "folders": [str(i) for i in range(21, 57)]},
+        # Block 5: Ejercicios 57-58 single
+        {"type": "single", "folders": [str(i) for i in range(57, 59)]},
+        # Block 6: Ejercicios 59-66 single
+        {"type": "single", "folders": [str(i) for i in range(59, 67)]},
+        # Block 7: Ejercicios 67-76 single
+        {"type": "single", "folders": [str(i) for i in range(67, 77)]}
     ]
 }
 
