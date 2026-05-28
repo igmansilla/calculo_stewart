@@ -734,6 +734,54 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(57, 61)]},
         # Block 16: Ejercicios 61-66 single
         {"type": "single", "folders": [str(i) for i in range(61, 67)]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/seccion_11_6/seccion_11_6.tex": [
+        # Block 1: Ejercicios 1-16 single
+        {"type": "single", "folders": [str(i) for i in range(1, 17)]},
+        # Block 2: Ejercicios 17-28 single
+        {"type": "single", "folders": [str(i) for i in range(17, 29)]},
+        # Block 3: Ejercicios 29-36 single
+        {"type": "single", "folders": [str(i) for i in range(29, 37)]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/seccion_11_7/seccion_11_7.tex": [
+        # Block 1: Ejercicios 1-8 single
+        {"type": "single", "folders": [str(i) for i in range(1, 9)]},
+        # Block 2: Ejercicios 9-10 single
+        {"type": "single", "folders": [str(i) for i in range(9, 11)]},
+        # Block 3: Ejercicios 11-14 single
+        {"type": "single", "folders": [str(i) for i in range(11, 15)]},
+        # Block 4: Ejercicios 15-22 single
+        {"type": "single", "folders": [str(i) for i in range(15, 23)]},
+        # Block 5: Ejercicios 23-28 single
+        {"type": "single", "folders": [str(i) for i in range(23, 29)]},
+        # Block 6: Ejercicios 29-32 single
+        {"type": "single", "folders": [str(i) for i in range(29, 33)]},
+        # Block 7: Ejercicios 33-38 single
+        {"type": "single", "folders": [str(i) for i in range(33, 39)]},
+        # Block 8: Ejercicios 39-40 single
+        {"type": "single", "folders": [str(i) for i in range(39, 41)]},
+        # Block 9: Ejercicios 41-44 single
+        {"type": "single", "folders": [str(i) for i in range(41, 45)]},
+        # Block 10: Ejercicios 45-59 single
+        {"type": "single", "folders": [str(i) for i in range(45, 60)]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/seccion_11_8/seccion_11_8.tex": [
+        # Block 1: Ejercicios 1-6 single
+        {"type": "single", "folders": [str(i) for i in range(1, 7)]},
+        # Block 2: Ejercicios 7-10 single
+        {"type": "single", "folders": [str(i) for i in range(7, 11)]},
+        # Block 3: Ejercicios 11-16 single
+        {"type": "single", "folders": [str(i) for i in range(11, 17)]},
+        # Block 4: Ejercicios 17-22 single
+        {"type": "single", "folders": [str(i) for i in range(17, 23)]},
+        # Block 5: Ejercicios 23-26 single
+        {"type": "single", "folders": [str(i) for i in range(23, 27)]},
+        # Block 6: Ejercicios 27-28 single
+        {"type": "single", "folders": [str(i) for i in range(27, 29)]},
+        # Block 7: Ejercicios 29-30 single
+        {"type": "single", "folders": [str(i) for i in range(29, 31)]},
+        # Block 8: Ejercicios 31-38 single
+        {"type": "single", "folders": [str(i) for i in range(31, 39)]}
     ]
 }
 

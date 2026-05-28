@@ -919,6 +919,24 @@ targets = {
         "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_5"),
         "dest_name": "Stewart_Seccion_11_5_Rectas_Planos.pdf",
         "description": "Capítulo 11 Sección 11.5 Standalone"
+    },
+    "seccion_11_6": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_6/seccion_11_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_6"),
+        "dest_name": "Stewart_Seccion_11_6_Superficies_Cuadricas.pdf",
+        "description": "Capítulo 11 Sección 11.6 Standalone"
+    },
+    "seccion_11_7": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_7/seccion_11_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_7"),
+        "dest_name": "Stewart_Seccion_11_7_Funciones_Vectoriales.pdf",
+        "description": "Capítulo 11 Sección 11.7 Standalone"
+    },
+    "seccion_11_8": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_8/seccion_11_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_8"),
+        "dest_name": "Stewart_Seccion_11_8_Longitud_Curvatura.pdf",
+        "description": "Capítulo 11 Sección 11.8 Standalone"
     }
 }
 
