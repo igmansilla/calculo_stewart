@@ -4,7 +4,7 @@ import subprocess
 import shutil
 import argparse
 
-base_dir = "/home/ignacio/personas/calculo_stewart"
+base_dir = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(base_dir, "pdfs")
 
 targets = {
@@ -415,6 +415,234 @@ targets = {
         "working_dir": os.path.join(base_dir, "derivadas/problemas_adicionales"),
         "dest_name": "Stewart_Capitulo_2_Problemas_Adicionales.pdf",
         "description": "Capítulo 2 Problemas Adicionales Standalone"
+    },
+    "seccion_3_1": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_1/seccion_03_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_1"),
+        "dest_name": "Stewart_Seccion_3_1_Valores_Maximos_y_Minimos.pdf",
+        "description": "Capítulo 3 Sección 3.1 Standalone"
+    },
+    "seccion_3_2": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_2/seccion_03_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_2"),
+        "dest_name": "Stewart_Seccion_3_2_El_Teorema_del_Valor_Medio.pdf",
+        "description": "Capítulo 3 Sección 3.2 Standalone"
+    },
+    "seccion_3_3": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_3/seccion_03_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_3"),
+        "dest_name": "Stewart_Seccion_3_3_Valores_Extremos_y_Comportamiento.pdf",
+        "description": "Capítulo 3 Sección 3.3 Standalone"
+    },
+    "seccion_3_4": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_4/seccion_03_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_4"),
+        "dest_name": "Stewart_Seccion_3_4_Concavidad_y_Puntos_de_Inflexion.pdf",
+        "description": "Capítulo 3 Sección 3.4 Standalone"
+    },
+    "seccion_3_5": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_5/seccion_03_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_5"),
+        "dest_name": "Stewart_Seccion_3_5_Limites_al_Infinito.pdf",
+        "description": "Capítulo 3 Sección 3.5 Standalone"
+    },
+    "seccion_3_6": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_6/seccion_03_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_6"),
+        "dest_name": "Stewart_Seccion_3_6_Limites_Infinitos.pdf",
+        "description": "Capítulo 3 Sección 3.6 Standalone"
+    },
+    "seccion_3_7": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_7/seccion_03_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_7"),
+        "dest_name": "Stewart_Seccion_3_7_Trazo_de_Curvas.pdf",
+        "description": "Capítulo 3 Sección 3.7 Standalone"
+    },
+    "seccion_3_8": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_8/seccion_03_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_8"),
+        "dest_name": "Stewart_Seccion_3_8_Problemas_de_Aplicacion.pdf",
+        "description": "Capítulo 3 Sección 3.8 Standalone"
+    },
+    "seccion_3_9": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_9/seccion_03_9_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_9"),
+        "dest_name": "Stewart_Seccion_3_9_Economia_Negocios.pdf",
+        "description": "Capítulo 3 Sección 3.9 Standalone"
+    },
+    "seccion_3_10": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_10/seccion_03_10_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/seccion_03_10"),
+        "dest_name": "Stewart_Seccion_3_10_Antiderivadas.pdf",
+        "description": "Capítulo 3 Sección 3.10 Standalone"
+    },
+    "repaso_3": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/repaso"),
+        "dest_name": "Stewart_Capitulo_3_Repaso.pdf",
+        "description": "Capítulo 3 Repaso Standalone"
+    },
+    "problemas_adicionales_3": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_derivada/problemas_adicionales/problemas_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_derivada/problemas_adicionales"),
+        "dest_name": "Stewart_Capitulo_3_Problemas_Adicionales.pdf",
+        "description": "Capítulo 3 Problemas Adicionales Standalone"
+    },
+    "seccion_4_1": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_1/seccion_04_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_1"),
+        "dest_name": "Stewart_Seccion_4_1_Notacion_de_Sumatoria.pdf",
+        "description": "Capítulo 4 Sección 4.1 Standalone"
+    },
+    "seccion_4_2": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_2/seccion_04_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_2"),
+        "dest_name": "Stewart_Seccion_4_2_Area.pdf",
+        "description": "Capítulo 4 Sección 4.2 Standalone"
+    },
+    "seccion_4_3": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_3/seccion_04_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_3"),
+        "dest_name": "Stewart_Seccion_4_3_Integral_Definida.pdf",
+        "description": "Capítulo 4 Sección 4.3 Standalone"
+    },
+    "seccion_4_4": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_4/seccion_04_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_4"),
+        "dest_name": "Stewart_Seccion_4_4_Propiedades_de_la_Integral.pdf",
+        "description": "Capítulo 4 Sección 4.4 Standalone"
+    },
+    "seccion_4_5": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_5/seccion_04_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_5"),
+        "dest_name": "Stewart_Seccion_4_5_Teorema_Fundamental.pdf",
+        "description": "Capítulo 4 Sección 4.5 Standalone"
+    },
+    "seccion_4_6": {
+        "tex_path": os.path.join(base_dir, "integracion/seccion_04_6/seccion_04_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/seccion_04_6"),
+        "dest_name": "Stewart_Seccion_4_6_Regla_Sustitucion.pdf",
+        "description": "Capítulo 4 Sección 4.6 Standalone"
+    },
+    "repaso_4": {
+        "tex_path": os.path.join(base_dir, "integracion/repaso_04/repaso_04_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/repaso_04"),
+        "dest_name": "Stewart_Capitulo_4_Repaso.pdf",
+        "description": "Capítulo 4 Repaso Standalone"
+    },
+    "problemas_adicionales_4": {
+        "tex_path": os.path.join(base_dir, "integracion/problemas_adicionales_04/problemas_adicionales_04_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "integracion/problemas_adicionales_04"),
+        "dest_name": "Stewart_Capitulo_4_Problemas_Adicionales.pdf",
+        "description": "Capítulo 4 Problemas Adicionales Standalone"
+    },
+    "seccion_5_1": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_1/seccion_05_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_1"),
+        "dest_name": "Stewart_Seccion_5_1_Areas_entre_Curvas.pdf",
+        "description": "Capítulo 5 Sección 5.1 Standalone"
+    },
+    "seccion_5_2": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_2/seccion_05_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_2"),
+        "dest_name": "Stewart_Seccion_5_2_Volumenes.pdf",
+        "description": "Capítulo 5 Sección 5.2 Standalone"
+    },
+    "seccion_5_3": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_3/seccion_05_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_3"),
+        "dest_name": "Stewart_Seccion_5_3_Volumenes_Envolventes_Cilindricas.pdf",
+        "description": "Capítulo 5 Sección 5.3 Standalone"
+    },
+    "seccion_5_4": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_4/seccion_05_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_4"),
+        "dest_name": "Stewart_Seccion_5_4_Trabajo.pdf",
+        "description": "Capítulo 5 Sección 5.4 Standalone"
+    },
+    "seccion_5_5": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_5/seccion_05_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/seccion_05_5"),
+        "dest_name": "Stewart_Seccion_5_5_Valor_Medio.pdf",
+        "description": "Capítulo 5 Sección 5.5 Standalone"
+    },
+    "repaso_5": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/repaso_05/repaso_05_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/repaso_05"),
+        "dest_name": "Stewart_Capitulo_5_Repaso.pdf",
+        "description": "Capítulo 5 Repaso Standalone"
+    },
+    "problemas_adicionales_5": {
+        "tex_path": os.path.join(base_dir, "aplicaciones_de_la_integral/problemas_adicionales_05/problemas_adicionales_05_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "aplicaciones_de_la_integral/problemas_adicionales_05"),
+        "dest_name": "Stewart_Capitulo_5_Problemas_Adicionales.pdf",
+        "description": "Capítulo 5 Problemas Adicionales Standalone"
+    },
+    "seccion_6_1": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_1/seccion_06_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_1"),
+        "dest_name": "Stewart_Seccion_6_1_Funciones_Exponenciales.pdf",
+        "description": "Capítulo 6 Sección 6.1 Standalone"
+    },
+    "seccion_6_2": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_2/seccion_06_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_2"),
+        "dest_name": "Stewart_Seccion_6_2_Derivadas_y_Integrales_Exponenciales.pdf",
+        "description": "Capítulo 6 Sección 6.2 Standalone"
+    },
+    "seccion_6_3": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_3/seccion_06_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_3"),
+        "dest_name": "Stewart_Seccion_6_3_Funciones_Inversas.pdf",
+        "description": "Capítulo 6 Sección 6.3 Standalone"
+    },
+    "seccion_6_4": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_4/seccion_06_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_4"),
+        "dest_name": "Stewart_Seccion_6_4_Funciones_Logaritmicas.pdf",
+        "description": "Capítulo 6 Sección 6.4 Standalone"
+    },
+    "seccion_6_5": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_5/seccion_06_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_5"),
+        "dest_name": "Stewart_Seccion_6_5_Ejercicios.pdf",
+        "description": "Capítulo 6 Sección 6.5 Standalone"
+    },
+    "seccion_6_6": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_6/seccion_06_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_6"),
+        "dest_name": "Stewart_Seccion_6_6_Ejercicios.pdf",
+        "description": "Capítulo 6 Sección 6.6 Standalone"
+    },
+    "seccion_6_7": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_7/seccion_06_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_7"),
+        "dest_name": "Stewart_Seccion_6_7_Crecimiento_y_Decrecimiento_Exponenciales.pdf",
+        "description": "Capítulo 6 Sección 6.7 Standalone"
+    },
+    "seccion_6_8": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_8/seccion_06_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_8"),
+        "dest_name": "Stewart_Seccion_6_8_Ejercicios.pdf",
+        "description": "Capítulo 6 Sección 6.8 Standalone"
+    },
+    "seccion_6_9": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_9/seccion_06_9_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_9"),
+        "dest_name": "Stewart_Seccion_6_9_Ejercicios.pdf",
+        "description": "Capítulo 6 Sección 6.9 Standalone"
+    },
+    "seccion_6_10": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/seccion_06_10/seccion_06_10_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/seccion_06_10"),
+        "dest_name": "Stewart_Seccion_6_10_Forma_Indeterminada_y_Regla_de_L_Hospital.pdf",
+        "description": "Capítulo 6 Sección 6.10 Standalone"
+    },
+    "repaso_6": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/repaso"),
+        "dest_name": "Stewart_Capitulo_6_Repaso.pdf",
+        "description": "Capítulo 6 Repaso Standalone"
     }
 }
 
@@ -454,6 +682,9 @@ def compile_latex(tex_path, working_dir, dest_name):
         elif "derivadas_parciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_12")
             rel_path = f"pdfs/capitulo_12/{dest_name}"
+        elif "aplicaciones_de_la_derivada" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_3")
+            rel_path = f"pdfs/capitulo_3/{dest_name}"
         elif "derivadas" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_2")
             rel_path = f"pdfs/capitulo_2/{dest_name}"
@@ -466,6 +697,15 @@ def compile_latex(tex_path, working_dir, dest_name):
         elif "ecuaciones_diferenciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_15")
             rel_path = f"pdfs/capitulo_15/{dest_name}"
+        elif "integracion" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_4")
+            rel_path = f"pdfs/capitulo_4/{dest_name}"
+        elif "aplicaciones_de_la_integral" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_5")
+            rel_path = f"pdfs/capitulo_5/{dest_name}"
+        elif "funciones_trascendentes" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_6")
+            rel_path = f"pdfs/capitulo_6/{dest_name}"
         else:
             chapter_dir = output_dir
             rel_path = f"pdfs/{dest_name}"

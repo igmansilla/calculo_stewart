@@ -1,9 +1,11 @@
 \documentclass[11pt,spanish,oneside]{book}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,provide=*]{babel}
+\providecommand{\sen}{\operatorname{sen}}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{import}
 \usepackage{hyperref}
@@ -45,6 +47,23 @@
 
 % --- CAPÍTULO 2 ---
 \subimport{derivadas/}{capitulo_02.tex}
+
+% --- CAPÍTULO 3 ---
+\subimport{aplicaciones_de_la_derivada/}{capitulo_03.tex}
+
+\part{Integración}
+
+% --- CAPÍTULO 4 ---
+\subimport{integracion/}{capitulo_04.tex}
+
+% --- CAPÍTULO 5 ---
+\subimport{aplicaciones_de_la_integral/}{capitulo_05.tex}
+
+\part{Funciones Trascendentes}
+
+% --- CAPÍTULO 6 ---
+\subimport{funciones_trascendentes/}{capitulo_06.tex}
+
 
 \part{Derivadas Parciales}
 

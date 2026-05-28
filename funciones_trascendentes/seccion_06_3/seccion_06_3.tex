@@ -1,0 +1,150 @@
+% Sección 6.3: Funciones Inversas
+
+\section*{SECCIÓN 6.3 \quad Ejercicios}
+
+\subsection*{Ejercicios 1--6: Análisis gráfico del criterio de la recta horizontal para determinar inyectividad.}
+
+\noindent \textit{En los Ejercicios 1 a 6 se muestra la gráfica de una función $f$. Determine si $f$ es o no inyectiva.}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Gráfica 1
+    \begin{scope}[shift={(0,0)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{1.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[below left] at (0,0) {\footnotesize $0$};
+        \draw[thick] plot [smooth, tension=0.8] coordinates {(-1.5,-1) (-0.5, 0.8) (0.2, 0.2) (1.5, 1.2)};
+    \end{scope}
+    
+    % Gráfica 2
+    \begin{scope}[shift={(6,0)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{2.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[below left] at (0,0) {\footnotesize $0$};
+        \draw[thick] plot [smooth, tension=0.7] coordinates {(-1.2, 1.5) (-0.3, -0.5) (1.5, -1.2)};
+    \end{scope}
+
+    % Gráfica 3
+    \begin{scope}[shift={(0,-4)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{3.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[below left] at (0,0) {\footnotesize $0$};
+        \draw[thick] plot [smooth, tension=0.7] coordinates {(-1.8, -1.5) (-0.5, 0) (1.5, 0.8)};
+    \end{scope}
+    
+    % Gráfica 4
+    \begin{scope}[shift={(6,-4)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{4.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[below left] at (0,0) {\footnotesize $0$};
+        \draw[thick] (-1.2, -1.5) -- (-0.4, 0.6) -- (0.6, 0.6) -- (1.2, 1.5);
+    \end{scope}
+
+    % Gráfica 5
+    \begin{scope}[shift={(0,-8)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{5.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[below left] at (0,0) {\footnotesize $0$};
+        \draw[thick] (-1.8, 0.2) -- (0.5, -0.2) -- (1.2, 1.5);
+    \end{scope}
+    
+    % Gráfica 6
+    \begin{scope}[shift={(6,-8)}]
+        \node[above left] at (-1.5, 1.5) {\textbf{6.}};
+        \draw[->] (-2,0) -- (2,0) node[right] {\footnotesize $x$};
+        \draw[->] (0,-1.5) -- (0,1.5) node[above] {\footnotesize $y$};
+        \node[above left] at (0,0) {\footnotesize $0$};
+        \draw[thick] (-1.8, -0.8) -- (0.5, 0) -- (1.2, 1.2);
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Ejercicios 7--12: Determinación analítica de la inyectividad de funciones algebraicas.}
+
+\noindent \textit{En los Ejercicios 7 a 12 determine si la función dada es o no inyectiva.}
+
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_07/}{ejercicio.tex}
+    \subimport{ejercicio_09/}{ejercicio.tex}
+    \subimport{ejercicio_11/}{ejercicio.tex}
+    \subimport{ejercicio_12/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_08/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_10/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 13--18: Demostración de inyectividad y obtención de la regla de correspondencia inversa.}
+
+\noindent \textit{En los Ejercicios 13 a 18 demuestre que $f$ es inyectiva y encuentre su inversa.}
+
+\begin{enumerate}
+    \setcounter{enumi}{12}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_13/}{ejercicio.tex}
+    \subimport{ejercicio_15/}{ejercicio.tex}
+    \subimport{ejercicio_17/}{ejercicio.tex}
+    \subimport{ejercicio_18/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_14/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_16/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 19--24: Recta tangente de la inversa, dominios, contradominios y bosquejos cruzados.}
+
+\noindent \textit{En los Ejercicios 19 a 24, (a) demuestre que $f$ es inyectiva, (b) utilice el Teorema 6.19 para encontrar $g'(a)$, en donde $g = f^{-1}$, (c) calcule $g(x)$ y determine el dominio y el contradominio de $g$, (d) calcule $g'(a)$ a partir de la fórmula obtenida en (c) y verifique que coincide con el resultado de la parte (b), y (e) trace las gráficas de $f$ y $g$.}
+
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_19/}{ejercicio.tex}
+    \subimport{ejercicio_21/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_20/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_22/}{ejercicio.tex}
+    \end{minipage}
+    
+    \setcounter{enumi}{22}
+    \subimport{ejercicio_23/}{ejercicio.tex}
+    \subimport{ejercicio_24/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 25--30: Derivada de la función inversa evaluada por el teorema fundamental de la derivada inversa.}
+
+\noindent \textit{En los Ejercicios 25 a 30 encuentre $g'(a)$, en donde $g$ es la inversa de la función dada.}
+
+\begin{enumerate}
+    \setcounter{enumi}{24}
+    \subimport{ejercicio_25/}{ejercicio.tex}
+    \subimport{ejercicio_26/}{ejercicio.tex}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+    \subimport{ejercicio_28/}{ejercicio.tex}
+    \subimport{ejercicio_29/}{ejercicio.tex}
+    \subimport{ejercicio_30/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 31--36: Teoremas analíticos de inversibilidad, derivadas recíprocas, derivadas de orden superior de la inversa y concavidad.}
+
+\begin{enumerate}
+    \setcounter{enumi}{30}
+    \subimport{ejercicio_31/}{ejercicio.tex}
+    \subimport{ejercicio_32/}{ejercicio.tex}
+    \subimport{ejercicio_33/}{ejercicio.tex}
+    \subimport{ejercicio_34/}{ejercicio.tex}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+    \subimport{ejercicio_36/}{ejercicio.tex}
+\end{enumerate}
