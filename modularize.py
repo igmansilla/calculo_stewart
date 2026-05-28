@@ -282,6 +282,22 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(11, 21)]},
         # Block 3: 21-30 single
         {"type": "single", "folders": [str(i) for i in range(21, 31)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_2/seccion_08_2.tex": [
+        # Block 1: 1-4 single
+        {"type": "single", "folders": [str(i) for i in range(1, 5)]},
+        # Block 2: 5-8 single
+        {"type": "single", "folders": [str(i) for i in range(5, 9)]},
+        # Block 3: 9-20 single
+        {"type": "single", "folders": [str(i) for i in range(9, 21)]},
+        # Block 4: 21-26 single
+        {"type": "single", "folders": [str(i) for i in range(21, 27)]},
+        # Block 5: 27-32 single
+        {"type": "single", "folders": [str(i) for i in range(27, 33)]},
+        # Block 6: 33-36 single
+        {"type": "single", "folders": [str(i) for i in range(33, 37)]},
+        # Block 7: 37-38 single
+        {"type": "single", "folders": [str(i) for i in range(37, 39)]}
     ]
 }
 

@@ -1,0 +1,29 @@
+\item La figura muestra un cable telefónico que cuelga entre dos postes situados en $x = -b$ y $x = b$. El cable toma la forma de una catenaria con ecuación $y = a \cosh(x/a)$. Encuentre la longitud del cable.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        % Ejes
+        \draw[->] (-3,0) -- (3,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,3.5) node[left] {$y$};
+        
+        % Catenaria
+        \draw[thick, domain=-2:2] plot (\x, {cosh(\x)});
+        
+        % Postes
+        \draw[thick] (-2,0) -- (-2,{cosh(-2)});
+        \draw[thick] (2,0) -- (2,{cosh(2)});
+        
+        % Etiquetas ejes y postes
+        \node[below] at (-2,0) {$-b$};
+        \node[below] at (2,0) {$b$};
+        \node[below right] at (0,0) {$0$};
+        
+        % Intersección y
+        \draw[dashed] (-2,1) -- (2,1);
+        \node[below left] at (0,1) {$a$};
+        
+        % Marcas
+        \draw (-2, 0.1) -- (-2, -0.1);
+        \draw (2, 0.1) -- (2, -0.1);
+    \end{tikzpicture}
+    \end{center}

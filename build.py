@@ -721,6 +721,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_1"),
         "dest_name": "Stewart_Seccion_8_1_Ejercicios.pdf",
         "description": "Capítulo 8 Sección 8.1 Standalone"
+    },
+    "seccion_8_2": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_2/seccion_08_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_2"),
+        "dest_name": "Stewart_Seccion_8_2_Ejercicios.pdf",
+        "description": "Capítulo 8 Sección 8.2 Standalone"
     }
 }
 
