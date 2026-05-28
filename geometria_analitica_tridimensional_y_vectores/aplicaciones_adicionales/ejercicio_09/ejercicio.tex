@@ -1,0 +1,35 @@
+\item 
+    \begin{enumerate}
+        \item Considere la función discontinua
+        \[
+        f(x) = \begin{cases} 
+              0 & \text{si } x \le 0 \\
+              1 & \text{si } x \ge 1
+           \end{cases}
+        \]
+        cuya gráfica se muestra en la figura. Encuentre un polinomio $P = P(x)$ de grado 5 tal que la función $F$ definida por
+        \[
+        F(x) = \begin{cases} 
+              0 & \text{si } x \le 0 \\
+              P(x) & \text{si } 0 < x < 1 \\
+              1 & \text{si } x \ge 1
+           \end{cases}
+        \]
+        sea continua y tenga pendiente y curvatura continuas. El concepto ilustrado en este caso tiene aplicaciones importantes en ingeniería. Un ejemplo obvio se presenta en el diseño de curvas de vías de ferrocarril para hacer transiciones suaves entre secciones rectas de vía. A tales curvas se les llama curvas de transferencia.
+        \item Considérese la función discontinua
+        \[
+        g(x) = \begin{cases} 
+              1 & \text{si } x \le 0 \\
+              -x + \sqrt{2} & \text{si } x \ge 1/\sqrt{2}
+           \end{cases}
+        \]
+        La función $h(x) = \sqrt{1 - x^2}$, $0 < x < 1/\sqrt{2}$, es el arco de la circunferencia unitaria que conecta las dos "porciones" de $g$. Determine si la función $H$ definida por
+        \[
+        H(x) = \begin{cases} 
+              h(x) & \text{si } 0 \le x < 1/\sqrt{2} \\
+              g(x) & \text{en cualquier otro caso}
+           \end{cases}
+        \]
+        en los demás puntos es continua. ¿Tiene la función $H$ pendiente continua? ¿Tiene $H$ curvatura continua?
+        \item Determine un polinomio de grado 5 que sirva como curva de transferencia entre los siguientes segmentos rectilíneos: $y = 0$ para $x \le 0$ y $y = x$ para $x \ge 1$. Trace la gráfica de la función "conectada". ¿Se podría efectuar esto con un polinomio de grado 4?
+    \end{enumerate}

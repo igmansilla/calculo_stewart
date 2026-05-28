@@ -1,0 +1,22 @@
+\item 
+    \begin{enumerate}
+        \item La curva definida paramétricamente por las ecuaciones $x = a \cos t$, $y = b \text{ sen } t$, $0 \le t \le 2\pi$, en donde $a > b > 0$, es una elipse cuyo centro está situado en el origen. Demuestre que la longitud de arco de esta elipse es 
+        \[
+        L = 4a \int_0^{\pi/2} \sqrt{1 - e^2 \cos^2 t} \, dt
+        \]
+        en donde $e$ es la excentricidad de la elipse. Ésta es una integral elíptica; el integrando no tiene una antiderivada elemental.
+        \item Utilice la serie binomial de $\sqrt{1 - x}$ para demostrar que
+        \[
+        L = 4a \int_0^{\pi/2} \left[ 1 - \frac{1}{2} e^2 \cos^2 t - \frac{1}{8} e^4 \cos^4 t - \frac{1}{16} e^6 \cos^6 t - \dots \right] dt
+        \]
+        \item Demuestre que la longitud de arco de la elipse está dada por
+        \[
+        L = 2\pi a \left[ 1 - \frac{1}{4} e^2 - \frac{3}{64} e^4 - \frac{5}{256} e^6 - \dots \right]
+        \]
+        calculando la integral de la parte (b). [\textit{Sugerencia:} Use el producto de Wallis
+        \[
+        \int_{0}^{\pi/2} \cos^{2n} t \, dt = \frac{1 \cdot 3 \cdot 5 \cdot \dots \cdot (2n-1)}{2 \cdot 4 \cdot 6 \cdot \dots \cdot (2n)} \cdot \frac{\pi}{2}
+        \]
+        Véase el ejercicio 40 de la sección 7.1]. Esta fórmula proporciona la longitud de arco de una elipse en términos de su semieje mayor y su excentricidad. Obsérvese que esta fórmula se reduce a $2\pi a$, la circunferencia de un círculo de radio $a$, cuando $e = 0$.
+        \item La órbita de la luna alrededor de la tierra es (casi) una elipse perfecta con la tierra en uno de los focos. Supóngase que $a = 238,850$ millas y $e = 0.055$. Utilice los tres primeros términos de la serie de la parte (c) para determinar la longitud de la trayectoria de la luna alrededor de la tierra.
+    \end{enumerate}

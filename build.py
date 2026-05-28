@@ -949,6 +949,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/repaso"),
         "dest_name": "Stewart_Capitulo_11_Repaso.pdf",
         "description": "Capítulo 11 Repaso Standalone"
+    },
+    "aplicaciones_adicionales_11": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/aplicaciones_adicionales/aplicaciones_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/aplicaciones_adicionales"),
+        "dest_name": "Stewart_Capitulo_11_Aplicaciones.pdf",
+        "description": "Capítulo 11 Aplicaciones Adicionales Standalone"
     }
 }
 

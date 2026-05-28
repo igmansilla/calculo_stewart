@@ -807,7 +807,13 @@ CONFIGS = {
     ],
     "geometria_analitica_tridimensional_y_vectores/repaso/repaso.tex": [
         # Block 1: Temas Basicos 1-40 single
-        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 41)]}
+        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 41)]},
+        # Block 2: Ejercicios 75-87 single
+        {"type": "single", "folders": [str(i) for i in range(75, 88)]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/aplicaciones_adicionales/aplicaciones_adicionales.tex": [
+        # Block 1: Ejercicios 1-11 single
+        {"type": "single", "folders": [str(i) for i in range(1, 12)]}
     ]
 }
 
