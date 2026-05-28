@@ -1,0 +1,49 @@
+\item En la figura siguiente hay infinidad de círculos que tienden a los vértices de un triángulo equilátero. Cada círculo toca a otros círculos y a lados del triángulo. Si el triángulo tiene lados de longitud 1, encuentre el área total ocupada por los círculos.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=4]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (1,0);
+        \coordinate (C) at (0.5, {sqrt(3)/2});
+
+        \draw[thick] (A) -- (B) -- (C) -- cycle;
+
+        % Círculo central
+        \def\r{0.288675} % sqrt(3)/6
+        \coordinate (O) at (0.5, \r);
+        \draw[thick] (O) circle (\r);
+
+        % Iteración 1
+        \def\rA{\r/3}
+        \coordinate (OA) at ($(A) + (30:{\rA*2})$);
+        \draw[thick] (OA) circle (\rA);
+
+        \coordinate (OB) at ($(B) + (150:{\rA*2})$);
+        \draw[thick] (OB) circle (\rA);
+
+        \coordinate (OC) at ($(C) + (270:{\rA*2})$);
+        \draw[thick] (OC) circle (\rA);
+
+        % Iteración 2
+        \def\rAA{\rA/3}
+        \coordinate (OAA) at ($(A) + (30:{\rAA*2})$);
+        \draw[thick] (OAA) circle (\rAA);
+
+        \coordinate (OBB) at ($(B) + (150:{\rAA*2})$);
+        \draw[thick] (OBB) circle (\rAA);
+
+        \coordinate (OCC) at ($(C) + (270:{\rAA*2})$);
+        \draw[thick] (OCC) circle (\rAA);
+
+        % Iteración 3
+        \def\rAAA{\rAA/3}
+        \coordinate (OAAA) at ($(A) + (30:{\rAAA*2})$);
+        \draw[thick] (OAAA) circle (\rAAA);
+
+        \coordinate (OBBB) at ($(B) + (150:{\rAAA*2})$);
+        \draw[thick] (OBBB) circle (\rAAA);
+
+        \coordinate (OCCC) at ($(C) + (270:{\rAAA*2})$);
+        \draw[thick] (OCCC) circle (\rAAA);
+    \end{tikzpicture}
+    \end{center}

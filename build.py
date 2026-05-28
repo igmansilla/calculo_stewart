@@ -829,6 +829,24 @@ targets = {
         "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_2"),
         "dest_name": "Stewart_Seccion_10_2_Series.pdf",
         "description": "Capítulo 10 Sección 10.2 Standalone"
+    },
+    "seccion_10_3": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_3/seccion_10_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_3"),
+        "dest_name": "Stewart_Seccion_10_3_Criterio_Integral.pdf",
+        "description": "Capítulo 10 Sección 10.3 Standalone"
+    },
+    "seccion_10_4": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_4/seccion_10_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_4"),
+        "dest_name": "Stewart_Seccion_10_4_Criterios_Comparacion.pdf",
+        "description": "Capítulo 10 Sección 10.4 Standalone"
+    },
+    "seccion_10_5": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_5/seccion_10_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_5"),
+        "dest_name": "Stewart_Seccion_10_5_Series_Alternantes.pdf",
+        "description": "Capítulo 10 Sección 10.5 Standalone"
     }
 }
 
