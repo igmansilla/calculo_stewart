@@ -274,6 +274,14 @@ CONFIGS = {
     "tecnicas_de_integracion/aplicaciones_adicionales/aplicaciones_adicionales.tex": [
         # Block 1: 1-6 single
         {"type": "single", "folders": [str(i) for i in range(1, 7)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_1/seccion_08_1.tex": [
+        # Block 1: 1-10 single
+        {"type": "single", "folders": [str(i) for i in range(1, 11)]},
+        # Block 2: 11-20 single
+        {"type": "single", "folders": [str(i) for i in range(11, 21)]},
+        # Block 3: 21-30 single
+        {"type": "single", "folders": [str(i) for i in range(21, 31)]}
     ]
 }
 
