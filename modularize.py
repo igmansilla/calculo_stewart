@@ -782,6 +782,32 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(29, 31)]},
         # Block 8: Ejercicios 31-38 single
         {"type": "single", "folders": [str(i) for i in range(31, 39)]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/seccion_11_10/seccion_11_10.tex": [
+        # Block 1: Ejercicios 1-6 single
+        {"type": "single", "folders": [str(i) for i in range(1, 7)]},
+        # Block 2: Ejercicios 7-12 single
+        {"type": "single", "folders": [str(i) for i in range(7, 13)]},
+        # Block 3: Ejercicios 13-18 single
+        {"type": "single", "folders": [str(i) for i in range(13, 19)]},
+        # Block 4: Ejercicios 19-24 single
+        {"type": "single", "folders": [str(i) for i in range(19, 25)]},
+        # Block 5: Ejercicios 25-28 single
+        {"type": "single", "folders": [str(i) for i in range(25, 29)]},
+        # Block 6: Ejercicios 29-32 single
+        {"type": "single", "folders": [str(i) for i in range(29, 33)]},
+        # Block 7: Ejercicios 33-50 single
+        {"type": "single", "folders": [str(i) for i in range(33, 51)]},
+        # Block 8: Ejercicios 51-58 single
+        {"type": "single", "folders": [str(i) for i in range(51, 59)]},
+        # Block 9: Ejercicios 59-62 single
+        {"type": "single", "folders": [str(i) for i in range(59, 63)]},
+        # Block 10: Ejercicio 63 single
+        {"type": "single", "folders": ["63"]}
+    ],
+    "geometria_analitica_tridimensional_y_vectores/repaso/repaso.tex": [
+        # Block 1: Temas Basicos 1-40 single
+        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 41)]}
     ]
 }
 

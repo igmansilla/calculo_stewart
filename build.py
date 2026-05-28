@@ -937,6 +937,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_8"),
         "dest_name": "Stewart_Seccion_11_8_Longitud_Curvatura.pdf",
         "description": "Capítulo 11 Sección 11.8 Standalone"
+    },
+    "seccion_11_10": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_10/seccion_11_10_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_10"),
+        "dest_name": "Stewart_Seccion_11_10_Coordenadas.pdf",
+        "description": "Capítulo 11 Sección 11.10 Standalone"
+    },
+    "repaso_11": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/repaso"),
+        "dest_name": "Stewart_Capitulo_11_Repaso.pdf",
+        "description": "Capítulo 11 Repaso Standalone"
     }
 }
 
