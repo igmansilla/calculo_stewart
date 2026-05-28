@@ -1,0 +1,19 @@
+\item Cuando se suspende un cable flexible de densidad uniforme entre dos puntos fijos y cuelga por su propio peso, la forma $y = f(x)$ asumida por el cable debe satisfacer una ecuación diferencial de la forma
+    \[ \frac{d^2y}{dx^2} = k \sqrt{1 + \left(\frac{dy}{dx}\right)^2} \]
+    en donde $k$ es una constante positiva. Considérese el cable indicado en la figura.
+    \begin{enumerate}
+        \item[(a)] Sea $z = dy/dx$ en la ecuación diferencial. Resuelva la ecuación diferencial de primer orden resultante (en $z$) y luego integre para encontrar $y$.
+        \item[(b)] Determine la longitud del cable.
+    \end{enumerate}
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[->] (-3,0) -- (3,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,4) node[left] {$y$};
+        \draw[thick, domain=-2.5:2.5] plot (\x, {cosh(\x)});
+        \draw[dashed] (-2.5, 0) node[below] {$-b$} -- (-2.5, {cosh(2.5)}) node[above left] {$(-b, h)$};
+        \draw[dashed] (2.5, 0) node[below] {$b$} -- (2.5, {cosh(2.5)}) node[above right] {$(b, h)$};
+        \fill (0,1) circle (1.5pt) node[below right] {$(0, a)$};
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

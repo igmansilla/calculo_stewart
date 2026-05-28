@@ -1,0 +1,31 @@
+\item En la siguiente figura el círculo de radio $a$ es fijo y para todo valor del ángulo $\theta$, el punto $P$ es el punto medio del segmento $QR$. La curva descrita por $P$ para $0 < \theta < \pi$ se llama \textbf{curva del arco}. Encuentre ecuaciones paramétricas para esta curva.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \draw[->] (-0.5,0) -- (4,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,3) node[left] {$y$};
+        \draw[thick] (1,0) circle (1cm);
+        \node[below left] at (0,0) {$O$};
+        
+        \draw[thick, dashed] (2,-0.5) -- (2,3) node[below right] {$x = 2a$};
+        \node[below right] at (2,0) {$2a$};
+        \fill (1,0) circle (1pt) node[below] {$a$};
+        
+        % Ray and points
+        \draw (0,0) -- (50:4) node[right] {$R$};
+        \coordinate (Q) at (50:{2*cos(50)});
+        \coordinate (R) at (2,{2*tan(50)});
+        \fill (Q) circle (1.5pt) node[above left] {$Q$};
+        \fill (R) circle (1.5pt);
+        
+        \coordinate (P) at ($(Q)!0.5!(R)$);
+        \fill (P) circle (1.5pt) node[above left] {$P$};
+        
+        \draw (0.3,0) arc (0:50:0.3);
+        \node at (25:0.45) {$\theta$};
+        
+        % The cissoid curve
+        \draw[thick, domain=10:80, samples=50] plot ({\x}: {cos(\x) + 1/cos(\x)});
+        \node[right] at (3.5, 2.5) {curva del arco};
+    \end{tikzpicture}
+    \end{center}

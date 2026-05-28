@@ -1,0 +1,21 @@
+\item Considérese un modelo de crecimiento de población que incluye dos especies en el que una de las especies tiene un amplio suministro de alimentos y la otra especie se alimenta de la primera. In esta situación, la primera especie se llama \textit{presa} y la segunda especie se llama \textit{depredadora}. Ejemplos de ello podrían ser los conejos y los lobos en un bosque aislado, peces comestibles y tiburones, pulgones y mariquitas, etc. Sea $x = x(t)$ el número de presas y $y = y(t)$ el número de depredadores en el tiempo $t$. En ausencia de depredadores, el amplio suministro de alimentos sostendrá un crecimiento exponencial de la presa, esto es, $dx/dt = kx, k > 0$. Análogamente, en ausencia de presas la población de depredadores disminuirá exponencialmente: $dy/dt = -ry, r > 0$. Sin embargo, con las dos especies presentes, supóngase que la causa principal de muerte en la población de presas es que son devoradas por un depredador y que la tasa de nacimiento y supervivencia de los depredadores depende del suministro de alimentos que tengan a su disposición, es decir, de las presas. Supóngase, además, que las dos especies se encuentran entre sí al azar a una razón proporcional al producto de los tamaños de las dos poblaciones. Estas hipótesis conducen al sistema de ecuaciones diferenciales
+    \[ \frac{dx}{dt} = kx - axy \qquad \frac{dy}{dt} = -ry + bxy \]
+    en donde $a, b, k$ y $r$ son constantes positivas. Estas ecuaciones se conocen como las \textit{ecuaciones depredador-presa}, o \textit{ecuaciones de Lotka-Volterra}. Si bien no es posible encontrar soluciones generales elementales de este sistema de ecuaciones, se pueden obtener relaciones entre $x$ y $y$. Dado que el número de depredadores depende del número de presas disponible para su alimentación, supóngase que $y$ es función de $x$. Entonces
+    \[ \frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{-ry + bxy}{kx - axy} \qquad (1) \]
+    \begin{enumerate}
+        \item[(a)] Demuestre que las funciones constantes $x(t) = r/b, y(t) = k/a$ son soluciones de las ecuaciones depredador-presa.
+        \item[(b)] Determine la solución general de la ecuación diferencial (1) y exprese su respuesta en términos de exponenciales.
+        \item[(c)] Demuestre que las poblaciones $x$ y $y$ son acotadas analizando la solución general obtenida en la parte (b).
+    \end{enumerate}
+    En la figura se muestra una curva solución característica de (1).
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \draw[->] (-0.5,0) -- (3,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,3) node[left] {$y$};
+        \draw[thick] (1.5,1.5) ellipse (1cm and 0.6cm); 
+        \draw (1.5, 0.1) -- (1.5, -0.1) node[below] {$\frac{r}{b}$};
+        \draw (0.1, 1.5) -- (-0.1, 1.5) node[left] {$\frac{k}{a}$};
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}

@@ -1,0 +1,26 @@
+\item Un perro ve a un conejo que corre en línea recta a lo largo de un campo abierto y se va en pos de él. En un sistema de coordenadas rectangulares, supóngase lo siguiente: 
+    (i) El conejo se encuentra en el origen y el perro en el punto $(L, 0)$ en el instante en que el perro ve por primera vez al conejo. 
+    (ii) El conejo corre hacia la dirección positiva del eje $y$ y el perro siempre corre directamente hacia el conejo. 
+    (iii) El perro corre a la misma velocidad que el conejo.
+    \begin{enumerate}
+        \item[(a)] Demuestre que la trayectoria del perro es la gráfica de la función $y = f(x)$, en donde $y$ satisface la ecuación diferencial
+        \[ x \frac{d^2y}{dx^2} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2} \]
+        \item[(b)] Determine la solución de la ecuación diferencial de la parte (a) que satisface las condiciones iniciales $y = y' = 0$ cuando $x = L$. (\textit{Sugerencia:} Sea $z = dy/dx$ en la ecuación diferencial y resuelva la ecuación de primer orden resultante para encontrar $z$; luego integre $z$ para obtener $y$).
+        \item[(c)] Determine si el perro llega a alcanzar al conejo.
+    \end{enumerate}
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        \draw[->] (-0.5,0) -- (4,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,3.5) node[left] {$y$};
+        \node[below left] at (0,0) {$0$};
+        \node[below] at (3,0) {$(L, 0)$};
+        
+        \draw[thick] (3,0) .. controls (2.5,0.1) and (1,0.5) .. (0.5,2);
+        \draw[dashed] (0.5,2) -- (0, 2.8);
+        \node[right] at (0.5,2) {$(x, y)$};
+        
+        \fill (0,2.8) circle (2pt) node[left] {Conejo};
+        \fill (0.5,2) circle (2pt) node[below] {Perro};
+    \end{tikzpicture}
+    \end{center}

@@ -1,0 +1,43 @@
+\item Un círculo $C$ de radio $2r$ tiene su centro en el origen. Otro círculo de radio $r$ se hace rodar sin resbalar en la dirección opuesta a las manecillas del reloj alrededor del exterior de $C$. Un punto $P$ está localizado en un radio fijo del círculo rodante a una distancia $b$ de su centro, $0 < b < r$. Véanse las figuras (i) y (ii). Sea $L$ la recta que une el centro de $C$ con el centro del círculo rodante y sea $\theta$ el ángulo que forma $L$ con el eje $x$ positivo.
+    \begin{enumerate}
+        \item[(a)] Usando $\theta$ como parámetro, demuestre que las ecuaciones paramétricas de la trayectoria trazada por $P$ son:
+        \[ x = b \cos 3\theta + 3r \cos\theta \qquad y = b \sen 3\theta + 3r \sen\theta \]
+        \textit{Nota: Si $b = 0$, la trayectoria es una circunferencia de radio $3r$; si $b = r$, la trayectoria es una \textbf{epicicloide}. La trayectoria trazada por $P$ para $0 < b < r$ se llama \textbf{epitrocoide}.}
+        \item[(b)] Supóngase que $0 < b < r$. Trace la gráfica de la curva.
+        \item[(c)] Demuestre que se puede inscribir un triángulo equilátero en la epitrocoide y que su centroide se encuentra en la circunferencia de radio $b$ con centro en el origen. \\
+        \textit{Nota: Este es el principio del motor giratorio Wankel. Cuando el triángulo equilátero gira con sus vértices en la epitrocoide, su centroide describe una circunferencia cuyo centro se encuentra en el centro de la curva.}
+    \end{enumerate}
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        \draw[->] (-3,0) -- (4.5,0) node[below] {$x$};
+        \draw[->] (0,-2.5) -- (0,2.5) node[left] {$y$};
+        \draw (0,0) circle (2cm);
+        \node[below left] at (0,0) {$0$};
+        \draw (3,0) circle (1cm);
+        \draw (0,0) -- (3,0);
+        \fill (3,0) circle (1.5pt);
+        \node[below] at (1,0) {$2r$};
+        \node[below] at (2.5,0) {$r$};
+        \fill (4,0) circle (1.5pt) node[right] {$P = P_0$};
+        \draw (3,0) -- (4,0) node[midway, below] {$b$};
+        \node at (0, -3) {(i)};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=1]
+        \draw[->] (-3,0) -- (4.5,0) node[below] {$x$};
+        \draw[->] (0,-2.5) -- (0,2.5) node[left] {$y$};
+        \draw (0,0) circle (2cm);
+        \node[below left] at (0,0) {$0$};
+        \coordinate (C) at (40:3);
+        \draw (C) circle (1cm);
+        \draw (0,0) -- (C);
+        \draw (0.5,0) arc (0:40:0.5);
+        \node at (20:0.7) {$\theta$};
+        \coordinate (P) at ($(C) + (100:0.8)$);
+        \draw (C) -- (P);
+        \fill (P) circle (1.5pt) node[above] {$P$};
+        \node[below right] at (2,0) {$P_0$};
+        \node at (0, -3) {(ii)};
+    \end{tikzpicture}
+    \end{center}

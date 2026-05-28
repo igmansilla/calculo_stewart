@@ -460,6 +460,34 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(9, 21)]},
         # Block 3: 21-28 single
         {"type": "single", "folders": [str(i) for i in range(21, 29)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/repaso/repaso.tex": [
+        # Block 1: Temas Basicos 1-17 single
+        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 18)]},
+        # Block 2: Ejercicios 1-4 single
+        {"type": "single", "folders": [str(i) for i in range(1, 5)]},
+        # Block 3: Ejercicios 5-12 single
+        {"type": "single", "folders": [str(i) for i in range(5, 13)]},
+        # Block 4: Ejercicios 13-14 single
+        {"type": "single", "folders": [str(i) for i in range(13, 15)]},
+        # Block 5: Ejercicios 15-18 single
+        {"type": "single", "folders": [str(i) for i in range(15, 19)]},
+        # Block 6: Ejercicios 19-20 single
+        {"type": "single", "folders": [str(i) for i in range(19, 21)]},
+        # Block 7: Ejercicios 21-28 single
+        {"type": "single", "folders": [str(i) for i in range(21, 29)]},
+        # Block 8: Ejercicios 29-32 single
+        {"type": "single", "folders": [str(i) for i in range(29, 33)]},
+        # Block 9: Ejercicios 33 single
+        {"type": "single", "folders": ["33"]},
+        # Block 10: Ejercicios 35-38 single
+        {"type": "single", "folders": [str(i) for i in range(35, 39)]},
+        # Block 11: Ejercicios 39-47 single
+        {"type": "single", "folders": [str(i) for i in range(39, 48)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/aplicaciones_adicionales/aplicaciones_adicionales.tex": [
+        # Block 1: 1-12 single
+        {"type": "single", "folders": [str(i) for i in range(1, 13)]}
     ]
 }
 
