@@ -1,0 +1,11 @@
+\item Casquete de una esfera de radio $r$ y altura $h$.
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw (0,0) circle (2cm);
+    \draw (-1.732, 1) arc (180:360:1.732cm and 0.4cm);
+    \draw[dashed] (1.732, 1) arc (0:180:1.732cm and 0.4cm);
+    \draw[dashed] (0,0) -- (2,0) node[midway, below] {$r$};
+    \draw[<->] (2.5, 1) -- (2.5, 2) node[midway, right] {$h$};
+    \draw[dashed] (0,1) -- (0,2);
+\end{tikzpicture}
+\end{center}

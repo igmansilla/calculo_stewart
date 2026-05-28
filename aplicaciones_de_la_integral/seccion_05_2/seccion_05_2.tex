@@ -1,0 +1,169 @@
+% Sección 5.2: Volúmenes
+
+Cálculo de volúmenes de sólidos tridimensionales mediante secciones transversales, discos y arandelas, utilizando integrales respecto a $x$ y respecto a $y$.
+
+\section*{SECCIÓN 5.2 \quad Ejercicios}
+
+\subsection*{Ejercicios 1--12: Volúmenes de sólidos de revolución obtenidos girando regiones alrededor de ejes o rectas.}
+
+\noindent \textit{En los Ejercicios 1 a 12, calcule el volumen del sólido que se obtiene al hacer girar la región limitada por las curvas dadas en torno al eje indicado. Dibuje la región, el sólido y un disco o bien arandela representativos.}
+
+\begin{enumerate}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_01/}{ejercicio.tex}
+    \subimport{ejercicio_03/}{ejercicio.tex}
+    \subimport{ejercicio_05/}{ejercicio.tex}
+    \subimport{ejercicio_07/}{ejercicio.tex}
+    \subimport{ejercicio_09/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \setcounter{enumi}{1}
+    \subimport{ejercicio_02/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_04/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_06/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_08/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_10/}{ejercicio.tex}
+    \subimport{ejercicio_11/}{ejercicio.tex}
+    \subimport{ejercicio_12/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 13--24: Volúmenes generados al girar las regiones indicadas en la gráfica analítica.}
+
+\noindent \textit{Tomando como referencia la siguiente figura, calcule el volumen que se genera al hacer girar la región dada en torno a la recta indicada en cada uno de los Ejercicios 13 a 24.}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    \draw[->] (-1,0) -- (10,0) node[right] {$x$};
+    \draw[->] (0,-1) -- (0,3.5) node[above] {$y$};
+    \draw[thick, domain=0:8, samples=100] plot (\x, {pow(\x, 1/3)}) node[right] {$y = \sqrt[3]{x}$};
+    \draw[thick] (0,0) -- (8,2);
+    \draw[dashed] (8,0) node[below] {$A(8, 0)$} -- (8,2) node[right] {$B(8, 2)$} -- (0,2) node[left] {$C(0, 2)$};
+    \node at (6, 0.6) {$\mathscr{R}_1$};
+    \node at (4.5, 1.2) {$\mathscr{R}_2$};
+    \node at (2, 1.6) {$\mathscr{R}_3$};
+    \node[below left] at (0,0) {$0$};
+    \node at (6.5, 1.2) {$x = 4y$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+    \setcounter{enumi}{12}
+    \begin{minipage}{0.3\textwidth}
+    \subimport{ejercicio_13/}{ejercicio.tex}
+    \subimport{ejercicio_15/}{ejercicio.tex}
+    \subimport{ejercicio_17/}{ejercicio.tex}
+    \subimport{ejercicio_20/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.3\textwidth}
+    \setcounter{enumi}{13}
+    \subimport{ejercicio_14/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_16/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_18/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_19/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.3\textwidth}
+    \setcounter{enumi}{20}
+    \subimport{ejercicio_21/}{ejercicio.tex}
+    \subimport{ejercicio_22/}{ejercicio.tex}
+    \subimport{ejercicio_23/}{ejercicio.tex}
+    \subimport{ejercicio_24/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 25--30: Sólidos girando alrededor del eje $x$.}
+
+\noindent \textit{Calcule el volumen del sólido que se obtiene al hacer girar la región limitada por las curvas dadas en los Ejercicios 25 a 30 en torno al eje $x$.}
+
+\begin{enumerate}
+    \setcounter{enumi}{24}
+    \subimport{ejercicio_25/}{ejercicio.tex}
+    \subimport{ejercicio_26/}{ejercicio.tex}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+    \subimport{ejercicio_28/}{ejercicio.tex}
+    \subimport{ejercicio_29/}{ejercicio.tex}
+    \subimport{ejercicio_30/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 31--36: Planteamiento formal de integrales para volúmenes.}
+
+\noindent \textit{Determine, sin evaluarla, una integral que corresponda al volumen del sólido que se obtiene al hacer girar la región limitada por las curvas dadas en torno a la recta indicada, en cada uno de los Ejercicios 31 a 36.}
+
+\begin{enumerate}
+    \setcounter{enumi}{30}
+    \subimport{ejercicio_31/}{ejercicio.tex}
+    \subimport{ejercicio_32/}{ejercicio.tex}
+    \subimport{ejercicio_33/}{ejercicio.tex}
+    \subimport{ejercicio_34/}{ejercicio.tex}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+    \subimport{ejercicio_36/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 37--38: Gráficas y volúmenes de funciones definidas por tramos.}
+
+\noindent \textit{Dibuje y calcule el volumen del sólido que se obtiene al hacer girar la región bajo la gráfica de $f$ que se da en los Ejercicios 37 y 38, en torno al eje $x$.}
+
+\begin{enumerate}
+    \setcounter{enumi}{36}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_37/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_38/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 39--44: Descripción de sólidos definidos por integrales dadas.}
+
+\noindent \textit{Las integrales dadas en los Ejercicios 39 a 44 representan volúmenes de sólidos. Describa los sólidos correspondientes.}
+
+\begin{enumerate}
+    \setcounter{enumi}{38}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_39/}{ejercicio.tex}
+    \subimport{ejercicio_41/}{ejercicio.tex}
+    \subimport{ejercicio_43/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_40/}{ejercicio.tex}
+    \subimport{ejercicio_42/}{ejercicio.tex}
+    \subimport{ejercicio_44/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 45--66: Sólidos geométricos, pirámides, secciones transversales y problemas físicos avanzados.}
+
+\noindent \textit{Calcule el volumen del sólido descrito $S$ que se da en cada uno de los Ejercicios 45 a 66.}
+
+\begin{enumerate}
+    \setcounter{enumi}{44}
+    \subimport{ejercicio_45/}{ejercicio.tex}
+    \subimport{ejercicio_46/}{ejercicio.tex}
+    \subimport{ejercicio_47/}{ejercicio.tex}
+    \subimport{ejercicio_48/}{ejercicio.tex}
+    \subimport{ejercicio_49/}{ejercicio.tex}
+    \subimport{ejercicio_50/}{ejercicio.tex}
+    \subimport{ejercicio_51/}{ejercicio.tex}
+    \subimport{ejercicio_52/}{ejercicio.tex}
+    \subimport{ejercicio_53/}{ejercicio.tex}
+    \subimport{ejercicio_54/}{ejercicio.tex}
+    \subimport{ejercicio_55/}{ejercicio.tex}
+    \subimport{ejercicio_56/}{ejercicio.tex}
+    \subimport{ejercicio_57/}{ejercicio.tex}
+    \subimport{ejercicio_58/}{ejercicio.tex}
+    \subimport{ejercicio_59/}{ejercicio.tex}
+    \subimport{ejercicio_60/}{ejercicio.tex}
+    \subimport{ejercicio_61/}{ejercicio.tex}
+    \subimport{ejercicio_62/}{ejercicio.tex}
+    \subimport{ejercicio_63/}{ejercicio.tex}
+    \subimport{ejercicio_64/}{ejercicio.tex}
+    \subimport{ejercicio_65/}{ejercicio.tex}
+    \subimport{ejercicio_66/}{ejercicio.tex}
+\end{enumerate}

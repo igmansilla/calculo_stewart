@@ -1,0 +1,39 @@
+\item Cada celdilla de una colmena es un prisma hexagonal regular, abierto en uno de los extremos con un ángulo triedro en el otro. Se cree que las abejas forman sus celdillas de manera que se minimice el área de la superficie para un volumen dado, empleando así la mínima cantidad de cera en la construcción de las celdillas. El análisis de estas celdillas ha demostrado que la medida del ángulo $\theta$ del vértice es asombrosamente consistente. Con base en la geometría de la celdilla, se puede demostrar que el área de superficie $S$ está dada por
+$$S = 6sh - \tfrac{3}{2}s^2 \cot \theta + (3s^2\sqrt{3}/2)\csc \theta$$
+en donde $s$, la longitud de los lados del hexágono, y $h$, la altura, son constantes.
+\begin{enumerate}
+    \item[(a)] Calcule $dS/d\theta$.
+    \item[(b)] ¿Qué ángulo deben preferir las abejas?
+    \item[(c)] Determine el área de superficie mínima de la celdilla (en términos de $s$ y $h$).
+\end{enumerate}
+\textit{Nota}: Se han realizado mediciones reales del ángulo $\theta$ en las colmenas, y las medidas de estos ángulos raramente difieren del valor calculado en más de $2^\circ$.
+\begin{center}
+\begin{tikzpicture}[scale=0.8, fill=gray!20]
+    % Base hexagonal (frente)
+    \draw[thick] (0,-1) -- (1,-0.5) -- (1,0.5) -- (0,1) -- (-1,0.5) -- (-1,-0.5) -- cycle;
+    % Aristas verticales
+    \draw[thick] (0,-1) -- (0,-4);
+    \draw[thick] (1,-0.5) -- (1,-3.5);
+    \draw[thick] (-1,-0.5) -- (-1,-3.5);
+    % Fondo de la celda (triedro)
+    \draw[thick] (0,-4) -- (1,-3.5);
+    \draw[thick] (0,-4) -- (-1,-3.5);
+    \draw[dashed] (1,-3.5) -- (0,-3) -- (-1,-3.5);
+    \draw[dashed] (0,-3) -- (0,0);
+    \draw[dashed] (1,0.5) -- (1,-2.5) -- (0,-3);
+    \draw[dashed] (-1,0.5) -- (-1,-2.5) -- (0,-3);
+    
+    \node[left] at (-1.5, -2) {Parte posterior};
+    \node[left] at (-1.5, -2.5) {de la celdilla};
+    
+    \node[right] at (1.5, 0.5) {Ángulo};
+    \node[right] at (1.5, 0) {triedro $\theta$};
+    
+    \node[right] at (1.5, -3.5) {Frente de la};
+    \node[right] at (1.5, -4) {celdilla};
+
+    \draw[<->] (-0.8, -1) -- (-0.8, -3) node[midway, fill=white] {$h$};
+    \draw[<->] (-0.5, -3.8) -- (-0.5, -4.2) node[midway, below] {$s$};
+    \draw[<->] (-0.2, -3.4) -- (-0.8, -3.6) node[midway, fill=white] {$b$};
+\end{tikzpicture}
+\end{center}

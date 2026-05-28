@@ -1,0 +1,35 @@
+\item 
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+        % Ejes
+        \draw[->] (-0.5, 0) -- (6, 0) node[right] {$x$};
+        \draw[->] (0, -0.5) -- (0, 3) node[above] {$y$};
+        \node[below left] at (0,0) {$0$};
+        
+        % Curva
+        \draw[thick] plot [smooth, tension=0.7] coordinates { 
+            (0, 1.5) 
+            (0.5, 2.2) 
+            (1.5, 0.5) 
+            (2.2, 1.8) 
+            (3, 2.5) 
+            (4, 1.2) 
+            (5, 2.0) 
+        };
+        
+        % Líneas punteadas y etiquetas
+        \draw[dashed] (0.5, 0) node[below] {$a$} -- (0.5, 2.2);
+        \draw[dashed] (1.0, 0) node[below] {$b$} -- (1.0, 1.15);
+        \draw[dashed] (1.5, 0) node[below] {$c$} -- (1.5, 0.5);
+        \draw[dashed] (2.2, 0) node[below] {$d$} -- (2.2, 1.8);
+        \draw[dashed] (3.0, 0) node[below] {$e$} -- (3.0, 2.5);
+        \draw[dashed] (3.5, 0) node[below] {$r$} -- (3.5, 1.85);
+        \draw[dashed] (4.0, 0) node[below] {$s$} -- (4.0, 1.2);
+        \draw[dashed] (5.0, 0) node[below] {$t$} -- (5.0, 2.0);
+        
+        % Puntos extremos
+        \filldraw (0, 1.5) circle (1pt);
+        \filldraw (5, 2.0) circle (1pt);
+    \end{tikzpicture}
+\end{center}
+

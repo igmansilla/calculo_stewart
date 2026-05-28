@@ -1,0 +1,14 @@
+\item Cono circular recto truncado de altura $h$, radio de la base inferior $R$ y radio de la parte superior $r$.
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw (0,2.5) ellipse (1.2cm and 0.3cm);
+    \draw (-1.2,2.5) -- (-2,0);
+    \draw (1.2,2.5) -- (2,0);
+    \draw (-2,0) arc (180:360:2cm and 0.5cm);
+    \draw[dashed] (2,0) arc (0:180:2cm and 0.5cm);
+    \draw[dashed] (0,0) -- (2,0) node[midway, below] {$R$};
+    \draw[dashed] (0,2.5) -- (1.2,2.5) node[midway, below] {$r$};
+    \draw[dashed] (0,0) -- (0,2.5);
+    \draw[<->] (2.6,0) -- (2.6,2.5) node[midway, fill=white] {$h$};
+\end{tikzpicture}
+\end{center}

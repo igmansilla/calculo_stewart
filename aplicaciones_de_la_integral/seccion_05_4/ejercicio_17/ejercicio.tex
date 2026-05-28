@@ -1,0 +1,15 @@
+\item 
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw (0,0) -- (3,0) node[midway, above] {\footnotesize $3\text{ m}$} -- (1.5,-2) -- cycle;
+    \draw (3,0) -- (6,1) -- (4.5,-1) -- (1.5,-2);
+    \draw[dashed] (0,0) -- (3,1) -- (6,1);
+    \draw[dashed] (3,1) -- (4.5,-1);
+    \draw[<->] (1.5,-2.5) -- (4.5,-1.5) node[midway, below right] {\footnotesize $8\text{ m}$};
+    % Spout
+    \draw (-0.2, 0) -- (-0.2, 1.5) -- (0, 1.5) -- (0, 0);
+    \draw[<->] (-0.6, 0) -- (-0.6, 1.5) node[midway, left] {\footnotesize $2\text{ m}$};
+    \draw[<->] (-0.6, 0) -- (-0.6, -2) node[midway, left] {\footnotesize $3\text{ m}$};
+    \draw[dashed] (0,-2) -- (1.5,-2);
+\end{tikzpicture}
+\end{center}

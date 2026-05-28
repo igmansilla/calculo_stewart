@@ -1,0 +1,16 @@
+\item Una persona que se encuentra en un punto $A$ en la orilla de un lago circular de 2 mi de radio desea llegar en el mínimo tiempo posible, al punto $C$ que se encuentra diametralmente opuesto a $A$ al otro lado del lago. La persona puede caminar a una velocidad de 4 mi/h y remar en un bote o lancha a 2 mi/h. ¿A qué ángulo $\theta$ con respecto al diámetro debe remar?
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    \draw[thick] (0,0) circle (1.5);
+    \filldraw (-1.5,0) circle (1pt) node[left] {$A$};
+    \filldraw (1.5,0) circle (1pt) node[right] {$C$};
+    \filldraw (60:1.5) circle (1pt) node[above right] {$B$};
+    \draw[thick] (-1.5,0) -- (1.5,0);
+    \draw[thick] (-1.5,0) -- (60:1.5) -- (1.5,0);
+    \draw (-1.1,0) arc (0:30:0.4);
+    \node at (-0.9, 0.15) {$\theta$};
+    \node[below] at (-0.75, 0) {$2$};
+    \node[below] at (0.75, 0) {$2$};
+    \filldraw (0,0) circle (1pt);
+\end{tikzpicture}
+\end{center}

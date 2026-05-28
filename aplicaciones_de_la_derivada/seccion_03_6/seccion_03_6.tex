@@ -1,0 +1,178 @@
+% Capítulo 3: Sección 3.6 - Límites Infinitos; Asíntotas Verticales
+
+Estudio de los límites que tienden a infinito en puntos finitos, análisis de discontinuidades infinitas y determinación geométrica y algebraica de asíntotas verticales.
+
+En el Ejemplo 6 de la Sección 1.2 y el Ejemplo 2 de la Sección 1.4 vimos que el $\displaystyle \lim_{x \to 0} (1/x^2)$ no existe examinando el comportamiento de la función $f(x) = 1/x^2$ para valores de $x$ cercanos a 0. Cuanto más cercano se tome el valor de $x$ a 0, el valor de $1/x^2$ se vuelve más grande, y en realidad se puede hacer que el valor de $f(x)$ sea tan grande como se quiera tomando $x$ suficientemente cercano a 0 (Fig. 3.41).
+
+Para indicar esta clase de comportamiento de la función se utiliza la notación
+$$\lim_{x \to 0} \frac{1}{x^2} = \infty$$
+
+En general, escribimos simbólicamente
+$$\lim_{x \to a} f(x) = \infty$$
+para indicar que los valores de $f(x)$ se vuelven más y más grandes (o ``aumentan sin cota'') cuando $x$ se acerca más y más a $a$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[->] (-3,0) -- (3,0) node[right] {$x$};
+    \draw[->] (0,-0.5) -- (0,4) node[above] {$y$};
+    \draw[thick, domain=0.5:2.5, samples=100] plot (\x, {1/(\x*\x)});
+    \draw[thick, domain=-2.5:-0.5, samples=100] plot (\x, {1/(\x*\x)});
+    \node[below right] at (0,0) {$0$};
+    \node[left] at (-0.5, 3) {$y = \frac{1}{x^2}$};
+\end{tikzpicture}
+
+\vspace{0.5em}
+Figura 3.41
+\end{center}
+
+\vspace{1.5em}
+\section*{Ejercicios}
+
+\begin{enumerate}
+    \subimport{ejercicio_01/}{ejercicio.tex}
+\end{enumerate}
+
+\noindent \textit{Encuentre el límite indicado en cada uno de los Ejercicios 2 a 35.}
+
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_02/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_04/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_06/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_08/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_10/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_12/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_14/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_16/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_18/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_20/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_22/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_24/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_26/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_28/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_30/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_32/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_34/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \setcounter{enumi}{2}
+    \subimport{ejercicio_03/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_05/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_07/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_09/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_11/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_13/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_15/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_17/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_19/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_21/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_23/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_25/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_29/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_31/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_33/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\vspace{1em}
+\noindent \textit{En los Ejercicios 36 a 39 encuentre las asíntotas verticales y horizontales de las curvas dadas.}
+
+\begin{enumerate}
+    \setcounter{enumi}{35}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_36/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_38/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \setcounter{enumi}{36}
+    \subimport{ejercicio_37/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_39/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\vspace{1em}
+\noindent \textit{En los Ejercicios 40 a 43 encuentre las asíntotas verticales y horizontales de la curva dada. Utilice esta información junto con la referente a la concavidad y a los intervalos donde es creciente y decreciente la curva y trace su gráfica.}
+
+\begin{enumerate}
+    \setcounter{enumi}{39}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_40/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_42/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \setcounter{enumi}{40}
+    \subimport{ejercicio_41/}{ejercicio.tex}
+    \addtocounter{enumi}{1}
+    \subimport{ejercicio_43/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\vspace{1em}
+\begin{enumerate}
+    \setcounter{enumi}{43}
+    \subimport{ejercicio_44/}{ejercicio.tex}
+\end{enumerate}
+
+\noindent \textit{En los Ejercicios 45 a 48 encuentre los límites cuando $x \to \infty$ y $x \to -\infty$. Utilice esta información, junto con las intercepciones, para proporcionar un trazo aproximado de la gráfica como se hizo en el Ejemplo 7.}
+
+\begin{enumerate}
+    \setcounter{enumi}{44}
+    \subimport{ejercicio_45/}{ejercicio.tex}
+    \subimport{ejercicio_46/}{ejercicio.tex}
+    \subimport{ejercicio_47/}{ejercicio.tex}
+    \subimport{ejercicio_48/}{ejercicio.tex}
+\end{enumerate}
+
+\noindent \textit{En los Ejercicios 49 y 50 trace la gráfica de una función que satisfaga las condiciones dadas.}
+
+\begin{enumerate}
+    \setcounter{enumi}{48}
+    \subimport{ejercicio_49/}{ejercicio.tex}
+    \subimport{ejercicio_50/}{ejercicio.tex}
+    \subimport{ejercicio_51/}{ejercicio.tex}
+    \subimport{ejercicio_52/}{ejercicio.tex}
+    \subimport{ejercicio_53/}{ejercicio.tex}
+    \subimport{ejercicio_54/}{ejercicio.tex}
+    \subimport{ejercicio_55/}{ejercicio.tex}
+    \subimport{ejercicio_56/}{ejercicio.tex}
+    \subimport{ejercicio_57/}{ejercicio.tex}
+    \subimport{ejercicio_58/}{ejercicio.tex}
+\end{enumerate}

@@ -1,0 +1,33 @@
+\item El sistema vascular está formado por los vasos o conductos sanguíneos (arterias, arteriolas, capilares y venas) que transportan la sangre del corazón hacia los órganos y de regreso al corazón. Este sistema debe funcionar de manera que se minimice la energía empleada por el corazón para bombear la sangre. En particular, esta energía se reduce cuando disminuye la resistencia de la sangre. Una de las Leyes de Poiseuille proporciona la resistencia $R$ de la sangre en la forma
+$$R = C \frac{L}{r^4}$$
+en donde $L$ es la longitud del conducto sanguíneo, $r$ es el radio y $C$ es una constante positiva determinada por la viscosidad de la sangre. (Poiseuille estableció experimentalmente esta ley pero también se deduce de la Ecuación 8.42 de la Sección 8.6). La Figura muestra un vaso sanguíneo principal de radio $r_1$ que se bifurca según un ángulo $\theta$ a un vaso más pequeño de radio $r_2$.
+\begin{enumerate}
+    \item[(a)] Utilice la Ley de Poiseuille para demostrar que la resistencia total de la sangre a lo largo de la trayectoria $ABC$ es
+    $$R = C \left( \frac{a - b \cot \theta}{r_1^4} + \frac{b \csc \theta}{r_2^4} \right)$$
+    en donde $a$ y $b$ son las distancias mostradas en la figura.
+    \item[(b)] Pruebe que esta resistencia se minimiza cuando
+    $$\cos \theta = \frac{r_2^4}{r_1^4}$$
+    \item[(c)] Encuentre el ángulo óptimo de bifurcación (correcto hasta el grado entero más cercano) cuando el radio del vaso sanguíneo menor es dos tercios del radio del vaso mayor.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[thick] (0,1) -- (4,1);
+    \draw[thick] (0,-1) -- (4,-1);
+    \draw[dashed] (0,0) node[left] {$A$} -- (4,0) node[below right] {$B$};
+    \draw[thick] (4,1) -- (7, 2.5);
+    \draw[thick] (4,-1) -- (7, 0.5);
+    \draw[dashed] (4,0) -- (7, 1.5) node[right] {$C$};
+    \draw (5, 0) arc (0:26:1);
+    \node at (4.8, 0.2) {$\theta$};
+    \draw[<->] (3.8, 0) -- (3.8, 1) node[midway, left] {$r_1$};
+    \draw[<->] (6, 1) -- (5.5, 1.9) node[midway, above left] {$r_2$}; 
+    \draw[<->] (0, -1.5) -- (4, -1.5) node[midway, below] {$a$};
+    \draw[<->] (7.5, 0) -- (7.5, 1.5) node[midway, right] {$b$};
+    \draw[dashed] (0,-1) -- (0,-1.8);
+    \draw[dashed] (4,-1) -- (4,-1.8);
+    \draw[dashed] (7,0) -- (7.8,0);
+    \draw[dashed] (7,1.5) -- (7.8,1.5);
+    \node[above] at (2,1.2) {Bifurcación};
+    \node[above] at (2,0.8) {vascular};
+\end{tikzpicture}
+\end{center}

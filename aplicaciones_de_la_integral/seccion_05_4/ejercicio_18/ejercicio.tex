@@ -1,0 +1,15 @@
+\item 
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw (0,0) circle (1.5);
+    \draw (0,1.5) -- (4,1.5);
+    \draw (0,-1.5) -- (4,-1.5);
+    \draw (4,0) ellipse (0.5 and 1.5);
+    \filldraw (0,0) circle (1pt);
+    \draw (0,0) -- (1.5,-0.5) node[midway, above] {\footnotesize $1.5\text{ m}$};
+    \draw[<->] (0,-2) -- (4,-2) node[midway, below] {\footnotesize $6\text{ m}$};
+    % Spout
+    \draw (-0.2, 1.5) -- (-0.2, 2.5) -- (0, 2.5) -- (0, 1.5);
+    \draw[<->] (-0.6, 1.5) -- (-0.6, 2.5) node[midway, left] {\footnotesize $1\text{ m}$};
+\end{tikzpicture}
+\end{center}

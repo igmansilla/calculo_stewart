@@ -1,0 +1,17 @@
+\item La recta $y = mx + b$ corta a la parábola $y = x^2$ en los puntos $A$ y $B$. Encuentre el punto $P$ del arco $AOB$ de la parábola que haga que el área del triángulo $PAB$ sea máxima.
+\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[->] (-2.5,0) -- (3,0) node[below] {$x$};
+    \draw[->] (0,-1) -- (0,5) node[left] {$y$};
+    \draw[thick, domain=-2:2.2, samples=100] plot (\x, {\x*\x}) node[left] {$y = x^2$};
+    \draw[thick] (-2, 0.5) -- (2.5, 3.5) node[below right] {$y = mx + b$};
+    \coordinate (A) at (-1.2, 1.44);
+    \coordinate (B) at (1.8, 3.24);
+    \coordinate (P) at (0.3, 0.09);
+    \filldraw (A) circle (1.5pt) node[above left] {$A$};
+    \filldraw (B) circle (1.5pt) node[above right] {$B$};
+    \filldraw (P) circle (1.5pt) node[below right] {$P$};
+    \draw (A) -- (B) -- (P) -- cycle;
+    \node[below left] at (0,0) {$0$};
+\end{tikzpicture}
+\end{center}

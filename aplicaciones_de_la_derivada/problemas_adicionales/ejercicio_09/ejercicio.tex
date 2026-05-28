@@ -1,0 +1,43 @@
+\item Se va a cortar una viga rectangular de un tronco cilíndrico cuyo radio es de 10 pulg.
+\begin{enumerate}
+    \item[(a)] Demuestre que la viga de área transversal máxima es cuadrada.
+    \item[(b)] De las cuatro secciones del tronco que quedan después de cortar la viga cuadrada, se van a cortar cuatro tablas rectangulares. Determine las dimensiones de las tablas de máxima área transversal.
+    \item[(c)] Supóngase que la resistencia de una viga rectangular es proporcional al producto de su anchura y el cuadrado de su altura. Obtenga las dimensiones de la viga de mayor resistencia que se puede cortar del tronco cilíndrico.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    % Cilindro 3D aproximado
+    \draw[thick] (0,0) circle (2);
+    \draw[thick] (0,2) -- (4,2);
+    \draw[thick] (0,-2) -- (4,-2);
+    \draw[thick] (4,0) ellipse (1cm and 2cm);
+    % Viga interior
+    \draw[thick] (-1.41,-1.41) rectangle (1.41,1.41);
+    \draw[thick] (1.41, 1.41) -- (5.41, 1.41);
+    \draw[thick] (1.41, -1.41) -- (5.41, -1.41);
+    \draw[thick] (5.41, -1.41) -- (5.41, 1.41);
+    % Acotaciones
+    \draw[dashed] (-2.5, 1.41) -- (-1.41, 1.41);
+    \draw[dashed] (-2.5, -1.41) -- (-1.41, -1.41);
+    \draw[<->] (-2.2, -1.41) -- (-2.2, 1.41) node[midway, fill=white] {\footnotesize Altura};
+    \draw[<->] (-1.41, -2.5) -- (1.41, -2.5) node[midway, fill=white] {\footnotesize Ancho};
+    \draw[dashed] (-1.41, -2.5) -- (-1.41, -1.41);
+    \draw[dashed] (1.41, -2.5) -- (1.41, -1.41);
+    
+    % Sección transversal 2D
+    \begin{scope}[shift={(8,0)}]
+        \draw[thick] (0,0) circle (2);
+        \draw[thick] (-1.41,-1.41) rectangle (1.41,1.41);
+        \draw[thick] (-1.41, 1.41) rectangle (-2, 0.5);
+        \draw[thick] (1.41, 1.41) rectangle (2, 0.5);
+        \draw[thick] (-1.41, -1.41) rectangle (-2, -0.5);
+        \draw[thick] (1.41, -1.41) rectangle (2, -0.5);
+        \draw[thick] (-1.41, 1.41) rectangle (-0.5, 2);
+        \draw[thick] (1.41, 1.41) rectangle (0.5, 2);
+        % Anillos del árbol (representación simple)
+        \foreach \r in {0.2, 0.5, 0.8, 1.1, 1.4, 1.7} {
+            \draw[gray] (0,0) circle (\r);
+        }
+    \end{scope}
+\end{tikzpicture}
+\end{center}

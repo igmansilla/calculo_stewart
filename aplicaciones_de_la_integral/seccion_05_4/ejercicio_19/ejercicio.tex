@@ -1,0 +1,19 @@
+\item 
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw (0,0) arc (180:360:2 and 2);
+    \draw (0,0) -- (4,0);
+    \draw[dashed] (2,1) arc (180:360:2 and 2);
+    \draw[dashed] (0,0) -- (2,1) -- (6,1);
+    \draw (4,0) -- (6,1);
+    % Spout
+    \draw (-0.2,0) -- (-0.2,1) -- (0,1) -- (0,0);
+    \draw[<->] (-0.6,0) -- (-0.6,1) node[midway, left] {\footnotesize $1\text{ pie}$};
+    % Radius
+    \filldraw (2,0) circle (1pt);
+    \draw[->] (2,0) -- (4,0) node[midway, above] {\footnotesize $4\text{ pies}$};
+    % Length
+    \draw[<->] (2,-2.2) -- (6,-1.2) node[midway, below right] {\footnotesize $8\text{ pies}$};
+    \node at (2, -3) {\footnotesize semicírculo};
+\end{tikzpicture}
+\end{center}

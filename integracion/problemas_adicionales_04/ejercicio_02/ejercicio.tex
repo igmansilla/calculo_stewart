@@ -1,0 +1,20 @@
+\item La figura muestra la gráfica de la \textit{derivada} $f'$ de una función $f$.
+\begin{enumerate}
+    \item[(a)] Determine en qué intervalos $f$ es creciente o decreciente.
+    \item[(b)] ¿Para qué valores de $x$ $f$ tiene un máximo o mínimo local?
+    \item[(c)] Trace la gráfica de $f''$.
+    \item[(d)] Trace una posible gráfica de $f$.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw[->] (-1.5,0) -- (7.5,0) node[below] {$x$};
+    \draw[->] (0,-2.5) -- (0,2.5) node[left] {$y$};
+    \draw[thick] plot [smooth, tension=0.7] coordinates {(-1,-1.5) (0,0) (1,1.8) (2,0) (3,-2) (4,0) (5,1.8) (6,0) (7,-1.5)};
+    \node[below left] at (0,0) {$0$};
+    \node[above] at (4,2) {$y = f'(x)$};
+    \foreach \x in {-1, 1, 2, 3, 4, 5, 6, 7} {
+        \draw (\x, 0.1) -- (\x, -0.1) node[below] {\footnotesize $\x$};
+    }
+    \draw (0.1, -2) -- (-0.1, -2) node[left] {\footnotesize $-2$};
+\end{tikzpicture}
+\end{center}

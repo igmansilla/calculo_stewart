@@ -1,0 +1,15 @@
+\item Un péndulo simple consta de un cuerpo de masa $m$ que oscila sujeto al extremo de una varilla o cuerda (sin masa) de longitud $L$. El tiempo $T$ de una oscilación completa del péndulo se conoce como periodo y está dado por $T = 2\pi\sqrt{L/g}$, en donde $g$ es la aceleración de la gravedad.
+\begin{enumerate}
+    \item[(a)] Demuestre que un cambio pequeño $dL$ en la longitud produce un cambio en el periodo $dT$ que satisface la ecuación
+    $$\frac{dT}{T} = \frac{dL}{2L}$$
+    \item[(b)] Supóngase que el péndulo de un reloj produce un atraso de 15 segundos por hora. ¿Cómo debe ajustarse la longitud del péndulo?
+    \item[(c)] La fórmula del periodo dada anteriormente se puede emplear para medir la aceleración de la gravedad. Suponiendo que el error al medir la longitud $L$ es despreciable, exprese el error $dg$ incluido en la medida de la aceleración de la gravedad en términos del error $dT$ producido en la medida del periodo.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+    \draw[dashed] (0, 0) -- (0, -3);
+    \draw[thick] (0, 0) -- (290:2.5) node[midway, above right] {$L$};
+    \filldraw[fill=white, draw=black, thick] (290:2.5) circle (0.15) node[right=2pt] {$m$};
+    \draw[dashed] (240:2.5) arc (240:300:2.5);
+\end{tikzpicture}
+\end{center}

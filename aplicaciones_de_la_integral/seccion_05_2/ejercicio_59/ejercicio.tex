@@ -1,0 +1,17 @@
+\item 
+\begin{enumerate}
+    \item[(a)] Establezca una integral para el cálculo del volumen de un toro (sólido en forma de dona mostrado en la figura) con radios $r$ y $R$.
+    \item[(b)] Interpretando la integral como un área, calcule el volumen del toro.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw (0,0) ellipse (4cm and 1.5cm);
+    \draw[thick] (2.5,0) circle (0.6cm);
+    \draw[->] (2.5,0) -- (3.1,0) node[right] {$r$};
+    \draw[->] (0,0) -- (2.5,0) node[midway, fill=white] {$R$};
+    \filldraw (0,0) circle (1.5pt);
+    \filldraw (2.5,0) circle (1.5pt);
+    \draw (-2.5, 0.2) arc (120:60:5);
+    \draw (-2.2, 0.5) arc (-120:-60:4.4);
+\end{tikzpicture}
+\end{center}

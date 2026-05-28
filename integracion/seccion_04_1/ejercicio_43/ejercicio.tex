@@ -1,0 +1,45 @@
+\item Utilizando el siguiente método, publicado por Abu Bekr Mohammed ibn Alhusain Alkarchi aproximadamente en el año 1010 D.C., pruebe la Fórmula (e) del Teorema 4.3. En la figura se muestra un cuadrado $ABCD$ en el que se dividieron los lados $AB$ y $AD$ en segmentos de longitudes 1, 2, 3, \dots, $n$. De esta manera, el lado del cuadrado tiene longitud $n(n + 1)/2$, por lo que el área es $[n(n + 1)/2]^2$. Pero el área también es igual a la suma de las áreas de los $n$ ``gnomos'' $G_1, G_2, \dots, G_n$ mostrados en la figura. Pruebe que el área de $G_i$ es $i^3$, y concluya que es válida la Fórmula (e).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    % Borde principal
+    \draw[thick] (0,0) coordinate (A) -- (10,0) coordinate (B) -- (10,10) coordinate (C) -- (0,10) coordinate (D) -- cycle;
+    \node[below left] at (A) {$A$};
+    \node[below right] at (B) {$B$};
+    \node[above right] at (C) {$C$};
+    \node[above left] at (D) {$D$};
+
+    % Gnomos internos
+    \draw (0.6,0) -- (0.6,0.6) -- (0,0.6);
+    \draw (1.5,0) -- (1.5,1.5) -- (0,1.5);
+    \draw (2.6,0) -- (2.6,2.6) -- (0,2.6);
+    \draw (3.9,0) -- (3.9,3.9) -- (0,3.9);
+    \draw (5.4,0) -- (5.4,5.4) -- (0,5.4);
+    \draw (7.3,0) -- (7.3,7.3) -- (0,7.3);
+
+    % Etiquetas del eje X
+    \node[below] at (0.3, 0) {\footnotesize $1$};
+    \node[below] at (1.05, 0) {\footnotesize $2$};
+    \node[below] at (2.05, 0) {\footnotesize $3$};
+    \node[below] at (3.25, 0) {\footnotesize $4$};
+    \node[below] at (4.65, 0) {\footnotesize $5$};
+    \node[below] at (6.35, 0) {$\dots$};
+    \node[below] at (8.65, 0) {\footnotesize $n$};
+
+    % Etiquetas del eje Y
+    \node[left] at (0, 0.3) {\footnotesize $1$};
+    \node[left] at (0, 1.05) {\footnotesize $2$};
+    \node[left] at (0, 2.05) {\footnotesize $3$};
+    \node[left] at (0, 3.25) {\footnotesize $4$};
+    \node[left] at (0, 4.65) {\footnotesize $5$};
+    \node[left] at (0, 6.35) {$\dots$};
+    \node[left] at (0, 8.65) {\footnotesize $n$};
+
+    % Etiquetas G_i
+    \node at (1.05, 1.05) {$G_2$};
+    \node at (2.05, 2.05) {$G_3$};
+    \node at (3.25, 3.25) {$G_4$};
+    \node at (4.65, 4.65) {$G_5$};
+    \node at (8.65, 8.65) {$G_n$};
+\end{tikzpicture}
+\end{center}

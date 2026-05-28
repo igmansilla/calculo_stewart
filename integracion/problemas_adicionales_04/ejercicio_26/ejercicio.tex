@@ -1,0 +1,25 @@
+\item La figura muestra una rueda giratoria de 40 cm de radio y una biela $AP$ de 1.2 m de longitud. El pasador de corredera $P$ se desliza hacia adelante y hacia atrás sobre el eje $x$ a medida que la rueda gira en sentido contrario al del reloj, a razón de 360 revoluciones por minuto (rpm).
+\begin{enumerate}
+    \item[(a)] Calcule la velocidad angular de la biela, $d\alpha/dt$, en radianes por segundo, cuando $\theta = \pi/3$.
+    \item[(b)] Exprese la distancia $x = |OP|$ en términos de $\theta$.
+    \item[(c)] Encuentre la expresión de la velocidad del perno $P$ en términos de $\theta$.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+    \draw[->] (-2.5,0) -- (6,0) node[below] {$x$};
+    \draw[->] (0,-2) -- (0,2) node[left] {$y$};
+    \draw[thick] (0,0) circle (1.5);
+    \coordinate (A) at (60:1.5);
+    \coordinate (P) at (5,0);
+    \draw[thick] (0,0) -- (A);
+    \draw[thick] (A) -- (P);
+    \filldraw (A) circle (1.5pt) node[above right] {$A$};
+    \filldraw (P) circle (1.5pt) node[below] {$P(x, 0)$};
+    \node[below left] at (0,0) {$0$};
+    \draw (0.4,0) arc (0:60:0.4);
+    \node at (0.6, 0.25) {$\theta$};
+    \draw (4.4,0) arc (180:162:0.6);
+    \node at (3.5, 0.2) {$\alpha$};
+    \draw[thick, ->] (70:1.8) arc (70:110:1.8);
+\end{tikzpicture}
+\end{center}

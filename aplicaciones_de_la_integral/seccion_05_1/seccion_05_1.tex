@@ -1,0 +1,180 @@
+% Sección 5.1: Áreas entre Curvas
+
+Representación analítica y geométrica de áreas de regiones planas delimitadas por curvas algebraicas y trascendentes, integrando respecto a $x$ y respecto a $y$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+    % Ejes
+    \draw[->] (-0.5,0) -- (6,0) node[right] {$x$};
+    \draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+    
+    % Curva
+    \draw[thick] plot [smooth, tension=0.7] coordinates {(0,0.8) (0.8, 1.2) (2,0) (3,-1) (4,0) (5, 0.6)};
+    \node[right] at (5, 0.6) {$y = f(x)$};
+    
+    % Etiquetas en los ejes
+    \node[below left] at (0,0) {$0$};
+    \draw (0.2, 0.1) -- (0.2, -0.1) node[below] {$a$};
+    \draw (2, 0.1) -- (2, -0.1) node[above left] {$c$};
+    \draw (4, 0.1) -- (4, -0.1) node[above left] {$d$};
+    \draw (5.2, 0.1) -- (5.2, -0.1) node[below] {$b$};
+    
+    % Signos de las áreas
+    \node at (1.1, 0.5) {$+$};
+    \node at (3, -0.5) {$-$};
+    \node at (4.6, 0.25) {$+$};
+\end{tikzpicture}
+
+Figura 5.11
+\end{center}
+
+\begin{align*}
+\int_a^b f &= \int_a^c f + \int_c^d f + \int_d^b f \\
+&= \left( \int_a^c f + \int_d^b f \right) - \left( -\int_c^d f \right) \\
+&= A_1 - A_2
+\end{align*}
+
+\section*{SECCIÓN 5.1 \quad Ejercicios}
+
+\subsection*{Ejercicios 1--34: Determinación de áreas entre curvas y regiones delimitadas planas.}
+
+\noindent \textit{Dibuje la región limitada por las curvas dadas en cada uno de los Ejercicios 1 a 34 y calcule su área.}
+
+\begin{enumerate}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_01/}{ejercicio.tex}
+    \subimport{ejercicio_02/}{ejercicio.tex}
+    \subimport{ejercicio_03/}{ejercicio.tex}
+    \subimport{ejercicio_04/}{ejercicio.tex}
+    \subimport{ejercicio_05/}{ejercicio.tex}
+    \subimport{ejercicio_06/}{ejercicio.tex}
+    \subimport{ejercicio_07/}{ejercicio.tex}
+    \subimport{ejercicio_08/}{ejercicio.tex}
+    \subimport{ejercicio_09/}{ejercicio.tex}
+    \subimport{ejercicio_10/}{ejercicio.tex}
+    \subimport{ejercicio_11/}{ejercicio.tex}
+    \subimport{ejercicio_12/}{ejercicio.tex}
+    \subimport{ejercicio_13/}{ejercicio.tex}
+    \subimport{ejercicio_14/}{ejercicio.tex}
+    \subimport{ejercicio_15/}{ejercicio.tex}
+    \subimport{ejercicio_16/}{ejercicio.tex}
+    \subimport{ejercicio_17/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \setcounter{enumi}{17}
+    \subimport{ejercicio_18/}{ejercicio.tex}
+    \subimport{ejercicio_19/}{ejercicio.tex}
+    \subimport{ejercicio_20/}{ejercicio.tex}
+    \subimport{ejercicio_21/}{ejercicio.tex}
+    \subimport{ejercicio_22/}{ejercicio.tex}
+    \subimport{ejercicio_23/}{ejercicio.tex}
+    \subimport{ejercicio_24/}{ejercicio.tex}
+    \subimport{ejercicio_25/}{ejercicio.tex}
+    \subimport{ejercicio_26/}{ejercicio.tex}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+    \subimport{ejercicio_28/}{ejercicio.tex}
+    \subimport{ejercicio_29/}{ejercicio.tex}
+    \subimport{ejercicio_30/}{ejercicio.tex}
+    \subimport{ejercicio_31/}{ejercicio.tex}
+    \subimport{ejercicio_32/}{ejercicio.tex}
+    \subimport{ejercicio_33/}{ejercicio.tex}
+    \subimport{ejercicio_34/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 35--36: Cálculo de áreas mediante dos enfoques de integración (con respecto a $x$ y con respecto a $y$).}
+
+\noindent \textit{Calcule el área de la región limitada por las curvas dadas en los Ejercicios 35 y 36, por dos métodos: (a) integrando con respecto a $x$, y (b) integrando con respecto a $y$.}
+
+\begin{enumerate}
+    \setcounter{enumi}{34}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_36/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 37--38: Cálculo del área de triángulos formados por vértices cartesianos dados.}
+
+\noindent \textit{Utilice las técnicas del cálculo para determinar el área del triángulo cuyos vértices se dan en los Ejercicios 37 y 38.}
+
+\begin{enumerate}
+    \setcounter{enumi}{36}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_37/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_38/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 39--40: Evaluación e interpretación geométrica de integrales definidas.}
+
+\noindent \textit{Evalúe la integral indicada en los Ejercicios 39 y 40 e interprétela como el área de una región. Dibuje la región.}
+
+\begin{enumerate}
+    \setcounter{enumi}{38}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_39/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_40/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 41--44: Integrales interpretadas como diferencia neta de áreas.}
+
+\noindent \textit{Evalúe la integral indicada en los Ejercicios 41 a 44 e interprétela como una diferencia de áreas. Trace un esquema como el de la Figura 5.11.}
+
+\begin{enumerate}
+    \setcounter{enumi}{40}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_41/}{ejercicio.tex}
+    \subimport{ejercicio_42/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_43/}{ejercicio.tex}
+    \subimport{ejercicio_44/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}
+
+\subsection*{Ejercicios 45--46: Aproximaciones numéricas con la Regla del Punto Medio.}
+
+\noindent \textit{Aplique la Regla del Punto Medio con $n = 4$ para aproximar el área de la región limitada por las curvas dadas en los Ejercicios 45 y 46.}
+
+\begin{enumerate}
+    \setcounter{enumi}{44}
+    \subimport{ejercicio_45/}{ejercicio.tex}
+    \subimport{ejercicio_46/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 47--48: Bisección de áreas y particiones de regiones planas.}
+
+\begin{enumerate}
+    \setcounter{enumi}{46}
+    \subimport{ejercicio_47/}{ejercicio.tex}
+    \subimport{ejercicio_48/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{Ejercicios 49--54: Ejercicios aplicados para quienes cubrieron el Capítulo 6 (funciones trascendentes).}
+
+\noindent \textbf{\large Los siguientes ejercicios están dirigidos sólo para quienes ya cubrieron el Capítulo 6.}
+
+\vspace{1em}
+\noindent \textit{Dibuje la región limitada por las curvas dadas en cada uno de los Ejercicios 49 a 54 y calcule el área de la región.}
+
+\begin{enumerate}
+    \setcounter{enumi}{48}
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_49/}{ejercicio.tex}
+    \subimport{ejercicio_50/}{ejercicio.tex}
+    \subimport{ejercicio_51/}{ejercicio.tex}
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+    \subimport{ejercicio_52/}{ejercicio.tex}
+    \subimport{ejercicio_53/}{ejercicio.tex}
+    \subimport{ejercicio_54/}{ejercicio.tex}
+    \end{minipage}
+\end{enumerate}

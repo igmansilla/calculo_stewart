@@ -1,0 +1,21 @@
+\item Se va a colocar una lámpara en un poste, cuya altura es de $h$ pies, para iluminar una plaza con tránsito denso, que tiene un radio de 40 pies. La intensidad de iluminación $I$ en cualquier punto $P$ de la plaza es directamente proporcional al coseno del ángulo $\theta$ (véase la figura), e inversamente proporcional al cuadrado de la distancia $d$ con respecto a la fuente luminosa.
+\begin{enumerate}
+    \item[(a)] ¿De qué altura debe ser el poste de la lámpara para maximizar $I$?
+    \item[(b)] Supóngase que el poste tiene $h$ pies de alto y que una persona camina alejándose de la base del poste a razón de 4 pies/s. ¿A qué velocidad disminuye la intensidad de la luz en un punto situado en su espalda a 4 pies del suelo, cuando la persona llega al borde exterior de la plaza?
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Elipse de la plaza
+    \draw[dashed] (0,0) ellipse (4cm and 1cm);
+    \draw (-4,0) arc (180:360:4cm and 1cm);
+    % Poste
+    \draw[thick] (0,0) -- (0,3) node[midway, left] {$h$};
+    % Auto/Persona (representación simple)
+    \draw[thick] (-3.8, -0.2) rectangle (-3.4, 0);
+    % Rayo de luz
+    \draw[thick] (0,3) -- (4,0) node[midway, above right] {$d$};
+    \draw[thick] (0,0) -- (4,0) node[midway, below] {$40$};
+    \draw (0, 2.5) arc (270:323:0.5);
+    \node at (0.3, 2.1) {$\theta$};
+\end{tikzpicture}
+\end{center}

@@ -1,0 +1,23 @@
+\item Las velocidades del sonido, $c_1$ en una capa superior y $c_2$ en una capa inferior de roca, y el espesor $h$ de la capa superior se pueden determinar mediante exploración sísmica, si la velocidad del sonido en la capa inferior es mayor que en la capa superior. Se hace estallar una carga de dinamita en un punto $P$ y las señales transmitidas se registran en un punto $Q$, que se encuentra a una distancia $D$ de $P$. La primera señal en llegar a $Q$ viaja sobre la superficie y tarda $T_1$ segundos. La siguiente señal viaja de $P$ a un punto $R$, de $R$ a $S$ en la capa inferior, y luego a $Q$, y tarda $T_2$ segundos. La tercera señal se refleja a la capa inferior en el punto $O$ y demora $T_3$ segundos en llegar a $Q$.
+\begin{enumerate}
+    \item[(a)] Exprese $T_1, T_2$ y $T_3$ en términos de $D, h, c_1, c_2$ y $\theta$.
+    \item[(b)] Demuestre que $T_2$ es mínimo cuando $\operatorname{sen} \theta = c_1/c_2$.
+    \item[(c)] Suponga que $D = 1 \text{ km}$, $T_1 = \frac{1}{4} \text{ s}$, $T_2 = \frac{1}{3} \text{ s}$, y $T_3 = 3/(4\sqrt{5}) \text{ s}$. Encuentre $c_1, c_2$ y $h$.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    \draw[thick] (0,2) -- (6,2);
+    \draw[thick] (0,0) -- (6,0);
+    \node[above left] at (0,2) {$P$};
+    \node[above right] at (6,2) {$Q$};
+    \draw[<->] (0, 2.3) -- (6, 2.3) node[midway, fill=white] {$D$};
+    \node[below] at (3, 2) {Velocidad del sonido $= c_1$};
+    \draw[thick] (0,2) -- (1,0) node[below left] {$R$} -- (5,0) node[below right] {$S$} -- (6,2);
+    \draw[thick] (0,2) -- (3,0) node[below] {$O$} -- (6,2);
+    \draw[dashed] (1,0) -- (1,1);
+    \draw[dashed] (5,0) -- (5,1);
+    \node at (0.3, 0.7) {$\theta$};
+    \node at (5.7, 0.7) {$\theta$};
+    \node[below] at (3, -0.4) {Velocidad del sonido $= c_2$};
+\end{tikzpicture}
+\end{center}

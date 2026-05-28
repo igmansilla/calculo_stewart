@@ -1,0 +1,21 @@
+\item El Principio de Arquímedes establece que la fuerza de flotación ejercida sobre un objeto sumergido, o parcialmente sumergido, en un líquido es igual al peso del líquido desplazado por el objeto. De esta manera, para un objeto de densidad $\rho_0$ que flota sumergido parcialmente en un líquido de densidad $\rho_f$, la fuerza de flotación está dada por $F = \rho_f g \int_{-h}^0 A(y) \, dy$, en donde $g$ es la acelaración de la gravedad y $A(y)$ es el área de una sección transversal representativa del objeto. El peso del objeto está dado por
+$$W = \rho_0 g \int_{-h}^{L-h} A(y) \, dy$$
+\begin{enumerate}
+    \item[(a)] Demuestre que el porcentaje de volumen del objeto que está por arriba de la superficie del líquido es
+    $$100 \, \frac{\rho_f - \rho_0}{\rho_f}$$
+    \item[(b)] La densidad del hielo es $917 \text{ kg/m}^3$, y la densidad del agua de mar, es de $1030 \text{ kg/m}^3$. ¿Qué porcentaje del volumen de un \textit{iceberg} se encuentra por encima del agua?
+    \item[(c)] Una esfera cuyo radio es de $0.4 \text{ m}$ y cuyo peso es despreciable flota en un gran lago de agua dulce. ¿Qué trabajo se requiere para sumergir completamente la esfera? La densidad del agua es $1000 \text{ kg/m}^3$.
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw (-2.5, -2) rectangle (2.5, 2.5);
+    \draw[dashed] (-2.5, 1) -- (2.5, 1) node[right] {$y = L - h$};
+    \draw[dashed] (-2.5, 0) -- (2.5, 0) node[right] {$y = 0$};
+    \draw[dashed] (-2.5, -1.2) -- (2.5, -1.2) node[right] {$y = -h$};
+    % Objeto
+    \draw[thick] plot [smooth cycle, tension=0.8] coordinates {(-1,-0.8) (0.8,-1) (1.2,0) (0.8,0.8) (-0.5,1) (-1.5,0)};
+    % Acotaciones
+    \draw[<->] (-2, -1.2) -- (-2, 1) node[midway, fill=white] {$L$};
+    \draw[<->] (1.8, -1.2) -- (1.8, 0) node[midway, right] {$h$};
+\end{tikzpicture}
+\end{center}

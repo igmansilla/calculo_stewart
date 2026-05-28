@@ -1,0 +1,22 @@
+\item Los ornitólogos han determinado que algunas especies de aves tienden a evitar el vuelo sobre grandes extensiones de agua durante las horas de luz solar. Se cree que se requiere mayor energía para volar sobre el agua que sobre la tierra debido a que durante el día generalmente el aire se eleva desde la tierra y desciende sobre el agua. Un ave con estas tendencias se suelta desde una isla situada a 5 km del punto más cercano $B$ de una costa rectolínea, vuela hacia un punto $C$ sobre la costa y luego vuela a lo largo de la línea de la costa a su nido $D$. Supóngase que el ave elige instintivamente una trayectoria que hará que se minimice su gasto de energía. Los puntos $B$ y $D$ se encuentran a 13 km de distancia.
+\begin{enumerate}
+    \item[(a)] Si en general el ave requiere para volar sobre el agua de 1.4 veces la energía que emplea para volar sobre la tierra, ¿hacia qué punto $C$ debe volar el ave para minimizar la energía total empleada para regresar a su nido?
+    \item[(b)] Supóngase que $W$ representa la energía (en joules) requerida para volar sobre el agua, y $L$ la energía requerida para volar sobre la tierra. Determine la razón $W/L$ correspondiente al mínimo gasto de energía.
+    \item[(c)] ¿Cuál debe ser el valor de $W/L$ para que el ave vuele directamente a su nido $D$? ¿Cuál debe ser el valor de $W/L$ para que el ave vuele hacia $B$ y luego a lo largo de la costa hacia $D$?
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw[fill=gray!20] (0,3) ellipse (0.8cm and 0.4cm);
+    \node at (0,3) {Isla};
+    \draw[dashed] (0,3) -- (0,0) node[midway, left] {$5 \text{ km}$};
+    \draw[thick] (-1,0) -- (8,0);
+    \filldraw (0,0) circle (2pt) node[below] {$B$};
+    \filldraw (3,0) circle (2pt) node[above] {$C$};
+    \filldraw (6,0) circle (2pt) node[above] {$D$};
+    \draw[thick, ->] (0,2.6) -- (3,0);
+    \draw[thick, ->] (3,0) -- (6,0);
+    \draw (6,0) ellipse (0.6cm and 0.3cm);
+    \node at (6,0) {Nido};
+    \draw[<->] (0, -0.6) -- (6, -0.6) node[midway, fill=white] {$13 \text{ km}$};
+\end{tikzpicture}
+\end{center}

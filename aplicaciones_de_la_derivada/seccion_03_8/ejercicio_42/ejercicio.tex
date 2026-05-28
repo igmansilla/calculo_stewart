@@ -1,0 +1,11 @@
+\item Se va a formar el marco de una cometa con seis piezas de madera. Las cuatro piezas exteriores han sido cortadas con las longitudes indicadas en la figura. Para maximizar el área de la cometa, ¿de qué longitud deben de ser las piezas diagonales?
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw[thick] (0,2) -- (2,0) node[midway, above right] {$a$}
+              -- (0,-3) node[midway, below right] {$b$}
+              -- (-2,0) node[midway, below left] {$b$}
+              -- cycle node[midway, above left] {$a$};
+    \draw (0,2) -- (0,-3);
+    \draw (-2,0) -- (2,0);
+\end{tikzpicture}
+\end{center}

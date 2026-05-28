@@ -1,0 +1,31 @@
+\item Una \textit{clepsidra}, o reloj de agua, es un recipiente de cristal con un pequeño orificio en la base a través del cual puede circular el agua. El ``reloj'' se calibra para medir el tiempo por medio de marcas que se colocan en el recipiente y que corresponden a los niveles del agua en instantes igualmente espaciados. Sea $x = f(y)$ continua en el intervalo $[0, b]$ y supóngase que el recipiente se forma al hacer girar la gráfica de $f$ en torno al eje $y$. Denótese con $V$ el volumen del agua y con $h$ la altura del nivel del agua en el tiempo $t$.
+\begin{enumerate}
+    \item[(a)] Determine $V$ en función de $h$.
+    \item[(b)] Demuestre que
+    $$\frac{dV}{dt} = \pi [f(h)]^2 \frac{dh}{dt}$$
+    \item[(c)] Supóngase que $A$ es el área del orificio situado en la base del recipiente. De la Ley de Torricelli se deduce que la razón de cambio del volumen del agua está dada por
+    $$\frac{dV}{dt} = kA\sqrt{h}$$
+    en donde $k$ es una constante negativa. Determine una fórmula para la función $f$ tal que $dh/dt$ sea igual a una constante $C$. ¿Cuál es la ventaja de tener $dh/dt = C$?
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Recipiente
+    \draw[thick] (-2,2.5) -- (-1.5,0) arc (180:360:1.5cm and 0.2cm) -- (2,2.5);
+    \draw[thick] (0,2.5) ellipse (2cm and 0.3cm);
+    \draw[dashed] (-1.5,0) arc (180:0:1.5cm and 0.2cm);
+    
+    % Niveles de agua
+    \draw (0,1.8) ellipse (1.85cm and 0.25cm);
+    \draw (-1.7, 1.1) -- (1.7, 1.1);
+    \draw (-1.6, 0.6) -- (1.6, 0.6);
+    
+    % Ejes y acotaciones
+    \draw[->] (0,-0.8) -- (0,3.5) node[left] {$y$};
+    \draw[->] (0,0) -- (3.5,0) node[right] {$x$};
+    \draw[dashed] (-2,2.5) -- (-2.8,2.5);
+    \draw[<->] (-2.5,0) -- (-2.5,1.8) node[midway, left] {$h$};
+    \node[left] at (-2.8, 2.5) {$b$};
+    \node[right] at (2,2) {$x = f(y)$};
+    \filldraw (0,0) circle (1pt);
+\end{tikzpicture}
+\end{center}

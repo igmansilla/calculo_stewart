@@ -1,0 +1,15 @@
+\item Un tanque lleno de agua tiene la forma de un paraboloide de revolución, como se muestra en la figura; esto es, su forma se obtiene al hacer girar una parábola en torno a un eje vertical. Si la altura del tanque es de 4 pies y el radio en la parte superior es de 4 pies, calcule el trabajo que se requiere para bombear el agua hacia afuera del tanque.
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Parábola y elipse superior
+    \draw[thick] (-3, 3) parabola bend (0, 0) (3, 3);
+    \draw[thick] (0, 3) ellipse (3cm and 0.8cm);
+    
+    % Líneas y acotaciones
+    \draw[dashed] (0,0) -- (0,3);
+    \draw[<->] (0,3) -- (3,3) node[midway, fill=white] {\footnotesize $4$};
+    \draw[<->] (3.6,0) -- (3.6,3) node[midway, fill=white] {\footnotesize $4$};
+    \draw[dashed] (3,0) -- (3.6,0);
+    \draw[dashed] (3,3) -- (3.6,3);
+\end{tikzpicture}
+\end{center}

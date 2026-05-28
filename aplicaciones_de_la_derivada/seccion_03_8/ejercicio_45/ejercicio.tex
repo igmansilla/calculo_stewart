@@ -1,0 +1,15 @@
+\item La esquina superior izquierda de una hoja de papel de 8 pulgadas de ancho por 12 pulgadas de largo se dobla hasta el lado derecho, como se indica en la Figura. ¿Cómo debe efectuarse el doblez de manera que se minimice su longitud? En otras palabras, ¿cómo se debe elegir $x$ para minimizar $y$?
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    \draw[thick] (0,0) rectangle (4,6);
+    \draw[dashed] (0,4) -- (2,6);
+    \draw[thick] (0,4) -- (4,2) node[midway, above right] {$y$};
+    \draw[thick] (0,4) -- (2,6);
+    \node[left] at (0, 3) {$12$};
+    \node[below] at (2, 0) {$8$};
+    \draw[<->] (0, 6.4) -- (2, 6.4) node[midway, above] {$x$};
+    \draw[dashed] (0,6) -- (0,6.5);
+    \draw[dashed] (2,6) -- (2,6.5);
+    \draw (1.8, 5.8) -- (1.6, 6.0) -- (1.8, 6.2); 
+\end{tikzpicture}
+\end{center}
