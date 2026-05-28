@@ -793,6 +793,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_5"),
         "dest_name": "Stewart_Seccion_9_5_Ejercicios.pdf",
         "description": "Capítulo 9 Sección 9.5 Standalone"
+    },
+    "seccion_9_6": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_6/seccion_09_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_6"),
+        "dest_name": "Stewart_Seccion_9_6_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.6 Standalone"
+    },
+    "seccion_9_7": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_7/seccion_09_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_7"),
+        "dest_name": "Stewart_Seccion_9_7_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.7 Standalone"
     }
 }
 

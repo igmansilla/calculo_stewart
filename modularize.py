@@ -442,6 +442,24 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(45, 53)]},
         # Block 10: 53-56 single
         {"type": "single", "folders": [str(i) for i in range(53, 57)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_6/seccion_09_6.tex": [
+        # Block 1: 1-8 single
+        {"type": "single", "folders": [str(i) for i in range(1, 9)]},
+        # Block 2: 9-20 single
+        {"type": "single", "folders": [str(i) for i in range(9, 21)]},
+        # Block 3: 21-38 single
+        {"type": "single", "folders": [str(i) for i in range(21, 39)]},
+        # Block 4: 39-41 single
+        {"type": "single", "folders": [str(i) for i in range(39, 42)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_7/seccion_09_7.tex": [
+        # Block 1: 1-8 single
+        {"type": "single", "folders": [str(i) for i in range(1, 9)]},
+        # Block 2: 9-20 single
+        {"type": "single", "folders": [str(i) for i in range(9, 21)]},
+        # Block 3: 21-28 single
+        {"type": "single", "folders": [str(i) for i in range(21, 29)]}
     ]
 }
 
