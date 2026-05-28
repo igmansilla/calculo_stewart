@@ -1024,6 +1024,15 @@ def compile_latex(tex_path, working_dir, dest_name):
         elif "funciones_trascendentes" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_6")
             rel_path = f"pdfs/capitulo_6/{dest_name}"
+        elif "ecuaciones_parametricas_y_coordenadas_polares" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_9")
+            rel_path = f"pdfs/capitulo_9/{dest_name}"
+        elif "sucesiones_y_series_infinitas" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_10")
+            rel_path = f"pdfs/capitulo_10/{dest_name}"
+        elif "geometria_analitica_tridimensional_y_vectores" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_11")
+            rel_path = f"pdfs/capitulo_11/{dest_name}"
         else:
             chapter_dir = output_dir
             rel_path = f"pdfs/{dest_name}"
