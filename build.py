@@ -865,6 +865,30 @@ targets = {
         "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_8"),
         "dest_name": "Stewart_Seccion_10_8_Series_Potencias.pdf",
         "description": "Capítulo 10 Sección 10.8 Standalone"
+    },
+    "seccion_10_9": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_9/seccion_10_9_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_9"),
+        "dest_name": "Stewart_Seccion_10_9_Taylor_Maclaurin.pdf",
+        "description": "Capítulo 10 Sección 10.9 Standalone"
+    },
+    "seccion_10_10": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_10/seccion_10_10_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_10"),
+        "dest_name": "Stewart_Seccion_10_10_Serie_Binomial.pdf",
+        "description": "Capítulo 10 Sección 10.10 Standalone"
+    },
+    "seccion_10_11": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_11/seccion_10_11_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_11"),
+        "dest_name": "Stewart_Seccion_10_11_Polinomios_Taylor.pdf",
+        "description": "Capítulo 10 Sección 10.11 Standalone"
+    },
+    "repaso": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/repaso"),
+        "dest_name": "Stewart_Capitulo_10_Repaso.pdf",
+        "description": "Capítulo 10 Repaso Standalone"
     }
 }
 

@@ -1,0 +1,5 @@
+\item En la sección 2.10 se consideró el método de Newton para aproximar una raíz $r$ de la ecuación $f(x) = 0$, y de una aproximación inicial $x_0$ se obtuvieron aproximaciones sucesivas $x_1, x_2, \dots$, en donde
+    \[ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \]
+    Utilice la fórmula de Taylor con $n = 1, c = x_n$ y $x = r$ para demostrar que si $f(x)$ existe en un intervalo $I$ que contiene a $r, x_n$ y $x_{n+1}$, y $|f''(x)| \le M, |f'(x)| \ge K$ para todo $x \in I$, entonces
+    \[ |x_{n+1} - r| \le \frac{M}{2K} |x_n - r|^2 \]
+    [Esto significa que si $x_n$ es precisa hasta $d$ cifras decimales, entonces $x_{n+1}$ es precisa hasta aproximadamente $2d$ cifras decimales. De manera más exacta, si el error en la etapa $n$ es a lo sumo $10^{-m}$, entonces el error en la etapa $n+1$ es a lo sumo $(M/2K)10^{-2m}$].

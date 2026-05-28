@@ -560,6 +560,50 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(3, 33)]},
         # Block 3: Ejercicios 33-38 single
         {"type": "single", "folders": [str(i) for i in range(33, 39)]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_9/seccion_10_9.tex": [
+        # Block 1: Ejercicios 1-12 single
+        {"type": "single", "folders": [str(i) for i in range(1, 13)]},
+        # Block 2: Ejercicios 13-24 single
+        {"type": "single", "folders": [str(i) for i in range(13, 25)]},
+        # Block 3: Ejercicios 25-42 single
+        {"type": "single", "folders": [str(i) for i in range(25, 43)]},
+        # Block 4: Ejercicios 43-44 single
+        {"type": "single", "folders": [str(i) for i in range(43, 45)]},
+        # Block 5: Ejercicios 45-50 single
+        {"type": "single", "folders": [str(i) for i in range(45, 51)]},
+        # Block 6: Ejercicios 51-56 single
+        {"type": "single", "folders": [str(i) for i in range(51, 57)]},
+        # Block 7: Ejercicios 57-58 single
+        {"type": "single", "folders": [str(i) for i in range(57, 59)]},
+        # Block 8: Ejercicios 59-64 single
+        {"type": "single", "folders": [str(i) for i in range(59, 65)]},
+        # Block 9: Ejercicios 65-68 single
+        {"type": "single", "folders": [str(i) for i in range(65, 69)]},
+        # Block 10: Ejercicios 69-72 single
+        {"type": "single", "folders": [str(i) for i in range(69, 73)]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_10/seccion_10_10.tex": [
+        # Block 1: Ejercicios 1-12 single
+        {"type": "single", "folders": [str(i) for i in range(1, 13)]},
+        # Block 2: Ejercicios 13-21 single
+        {"type": "single", "folders": [str(i) for i in range(13, 22)]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_11/seccion_10_11.tex": [
+        # Block 1: Ejercicios 1-12 single
+        {"type": "single", "folders": [str(i) for i in range(1, 13)]},
+        # Block 2: Ejercicios 13-14 single
+        {"type": "single", "folders": [str(i) for i in range(13, 15)]},
+        # Block 3: Ejercicios 15-26 single
+        {"type": "single", "folders": [str(i) for i in range(15, 27)]},
+        # Block 4: Ejercicios 27-38 single
+        {"type": "single", "folders": [str(i) for i in range(27, 39)]},
+        # Block 5: Ejercicios 39-40 single
+        {"type": "single", "folders": [str(i) for i in range(39, 41)]},
+        # Block 6: Ejercicios 41-44 single
+        {"type": "single", "folders": [str(i) for i in range(41, 45)]},
+        # Block 7: Ejercicios 45-53 single
+        {"type": "single", "folders": [str(i) for i in range(45, 54)]}
     ]
 }
 
