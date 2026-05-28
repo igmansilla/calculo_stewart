@@ -1,0 +1,45 @@
+\item Un vaso cilíndrico de radio $r$ y altura $L$ se llena con agua y luego se inclina hasta que el agua que queda en el vaso cubre exactamente su base.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.9]
+        % Vaso 1 (Cubre exactamente la base)
+        \begin{scope}[shift={(0,5)}, rotate=-30]
+            \draw[thick] (0,3) ellipse (1.5cm and 0.5cm);
+            \draw[thick] (-1.5,0) -- (-1.5,3);
+            \draw[thick] (1.5,0) -- (1.5,3);
+            \draw[thick] (0,0) ellipse (1.5cm and 0.5cm);
+            
+            % Nivel del agua
+            \draw[thick] (-1.5,0) -- (1.5,3);
+            \fill[gray, opacity=0.3] (-1.5,0) arc (180:360:1.5cm and 0.5cm) -- (1.5,3) -- cycle;
+            
+            \draw[<->] (-1.8,0) -- (-1.8,3) node[midway, left] {$L$};
+            \draw[->] (0,0) -- (-1.5,0) node[midway, below] {$r$};
+            \fill (0,0) circle (1pt);
+        \end{scope}
+        
+        % Vaso 2 (Cubre la mitad de la base)
+        \begin{scope}[shift={(0,0)}, rotate=-30]
+            \draw[thick] (0,3) ellipse (1.5cm and 0.5cm);
+            \draw[thick] (-1.5,0) -- (-1.5,3);
+            \draw[thick] (1.5,0) -- (1.5,3);
+            \draw[thick] (0,0) ellipse (1.5cm and 0.5cm);
+            
+            % Nivel del agua (desde el centro de la base hasta arriba)
+            \draw[thick] (0,-0.5) -- (1.5,3); 
+            \fill[gray, opacity=0.3] (0,-0.5) arc (270:360:1.5cm and 0.5cm) -- (1.5,3) -- cycle;
+            
+            \draw[<->] (-1.8,0) -- (-1.8,3) node[midway, left] {$h$};
+            \draw[->] (0,0) -- (-1.5,0) node[midway, below] {$r$};
+            \fill (0,0) circle (1pt);
+        \end{scope}
+    \end{tikzpicture}
+    \end{center}
+
+    \begin{enumerate}
+        \item[(a)] Determine una manera de ``cortar'' el agua en secciones transversales rectangulares paralelas y luego \textit{plantee} una integral definida que dé el volumen del agua contenida en el vaso.
+        \item[(b)] Determine una manera de ``cortar'' el agua en secciones transversales paralelas que sean trapecios y luego \textit{plantee} una integral definida para el volumen del agua.
+        \item[(c)] Encuentre el volumen del agua contenida en el vaso calculando una de las integrales obtenidas en las partes (a) y (b).
+        \item[(d)] Encuentre el volumen del agua contenida en el vaso partiendo de consideraciones puramente geométricas.
+        \item[(e)] Supóngase que el vaso se inclina hasta que el agua cubre exactamente la mitad de la base. ¿En qué dirección se puede ``cortar'' el agua en secciones transversales triangulares? ¿en secciones transversales rectangulares? ¿en secciones transversales que sean segmentos de círculos? Encuentre el volumen del agua contenida en el vaso.
+    \end{enumerate}

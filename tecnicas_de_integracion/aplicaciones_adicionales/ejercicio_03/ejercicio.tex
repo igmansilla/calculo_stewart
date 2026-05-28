@@ -1,0 +1,36 @@
+\item Un hombre que se encuentra inicialmente en el punto $O$ camina a lo largo de un embarcadero arrastrando un bote de remos por medio de una cuerda de longitud $L$. El hombre mantiene la cuerda recta y tensa. La trayectoria seguida por el bote es una curva llamada \textit{tractriz} y tiene la propiedad de que la cuerda siempre es tangente a la curva (véase la figura).
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Embarcadero
+        \draw[fill=gray!30] (-0.8,0) rectangle (0,3);
+        \draw[step=0.2, gray, very thin] (-0.8,0) grid (0,3);
+        
+        % Ejes
+        \draw[thick] (0,0) -- (0,3);
+        \draw[->] (-0.8,0) -- (3.5,0) node[below] {$x$};
+        \draw[->] (0,-0.2) -- (0,3.2) node[left] {$y$};
+        \node[below left] at (0,0) {$O$};
+        
+        % Curva tractriz aproximada con Bezier
+        \draw[thick] (2.8, 0.2) .. controls (1.5, 0.3) and (0.3, 1.2) .. (0.1, 2.8);
+        
+        % Cuerda tangente y puntos
+        \coordinate (Bote) at (0.9, 1.25);
+        \coordinate (Hombre) at (0, 2.3);
+        
+        \draw[thick] (Bote) -- (Hombre) node[midway, below left] {$L$};
+        
+        % Bote (esquema visual)
+        \draw[thick, fill=white, rotate around={-50:(Bote)}] (Bote) ellipse (0.3cm and 0.1cm);
+        
+        \fill (Bote) circle (1.5pt) node[above right] {$(x, y)$};
+        \fill (2.8, 0.2) circle (1pt) node[below] {$(L, 0)$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \begin{enumerate}
+        \item[(a)] Demuestre que si la trayectoria seguida por el bote es la gráfica de la función $y = f(x)$, entonces
+        \[ f'(x) = \frac{dy}{dx} = \frac{-\sqrt{L^2 - x^2}}{x} \]
+        \item[(b)] Determine la función $y = f(x)$.
+    \end{enumerate}

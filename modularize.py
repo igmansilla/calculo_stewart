@@ -172,10 +172,114 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(47, 51)]},
         # Block 5: 51-61 single
         {"type": "single", "folders": [str(i) for i in range(51, 62)]}
+    ],
+    "seccion_07_2.tex": [
+        # Block 1: 1-56 single
+        {"type": "single", "folders": [str(i) for i in range(1, 57)]},
+        # Block 2: 57-58 single
+        {"type": "single", "folders": [str(i) for i in range(57, 59)]},
+        # Block 3: 59-60 single
+        {"type": "single", "folders": [str(i) for i in range(59, 61)]},
+        # Block 4: 61-64 single
+        {"type": "single", "folders": [str(i) for i in range(61, 65)]},
+        # Block 5: 65 single
+        {"type": "single", "folders": ["65"]},
+        # Block 6: 66-68 single
+        {"type": "single", "folders": [str(i) for i in range(66, 69)]},
+        # Block 7: 69 single
+        {"type": "single", "folders": ["69"]}
+    ],
+    "seccion_07_3.tex": [
+        # Block 1: 1-30 single
+        {"type": "single", "folders": [str(i) for i in range(1, 31)]},
+        # Block 2: 31-36 single
+        {"type": "single", "folders": [str(i) for i in range(31, 37)]}
+    ],
+    "seccion_07_4.tex": [
+        # Block 1: 1-18 single
+        {"type": "single", "folders": [str(i) for i in range(1, 19)]},
+        # Block 2: 19-64 single
+        {"type": "single", "folders": [str(i) for i in range(19, 65)]},
+        # Block 3: 65 single
+        {"type": "single", "folders": ["65"]},
+        # Block 4: 66-69 single
+        {"type": "single", "folders": [str(i) for i in range(66, 70)]},
+        # Block 5: 70-72 single
+        {"type": "single", "folders": [str(i) for i in range(70, 73)]},
+        # Block 6: 73 single
+        {"type": "single", "folders": ["73"]}
+    ],
+    "seccion_07_5.tex": [
+        # Block 1: 1-40 single
+        {"type": "single", "folders": [str(i) for i in range(1, 41)]},
+        # Block 2: 41-44 single
+        {"type": "single", "folders": [str(i) for i in range(41, 45)]}
+    ],
+    "seccion_07_6.tex": [
+        # Block 1: 1-42 single
+        {"type": "single", "folders": [str(i) for i in range(1, 43)]},
+        # Block 2: 43-80 single
+        {"type": "single", "folders": [str(i) for i in range(43, 81)]}
+    ],
+    "seccion_07_7.tex": [
+        # Block 1: 1-26 single
+        {"type": "single", "folders": [str(i) for i in range(1, 27)]},
+        # Block 2: 27-30 single
+        {"type": "single", "folders": [str(i) for i in range(27, 31)]}
+    ],
+    "seccion_07_8.tex": [
+        # Block 1: 1-2 single
+        {"type": "single", "folders": [str(i) for i in range(1, 3)]},
+        # Block 2: 3-6 single
+        {"type": "single", "folders": [str(i) for i in range(3, 7)]},
+        # Block 3: 7-10 single
+        {"type": "single", "folders": [str(i) for i in range(7, 11)]},
+        # Block 4: 11-20 single
+        {"type": "single", "folders": [str(i) for i in range(11, 21)]},
+        # Block 5: 21-36 single
+        {"type": "single", "folders": [str(i) for i in range(21, 37)]}
+    ],
+    "seccion_07_9.tex": [
+        # Block 1: 1-46 single
+        {"type": "single", "folders": [str(i) for i in range(1, 47)]},
+        # Block 2: 47-52 single
+        {"type": "single", "folders": [str(i) for i in range(47, 53)]},
+        # Block 3: 53-58 single
+        {"type": "single", "folders": [str(i) for i in range(53, 59)]},
+        # Block 4: 59-60 single
+        {"type": "single", "folders": [str(i) for i in range(59, 61)]},
+        # Block 5: 61-63 single
+        {"type": "single", "folders": [str(i) for i in range(61, 64)]},
+        # Block 6: 64-78 single
+        {"type": "single", "folders": [str(i) for i in range(64, 79)]}
+    ],
+    "tecnicas_de_integracion/repaso/repaso.tex": [
+        # Block 1: Temas Basicos 1-11 single
+        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 12)]},
+        # Block 2: Ejercicios 1-8 single
+        {"type": "single", "folders": [str(i) for i in range(1, 9)]},
+        # Block 3: Ejercicios 9-44 single
+        {"type": "single", "folders": [str(i) for i in range(9, 45)]},
+        # Block 4: Ejercicios 45-62 single
+        {"type": "single", "folders": [str(i) for i in range(45, 63)]},
+        # Block 5: Ejercicios 63-66 single
+        {"type": "single", "folders": [str(i) for i in range(63, 67)]},
+        # Block 6: Ejercicios 67-68 single
+        {"type": "single", "folders": [str(i) for i in range(67, 69)]},
+        # Block 7: Ejercicios 69-70 single
+        {"type": "single", "folders": [str(i) for i in range(69, 71)]},
+        # Block 8: Ejercicios 71-81 single
+        {"type": "single", "folders": [str(i) for i in range(71, 82)]}
+    ],
+    "tecnicas_de_integracion/aplicaciones_adicionales/aplicaciones_adicionales.tex": [
+        # Block 1: 1-6 single
+        {"type": "single", "folders": [str(i) for i in range(1, 7)]}
     ]
 }
 
 def format_folder_name(name):
+    if name.startswith("tema_") or name.startswith("ejercicio_"):
+        return name
     if name.isdigit():
         return f"ejercicio_{int(name):02d}"
     else:
@@ -333,6 +437,10 @@ def process_section(filename, config_list):
         else:
             raise ValueError(f"Unknown chapter directory for {filename}")
     
+    if not os.path.exists(file_path):
+        print(f"⚠️ File {file_path} not found. Skipping.")
+        return
+        
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
         

@@ -1,0 +1,34 @@
+\item Los economistas utilizan una distribución acumulada llamada \textit{curva de Lorenz} para describir la distribución de ingresos entre familias de un país dado. De manera característica, una curva de Lorenz está definida en el intervalo $[0, 1]$, pasa por los puntos $(0, 0)$ y $(1, 1)$ y es continua, creciente y cóncava hacia arriba. Los puntos de esta curva se determinan clasificando todas las familias por sus ingresos y luego calculando el porcentaje de familias cuyo ingreso es menor o igual a un porcentaje dado del ingreso total del país. Por ejemplo, el punto $(a/100, b/100)$ se encuentra en la curva de Lorenz si el $a\%$ inferior de las familias percibe una cantidad menor o igual al $b\%$ del ingreso total. La \textit{igualdad absoluta} de la distribución de ingresos se produce si el $a\%$ inferior de las familias percibe $a\%$ del ingreso, en cuyo caso la curva de Lorenz sería la recta $y = x$. El área comprendida entre la curva de Lorenz y la recta $y = x$ mide la diferencia entre la distribución de ingresos y la igualdad absoluta. El \textit{coeficiente de desigualdad} es la razón del área comprendida entre la curva de Lorenz y la recta $y = x$ al área bajo la recta $y = x$.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=3]
+        % Ejes
+        \draw[->] (-0.1,0) -- (1.2,0) node[below] {$x$};
+        \draw[->] (0,-0.1) -- (0,1.2) node[left] {$y$};
+        \node[below left] at (0,0) {$0$};
+        
+        % Marcas de 1
+        \draw (1,0.02) -- (1,-0.02) node[below] {$1$};
+        \draw (0.02,1) -- (-0.02,1);
+        \draw[dashed, very thin] (1,0) -- (1,1) -- (0,1);
+        
+        % Recta y = x
+        \draw[thick] (0,0) -- (1,1) node[midway, above left] {$y = x$};
+        
+        % Curva de Lorenz (aproximación cuadrática para ilustración)
+        \draw[thick, domain=0:1, samples=50] plot (\x, {\x*\x}) node[midway, below right] {$y = L(x)$};
+        
+        % Punto (1,1)
+        \fill (1,1) circle (0.5pt) node[above left] {$(1, 1)$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \begin{enumerate}
+        \item[(a)] Demuestre que el coeficiente de desigualdad es igual al doble del área comprendida entre la curva de Lorenz y la recta $y = x$, esto es, demuestre que
+        \[ \text{coeficiente de desigualdad} = 2 \int_{0}^{1} [x - L(x)] \, dx \]
+        \item[(b)] La distribución de ingresos para cierto país está representada por la curva de Lorenz definida por la ecuación
+        \[ L(x) = \frac{5}{12}x^2 + \frac{7}{12}x \]
+        ¿Qué porcentaje del ingreso total es percibido por el 50\% inferior de las familias? Encuentre el coeficiente de desigualdad.
+        \item[(c)] Encuentre el coeficiente de desigualdad para la curva de Lorenz definida por la ecuación
+        \[ L(x) = \frac{5x^3}{4 + x^2} \]
+    \end{enumerate}

@@ -655,6 +655,66 @@ targets = {
         "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_1"),
         "dest_name": "Stewart_Seccion_7_1_Ejercicios.pdf",
         "description": "Capítulo 7 Sección 7.1 Standalone"
+    },
+    "seccion_7_2": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_2/seccion_07_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_2"),
+        "dest_name": "Stewart_Seccion_7_2_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.2 Standalone"
+    },
+    "seccion_7_3": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_3/seccion_07_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_3"),
+        "dest_name": "Stewart_Seccion_7_3_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.3 Standalone"
+    },
+    "seccion_7_4": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_4/seccion_07_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_4"),
+        "dest_name": "Stewart_Seccion_7_4_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.4 Standalone"
+    },
+    "seccion_7_5": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_5/seccion_07_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_5"),
+        "dest_name": "Stewart_Seccion_7_5_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.5 Standalone"
+    },
+    "seccion_7_6": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_6/seccion_07_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_6"),
+        "dest_name": "Stewart_Seccion_7_6_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.6 Standalone"
+    },
+    "seccion_7_7": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_7/seccion_07_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_7"),
+        "dest_name": "Stewart_Seccion_7_7_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.7 Standalone"
+    },
+    "seccion_7_8": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_8/seccion_07_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_8"),
+        "dest_name": "Stewart_Seccion_7_8_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.8 Standalone"
+    },
+    "seccion_7_9": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_9/seccion_07_9_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_9"),
+        "dest_name": "Stewart_Seccion_7_9_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.9 Standalone"
+    },
+    "repaso_7": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/repaso"),
+        "dest_name": "Stewart_Capitulo_7_Repaso.pdf",
+        "description": "Capítulo 7 Repaso Standalone"
+    },
+    "aplicaciones_adicionales_7": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/aplicaciones_adicionales/aplicaciones_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/aplicaciones_adicionales"),
+        "dest_name": "Stewart_Capitulo_7_Aplicaciones_Adicionales.pdf",
+        "description": "Capítulo 7 Aplicaciones Adicionales Standalone"
     }
 }
 

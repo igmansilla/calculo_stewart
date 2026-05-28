@@ -1,0 +1,31 @@
+\item Pruebe la fórmula $A = \frac{1}{2}r^2\theta$ correspondiente al área de un sector circular de radio $r$ y ángulo central $\theta$. (\textit{Sugerencia:} Suponga que $0 < \theta < \pi/2$ y coloque el centro de la circunferencia en el origen de manera que tenga por ecuación $x^2 + y^2 = r^2$. Entonces $A$ es la suma del área del triángulo $POQ$ y el área de la región $PQR$ mostrados en la figura).
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=2.5]
+        % Ejes
+        \draw[->] (-0.2,0) -- (1.5,0) node[below] {$x$};
+        \draw[->] (0,-0.2) -- (0,1.2) node[left] {$y$};
+        \node[below left] at (0,0) {$0$};
+
+        % Coordenadas
+        \coordinate (O) at (0,0);
+        \coordinate (P) at (45:1);
+        \coordinate (Q) at ({cos(45)}, 0);
+        \coordinate (R) at (1,0);
+
+        % Arco y líneas
+        \draw (0,1) arc (90:0:1);
+        \draw (O) -- (P) node[above] {$P$};
+        \draw (P) -- (Q);
+        
+        % Etiquetas
+        \node[below] at (Q) {$Q$};
+        \node[below] at (R) {$R$};
+
+        % Ángulo recto en Q
+        \draw ({cos(45)-0.05}, 0) -- ({cos(45)-0.05}, 0.05) -- ({cos(45)}, 0.05);
+
+        % Ángulo theta
+        \pic [draw, "$\theta$", angle eccentricity=1.5, angle radius=0.4cm] {angle = Q--O--P};
+    \end{tikzpicture}
+    \end{center}
