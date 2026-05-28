@@ -124,6 +124,38 @@ CONFIGS = {
         ]},
         # Block 4: 101-107 single
         {"type": "single", "folders": [str(i) for i in range(101, 108)]}
+    ],
+    "repaso.tex": [
+        # Block 1: 1-8 interleaved
+        {"type": "interleaved", "folders": [
+            ["01", "03", "05", "07"],
+            ["02", "04", "06", "08"]
+        ]},
+        # Block 2: 9-16 interleaved
+        {"type": "interleaved", "folders": [
+            ["09", "11", "13", "15"],
+            ["10", "12", "14", "16"]
+        ]},
+        # Block 3: 17-32 single
+        {"type": "single", "folders": [str(i) for i in range(17, 33)]},
+        # Block 4: 47-48 single
+        {"type": "single", "folders": [str(i) for i in range(47, 49)]},
+        # Block 5: 49-50 single
+        {"type": "single", "folders": [str(i) for i in range(49, 51)]},
+        # Block 6: 51-54 single
+        {"type": "single", "folders": [str(i) for i in range(51, 55)]},
+        # Block 7: 55-78 single
+        {"type": "single", "folders": [str(i) for i in range(55, 79)]},
+        # Block 8: 79-86 single
+        {"type": "single", "folders": [str(i) for i in range(79, 87)]},
+        # Block 9: 87-93 single
+        {"type": "single", "folders": [str(i) for i in range(87, 94)]},
+        # Block 10: 94-99 single
+        {"type": "single", "folders": [str(i) for i in range(94, 100)]},
+        # Block 11: 100-109 single
+        {"type": "single", "folders": [str(i) for i in range(100, 110)]},
+        # Block 12: 110-114 single
+        {"type": "single", "folders": [str(i) for i in range(110, 115)]}
     ]
 }
 
