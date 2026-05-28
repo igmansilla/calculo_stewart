@@ -859,6 +859,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_7"),
         "dest_name": "Stewart_Seccion_10_7_Estrategia.pdf",
         "description": "Capítulo 10 Sección 10.7 Standalone"
+    },
+    "seccion_10_8": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_8/seccion_10_8_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_8"),
+        "dest_name": "Stewart_Seccion_10_8_Series_Potencias.pdf",
+        "description": "Capítulo 10 Sección 10.8 Standalone"
     }
 }
 
