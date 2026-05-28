@@ -1,0 +1,27 @@
+\item Dos cuerdas de $3\text{ m}$ y $5\text{ m}$ de longitud están sujetas a un adorno festivo que se encuentra suspendido sobre una plaza citadina. El adorno tiene una masa de $5\text{ kg}$. Las cuerdas, sujetas a diferentes alturas, forman ángulos de $52^\circ$ y $40^\circ$ con la horizontal. Encuentre la tensión en cada una de las cuerdas y la magnitud de cada tensión.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        % Estrella
+        \node[star, star points=5, star point ratio=2.5, draw, minimum size=1.2cm, thick] (S) at (0,-3) {};
+        
+        % Coordenadas de anclaje
+        \coordinate (L) at (-2, 0);
+        \coordinate (R) at (3, -0.5);
+        
+        % Cuerdas
+        \draw[thick] (L) -- (S.north) node[midway, below left] {$3\text{ m}$};
+        \draw[thick] (R) -- (S.north) node[midway, below right] {$5\text{ m}$};
+        
+        % Líneas horizontales punteadas
+        \draw[dashed] (L) -- ++(1.5,0);
+        \draw[dashed] (R) -- ++(-1.5,0);
+        
+        % Ángulos
+        \draw (L) ++(0.7,0) arc (0:-56:0.7);
+        \node at (-1.1, -0.4) {\small $52^\circ$};
+        
+        \draw (R) ++(-0.7,0) arc (180:220:0.7);
+        \node at (2.1, -0.9) {\small $40^\circ$};
+    \end{tikzpicture}
+    \end{center}

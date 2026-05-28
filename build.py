@@ -889,6 +889,30 @@ targets = {
         "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/repaso"),
         "dest_name": "Stewart_Capitulo_10_Repaso.pdf",
         "description": "Capítulo 10 Repaso Standalone"
+    },
+    "seccion_11_1": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_1/seccion_11_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_1"),
+        "dest_name": "Stewart_Seccion_11_1_Coordenadas_3D.pdf",
+        "description": "Capítulo 11 Sección 11.1 Standalone"
+    },
+    "seccion_11_2": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_2/seccion_11_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_2"),
+        "dest_name": "Stewart_Seccion_11_2_Vectores.pdf",
+        "description": "Capítulo 11 Sección 11.2 Standalone"
+    },
+    "seccion_11_3": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_3/seccion_11_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_3"),
+        "dest_name": "Stewart_Seccion_11_3_Producto_Escalar.pdf",
+        "description": "Capítulo 11 Sección 11.3 Standalone"
+    },
+    "seccion_11_4": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_4/seccion_11_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_4"),
+        "dest_name": "Stewart_Seccion_11_4_Producto_Cruz.pdf",
+        "description": "Capítulo 11 Sección 11.4 Standalone"
     }
 }
 

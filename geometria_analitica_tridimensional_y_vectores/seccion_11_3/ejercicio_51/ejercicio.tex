@@ -1,0 +1,29 @@
+\item Una molécula de metano, $\text{CH}_4$, está estructurada con los cuatro átomos de hidrógeno en los vértices de un tetraedro regular y el átomo de carbono en el centroide. El \textit{ángulo de enlace} es el que se forma por la combinación H-C-H; es el ángulo comprendido entre las rectas que unen el átomo de carbono con dos de los átomos de hidrógeno. Demuestre que el ángulo de enlace es aproximadamente $109.5^\circ$. [\textit{Sugerencia}: Considere que los vértices del tetraedro son los puntos $(1, 0, 0)$, $(0, 1, 0)$, $(0, 0, 1)$ y $(1, 1, 1)$ como se muestra en la figura. Entonces el centroide es $\left( \frac{1}{2}, \frac{1}{2}, \frac{1}{2} \right)$.]
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=2]
+        % Ejes
+        \draw[->, gray] (0,0) -- (-0.8,-0.6) node[below] {$x$};
+        \draw[->, gray] (0,0) -- (1.5,0) node[right] {$y$};
+        \draw[->, gray] (0,0) -- (0,1.5) node[above] {$z$};
+        
+        % Vértices
+        \coordinate (H1) at (-0.6,-0.45); % (1,0,0) approx
+        \coordinate (H2) at (1.2,0);      % (0,1,0) approx
+        \coordinate (H3) at (0,1.2);      % (0,0,1) approx
+        \coordinate (H4) at (0.9,0.7);    % (1,1,1) approx
+        
+        % Aristas visibles
+        \draw[thick] (H1) -- (H2) -- (H4) -- cycle;
+        \draw[thick] (H1) -- (H3) -- (H2);
+        
+        % Arista oculta
+        \draw[thick, dashed] (H3) -- (H4);
+        
+        % Nodos H
+        \fill (H1) circle (1pt) node[left] {$H$};
+        \fill (H2) circle (1pt) node[right] {$H$};
+        \fill (H3) circle (1pt) node[right] {$H$};
+        \fill (H4) circle (1pt) node[right] {$H$};
+    \end{tikzpicture}
+    \end{center}
