@@ -1,0 +1,37 @@
+\documentclass[11pt,spanish,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,provide=*]{babel}
+\providecommand{\sen}{\operatorname{sen}}
+\providecommand{\senh}{\operatorname{senh}}
+\providecommand{\cosh}{\operatorname{cosh}}
+\providecommand{\sech}{\operatorname{sech}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{tikz}
+\usetikzlibrary{angles, quotes, calc, intersections}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm}
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Cálculo: James Stewart} \\ \Large Sección 9.5: Ejercicios}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subimport{./}{seccion_09_5.tex}
+
+\end{document}

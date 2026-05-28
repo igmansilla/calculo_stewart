@@ -1,0 +1,30 @@
+\item Encuentre ecuaciones paramétricas para describir el conjunto de todos los puntos $P$ determinados como se ilustra en la figura, empleando el ángulo $\theta$ como parámetro. Luego elimine el parámetro e identifique la curva.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \draw[->] (-1.8,0) -- (2.5,0) node[below] {$x$};
+        \draw[->] (0,-1.8) -- (0,2) node[left] {$y$};
+        
+        \draw[thick] (0,0) circle (1cm);
+        \draw[thick] (0,0) circle (1.5cm);
+        
+        \node[below left] at (0,0) {$0$};
+        \node[above left] at (135:1.5) {$a$};
+        \node[above left] at (135:1) {$b$};
+        
+        \coordinate (B) at (40:1);
+        \coordinate (A) at (40:1.5);
+        \coordinate (P) at ({1.5*cos(40)}, {1*sin(40)});
+        
+        \draw (0,0) -- (40:1.8);
+        \draw (B) -- ({1.5*cos(40)}, {1*sin(40)});
+        \draw (A) -- ({1.5*cos(40)}, {1*sin(40)});
+        \draw ({1.5*cos(40)}, 0) -- (P);
+        
+        \fill (P) circle (1pt) node[below right] {$P$};
+        
+        \coordinate (origin) at (0,0);
+        \coordinate (right) at (1,0);
+        \pic [draw, "$\theta$", angle eccentricity=1.5, angle radius=0.4cm] {angle = right--origin--B};
+    \end{tikzpicture}
+    \end{center}

@@ -1,0 +1,34 @@
+\item La \textbf{curvatura} en un punto $P$ de una curva se define como
+    \[ \kappa = \left| \frac{d\phi}{ds} \right| \]
+    en donde $\phi$ es el ángulo de inclinación de la recta tangente en $P$, como se ilustra en la figura. De manera que la curvatura es el valor absoluto de la razón de cambio de $\phi$ con respecto a la longitud de arco. La curvatura se puede considerar como una medida de la razón de cambio de dirección de la curva en $P$ y se estudiará con todo detalle en el capítulo 11.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.2]
+        \draw[->] (-0.5,0) -- (4,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,3) node[left] {$y$};
+        
+        % Curva
+        \draw[thick] (0.5, 0.5) .. controls (2, 0.5) and (3, 1.5) .. (3.8, 3);
+        
+        % Punto P
+        \coordinate (P) at (2.5, 1.3); 
+        \fill (P) circle (1.5pt) node[above left] {$P$};
+        
+        % Línea tangente
+        \draw[thin] (0.8, -0.2) -- (3.6, 2.27);
+        
+        % Ángulo phi
+        \draw (1.4, 0) arc (0:41:0.35);
+        \node at (1.7, 0.2) {$\phi$};
+        \node[below left] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \begin{enumerate}
+        \item[(a)] Para una curva paramétrica $x = x(t), y = y(t)$, deduzca la fórmula
+        \[ \kappa = \frac{|\dot{x}\ddot{y} - \ddot{x}\dot{y}|}{[\dot{x}^2 + \dot{y}^2]^{3/2}} \]
+        en donde los puntos indican derivadas con respecto a $t$, de manera que $\dot{x} = dx/dt$. [\textit{Sugerencia:} Use $\phi = \tan^{-1}(dy/dx)$ y la ecuación 9.4 para encontrar $d\phi/dt$. Luego utilice la regla de la cadena para encontrar $d\phi/ds$].
+        
+        \item[(b)] Considerando una curva $y = f(x)$ como la curva paramétrica $x = x, y = f(x)$, con parámetro $x$, demuestre que la fórmula de la parte (a) se convierte en
+        \[ \kappa = \frac{|d^2y/dx^2|}{[1 + (dy/dx)^2]^{3/2}} \]
+    \end{enumerate}

@@ -763,6 +763,36 @@ targets = {
         "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/problemas_adicionales"),
         "dest_name": "Stewart_Capitulo_8_Problemas_Adicionales.pdf",
         "description": "Capítulo 8 Problemas Adicionales Standalone"
+    },
+    "seccion_9_1": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_1/seccion_09_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_1"),
+        "dest_name": "Stewart_Seccion_9_1_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.1 Standalone"
+    },
+    "seccion_9_2": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_2/seccion_09_2_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_2"),
+        "dest_name": "Stewart_Seccion_9_2_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.2 Standalone"
+    },
+    "seccion_9_3": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_3/seccion_09_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_3"),
+        "dest_name": "Stewart_Seccion_9_3_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.3 Standalone"
+    },
+    "seccion_9_4": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_4/seccion_09_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_4"),
+        "dest_name": "Stewart_Seccion_9_4_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.4 Standalone"
+    },
+    "seccion_9_5": {
+        "tex_path": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_5/seccion_09_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_5"),
+        "dest_name": "Stewart_Seccion_9_5_Ejercicios.pdf",
+        "description": "Capítulo 9 Sección 9.5 Standalone"
     }
 }
 

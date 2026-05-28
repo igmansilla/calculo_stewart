@@ -1,0 +1,164 @@
+% Sección 9.4: Coordenadas Polares
+
+\subsection*{SECCIÓN 9.4 \quad Coordenadas Polares}
+
+En un sistema de coordenadas un punto del plano se representa por una pareja ordenada de números llamados coordenadas. Hasta ahora hemos estado utilizando coordenadas cartesianas, que son distancias dirigidas con respecto a dos ejes perpendiculares. En esta sección se describe un sistema de coordenadas introducido por Newton, llamado sistema de coordenadas polares, que es más conveniente para muchos propósitos.
+
+Se elige un punto del plano al cual se llama \textbf{polo} (u origen) y se le marca con $O$. Luego se traza un rayo (semirrecta) con punto inicial en $O$ llamado \textbf{eje polar}. Este eje de ordinario se dibuja horizontalmente hacia la derecha y corresponde al eje $x$ positivo del sistema de coordenadas cartesianas.
+
+\begin{center}
+\textbf{Figura 9.13}
+\vspace{0.2cm}
+
+\begin{tikzpicture}[scale=1.5]
+    \draw[thick, ->] (0,0) -- (3,0) node[below] {eje polar};
+    \fill (0,0) circle (1.5pt) node[below left] {$O$};
+    \draw[thick] (0,0) -- (40:2.5) node[midway, above left] {$r$};
+    \fill (40:2.5) circle (1.5pt) node[right] {$P(r, \theta)$};
+    \draw (0.5,0) arc (0:40:0.5);
+    \node at (20:0.7) {$\theta$};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Ejercicios}
+
+\noindent\textbf{En los ejercicios 1-8 marque los puntos cuyas coordenadas polares son dadas. Luego encuentre otras dos parejas de coordenadas polares de dichos puntos, una con $r > 0$ y otra con $r < 0$.}
+\begin{enumerate}
+    \subimport{ejercicio_01/}{ejercicio.tex}
+\subimport{ejercicio_02/}{ejercicio.tex}
+\subimport{ejercicio_03/}{ejercicio.tex}
+\subimport{ejercicio_04/}{ejercicio.tex}
+\subimport{ejercicio_05/}{ejercicio.tex}
+\subimport{ejercicio_06/}{ejercicio.tex}
+\subimport{ejercicio_07/}{ejercicio.tex}
+\subimport{ejercicio_08/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 9-16 marque los puntos cuyas coordenadas polares son dadas. Luego encuentre las coordenadas cartesianas de dichos puntos.}
+\begin{enumerate}
+    \setcounter{enumi}{8}
+    \subimport{ejercicio_09/}{ejercicio.tex}
+\subimport{ejercicio_10/}{ejercicio.tex}
+\subimport{ejercicio_11/}{ejercicio.tex}
+\subimport{ejercicio_12/}{ejercicio.tex}
+\subimport{ejercicio_13/}{ejercicio.tex}
+\subimport{ejercicio_14/}{ejercicio.tex}
+\subimport{ejercicio_15/}{ejercicio.tex}
+\subimport{ejercicio_16/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 17-20 se dan las coordenadas cartesianas de un punto. Encuentre las coordenadas polares $(r, \theta)$ del punto dado, en donde $r > 0$ y $0 \le \theta < 2\pi$.}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \subimport{ejercicio_17/}{ejercicio.tex}
+\subimport{ejercicio_18/}{ejercicio.tex}
+\subimport{ejercicio_19/}{ejercicio.tex}
+\subimport{ejercicio_20/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 21-26 grafique la región del plano que consta de los puntos cuyas coordenadas polares satisfacen las condiciones dadas.}
+\begin{enumerate}
+    \setcounter{enumi}{20}
+    \subimport{ejercicio_21/}{ejercicio.tex}
+\subimport{ejercicio_22/}{ejercicio.tex}
+\subimport{ejercicio_23/}{ejercicio.tex}
+\subimport{ejercicio_24/}{ejercicio.tex}
+\subimport{ejercicio_25/}{ejercicio.tex}
+\subimport{ejercicio_26/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 27-28 encuentre la distancia de los puntos cuyas coordenadas polares son $(1, \pi/6)$ y $(3, 3\pi/4)$.}
+\begin{enumerate}
+    \setcounter{enumi}{26}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 29-34 encuentre una ecuación cartesiana de la curva descrita por la ecuación polar dada.}
+\begin{enumerate}
+    \setcounter{enumi}{28}
+    \subimport{ejercicio_29/}{ejercicio.tex}
+\subimport{ejercicio_30/}{ejercicio.tex}
+\subimport{ejercicio_31/}{ejercicio.tex}
+\subimport{ejercicio_32/}{ejercicio.tex}
+\subimport{ejercicio_33/}{ejercicio.tex}
+\subimport{ejercicio_34/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 35-40 encuentre una ecuación polar de la curva representada por la ecuación cartesiana dada.}
+\begin{enumerate}
+    \setcounter{enumi}{35}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+\subimport{ejercicio_36/}{ejercicio.tex}
+\subimport{ejercicio_37/}{ejercicio.tex}
+\subimport{ejercicio_38/}{ejercicio.tex}
+\subimport{ejercicio_39/}{ejercicio.tex}
+\subimport{ejercicio_40/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 41-72 trace la gráfica de la curva cuya ecuación polar es dada.}
+\begin{enumerate}
+    \setcounter{enumi}{40}
+    \subimport{ejercicio_41/}{ejercicio.tex}
+\subimport{ejercicio_42/}{ejercicio.tex}
+\subimport{ejercicio_43/}{ejercicio.tex}
+\subimport{ejercicio_44/}{ejercicio.tex}
+\subimport{ejercicio_45/}{ejercicio.tex}
+\subimport{ejercicio_46/}{ejercicio.tex}
+\subimport{ejercicio_47/}{ejercicio.tex}
+\subimport{ejercicio_48/}{ejercicio.tex}
+\subimport{ejercicio_49/}{ejercicio.tex}
+\subimport{ejercicio_50/}{ejercicio.tex}
+\subimport{ejercicio_51/}{ejercicio.tex}
+\subimport{ejercicio_52/}{ejercicio.tex}
+\subimport{ejercicio_53/}{ejercicio.tex}
+\subimport{ejercicio_54/}{ejercicio.tex}
+\subimport{ejercicio_55/}{ejercicio.tex}
+\subimport{ejercicio_56/}{ejercicio.tex}
+\subimport{ejercicio_57/}{ejercicio.tex}
+\subimport{ejercicio_58/}{ejercicio.tex}
+\subimport{ejercicio_59/}{ejercicio.tex}
+\subimport{ejercicio_60/}{ejercicio.tex}
+\subimport{ejercicio_61/}{ejercicio.tex}
+\subimport{ejercicio_62/}{ejercicio.tex}
+\subimport{ejercicio_63/}{ejercicio.tex}
+\subimport{ejercicio_64/}{ejercicio.tex}
+\subimport{ejercicio_65/}{ejercicio.tex}
+\subimport{ejercicio_66/}{ejercicio.tex}
+\subimport{ejercicio_67/}{ejercicio.tex}
+\subimport{ejercicio_68/}{ejercicio.tex}
+\subimport{ejercicio_69/}{ejercicio.tex}
+\subimport{ejercicio_70/}{ejercicio.tex}
+\subimport{ejercicio_71/}{ejercicio.tex}
+\subimport{ejercicio_72/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 73-76 demuestre la propiedad indicada.}
+\begin{enumerate}
+    \setcounter{enumi}{72}
+    \subimport{ejercicio_73/}{ejercicio.tex}
+\subimport{ejercicio_74/}{ejercicio.tex}
+\subimport{ejercicio_75/}{ejercicio.tex}
+\subimport{ejercicio_76/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{En los ejercicios 77-84 encuentre la pendiente de la recta tangente a la curva polar dada en el punto determinado por el valor de $\theta$.}
+\begin{enumerate}
+    \setcounter{enumi}{76}
+    \subimport{ejercicio_77/}{ejercicio.tex}
+\subimport{ejercicio_78/}{ejercicio.tex}
+\subimport{ejercicio_79/}{ejercicio.tex}
+\subimport{ejercicio_80/}{ejercicio.tex}
+\subimport{ejercicio_81/}{ejercicio.tex}
+\subimport{ejercicio_82/}{ejercicio.tex}
+\subimport{ejercicio_83/}{ejercicio.tex}
+\subimport{ejercicio_84/}{ejercicio.tex}
+\end{enumerate}

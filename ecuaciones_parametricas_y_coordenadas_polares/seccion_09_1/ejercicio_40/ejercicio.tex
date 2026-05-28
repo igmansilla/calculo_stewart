@@ -1,0 +1,28 @@
+\item Encuentre ecuaciones paramétricas para describir el conjunto de todos los puntos $P$ determinados como se indica en la figura de manera que $|OP| = |AB|$. Trace la gráfica de la curva. (Esta curva se llama \textbf{cisoide de Diocles} en honor del erudito griego Diocles, quien introdujo la cisoide como un método gráfico para construir la arista de un cubo cuyo volumen sea igual al doble de un cubo dado).
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        \draw[->] (-0.5,0) -- (3,0) node[below] {$x$};
+        \draw[->] (0,-1.5) -- (0,2) node[left] {$y$};
+        \draw[thick] (1,0) circle (1cm);
+        \draw[thick] (2,-1.5) -- (2,2) node[right] {$x = 2a$};
+        
+        \node[below left] at (0,0) {$0$};
+        \fill (1,0) circle (1pt) node[below] {$a$};
+        
+        \draw (0,0) -- (35:3) coordinate (R);
+        \coordinate (B) at (2, {2*tan(35)});
+        \coordinate (A) at ({2*cos(35)*cos(35)}, {2*cos(35)*sin(35)});
+        \fill (A) circle (1pt) node[above left] {$A$};
+        \fill (B) circle (1pt) node[right] {$B$};
+        
+        \coordinate (P) at ({(2/cos(35) - 2*cos(35))*cos(35)}, {(2/cos(35) - 2*cos(35))*sin(35)});
+        \fill (P) circle (1pt) node[above left] {$P$};
+        
+        \draw[thick] ($(0,0)!0.5!(P) + (-0.05, 0.1)$) -- ($(0,0)!0.5!(P) + (0.05, -0.1)$);
+        \draw[thick] ($(0,0)!0.5!(P) + (-0.02, 0.1)$) -- ($(0,0)!0.5!(P) + (0.08, -0.1)$);
+        
+        \draw[thick] ($(A)!0.5!(B) + (-0.05, 0.1)$) -- ($(A)!0.5!(B) + (0.05, -0.1)$);
+        \draw[thick] ($(A)!0.5!(B) + (-0.02, 0.1)$) -- ($(A)!0.5!(B) + (0.08, -0.1)$);
+    \end{tikzpicture}
+    \end{center}

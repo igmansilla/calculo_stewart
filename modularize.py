@@ -358,6 +358,90 @@ CONFIGS = {
     "mas_aplicaciones_de_la_integracion/problemas_adicionales/problemas_adicionales.tex": [
         # Block 1: 1-16 single
         {"type": "single", "folders": [str(i) for i in range(1, 17)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_1/seccion_09_1.tex": [
+        # Block 1: 1-20 single
+        {"type": "single", "folders": [str(i) for i in range(1, 21)]},
+        # Block 2: 21-26 single
+        {"type": "single", "folders": [str(i) for i in range(21, 27)]},
+        # Block 3: 27-30 single
+        {"type": "single", "folders": [str(i) for i in range(27, 31)]},
+        # Block 4: 31-40 single
+        {"type": "single", "folders": [str(i) for i in range(31, 41)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_2/seccion_09_2.tex": [
+        # Block 1: 1-6 single
+        {"type": "single", "folders": [str(i) for i in range(1, 7)]},
+        # Block 2: 7-10 single
+        {"type": "single", "folders": [str(i) for i in range(7, 11)]},
+        # Block 3: 11-18 single
+        {"type": "single", "folders": [str(i) for i in range(11, 19)]},
+        # Block 4: 19-24 single
+        {"type": "single", "folders": [str(i) for i in range(19, 25)]},
+        # Block 5: 25-40 single
+        {"type": "single", "folders": [str(i) for i in range(25, 41)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_3/seccion_09_3.tex": [
+        # Block 1: 1-4 single
+        {"type": "single", "folders": [str(i) for i in range(1, 5)]},
+        # Block 2: 5-12 single
+        {"type": "single", "folders": [str(i) for i in range(5, 13)]},
+        # Block 3: 13-14 single
+        {"type": "single", "folders": [str(i) for i in range(13, 15)]},
+        # Block 4: 15-16 single
+        {"type": "single", "folders": [str(i) for i in range(15, 17)]},
+        # Block 5: 17-20 single
+        {"type": "single", "folders": [str(i) for i in range(17, 21)]},
+        # Block 6: 21-26 single
+        {"type": "single", "folders": [str(i) for i in range(21, 27)]},
+        # Block 7: 27-28 single
+        {"type": "single", "folders": [str(i) for i in range(27, 29)]},
+        # Block 8: 29-34 single
+        {"type": "single", "folders": [str(i) for i in range(29, 35)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_4/seccion_09_4.tex": [
+        # Block 1: 1-8 single
+        {"type": "single", "folders": [str(i) for i in range(1, 9)]},
+        # Block 2: 9-16 single
+        {"type": "single", "folders": [str(i) for i in range(9, 17)]},
+        # Block 3: 17-20 single
+        {"type": "single", "folders": [str(i) for i in range(17, 21)]},
+        # Block 4: 21-26 single
+        {"type": "single", "folders": [str(i) for i in range(21, 27)]},
+        # Block 5: 27 single
+        {"type": "single", "folders": ["27"]},
+        # Block 6: 29-34 single
+        {"type": "single", "folders": [str(i) for i in range(29, 35)]},
+        # Block 7: 35-40 single
+        {"type": "single", "folders": [str(i) for i in range(35, 41)]},
+        # Block 8: 41-72 single
+        {"type": "single", "folders": [str(i) for i in range(41, 73)]},
+        # Block 9: 73-76 single
+        {"type": "single", "folders": [str(i) for i in range(73, 77)]},
+        # Block 10: 77-84 single
+        {"type": "single", "folders": [str(i) for i in range(77, 85)]}
+    ],
+    "ecuaciones_parametricas_y_coordenadas_polares/seccion_09_5/seccion_09_5.tex": [
+        # Block 1: 1-6 single
+        {"type": "single", "folders": [str(i) for i in range(1, 7)]},
+        # Block 2: 7-8 single
+        {"type": "single", "folders": [str(i) for i in range(7, 9)]},
+        # Block 3: 9-18 single
+        {"type": "single", "folders": [str(i) for i in range(9, 19)]},
+        # Block 4: 19-24 single
+        {"type": "single", "folders": [str(i) for i in range(19, 25)]},
+        # Block 5: 25-30 single
+        {"type": "single", "folders": [str(i) for i in range(25, 31)]},
+        # Block 6: 31-36 single
+        {"type": "single", "folders": [str(i) for i in range(31, 37)]},
+        # Block 7: 37-38 single
+        {"type": "single", "folders": [str(i) for i in range(37, 39)]},
+        # Block 8: 39-44 single
+        {"type": "single", "folders": [str(i) for i in range(39, 45)]},
+        # Block 9: 45-52 single
+        {"type": "single", "folders": [str(i) for i in range(45, 53)]},
+        # Block 10: 53-56 single
+        {"type": "single", "folders": [str(i) for i in range(53, 57)]}
     ]
 }
 

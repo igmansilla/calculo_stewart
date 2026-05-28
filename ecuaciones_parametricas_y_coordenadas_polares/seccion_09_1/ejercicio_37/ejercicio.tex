@@ -1,0 +1,38 @@
+\item 
+    \begin{enumerate}
+        \item[(a)] Un círculo $C$ de radio $b$ se hace rodar en el interior de un círculo mayor con centro $O$ y radio $a$. La curva trazada por un punto fijo $P$ de $C$ se llama \textbf{hipocicloide}. Si la posición inicial de $P$ es $(a, 0)$ y el parámetro $\theta$ se elige como se indica en la figura, demuestre que las ecuaciones paramétricas de la hipocicloide son
+        \[ x = (a - b) \cos \theta + b \cos\left(\frac{a - b}{b}\theta\right) \]
+        \[ y = (a - b) \sen \theta - b \sen\left(\frac{a - b}{b}\theta\right) \]
+        
+        \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[->] (-2.5,0) -- (2.5,0) node[below] {$x$};
+            \draw[->] (0,-2.5) -- (0,2.5) node[left] {$y$};
+            \draw[thick] (0,0) circle (2cm);
+            
+            \coordinate (C) at (40:1.3); 
+            \draw[thick] (C) circle (0.7cm);
+            \draw (0,0) -- (C);
+            \node[below left] at (0,0) {$0$};
+            \fill (C) circle (1pt) node[above left] {$C$};
+            
+            \coordinate (P) at ($(C) + (-20:0.7)$);
+            \draw (C) -- (P);
+            \fill (P) circle (1pt) node[right] {$P$};
+            
+            \node[left] at (160:2) {$a$};
+            \node[below] at ($(C) + (220:0.35)$) {$b$};
+            
+            \coordinate (A) at (2,0);
+            \fill (A) circle (1pt) node[below right] {$A$};
+            \node[above right] at (2.1, 0) {$(a, 0)$};
+            
+            \coordinate (origin) at (0,0);
+            \pic [draw, "$\theta$", angle eccentricity=1.5, angle radius=0.4cm] {angle = A--origin--C};
+        \end{tikzpicture}
+        \end{center}
+
+        \item[(b)] Si $b = a/4$, la hipocicloide se llama \textbf{hipocicloide de cuatro vértices} o \textbf{astroide}. Demuestre que en este caso las ecuaciones paramétricas se reducen a
+        \[ x = a \cos^3 \theta \qquad y = a \sen^3 \theta \]
+        y trace la gráfica de la curva.
+    \end{enumerate}
