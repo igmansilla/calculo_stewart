@@ -649,6 +649,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "funciones_trascendentes/problemas_adicionales"),
         "dest_name": "Stewart_Capitulo_6_Problemas_Adicionales.pdf",
         "description": "Capítulo 6 Problemas Adicionales Standalone"
+    },
+    "seccion_7_1": {
+        "tex_path": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_1/seccion_07_1_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "tecnicas_de_integracion/seccion_07_1"),
+        "dest_name": "Stewart_Seccion_7_1_Ejercicios.pdf",
+        "description": "Capítulo 7 Sección 7.1 Standalone"
     }
 }
 
@@ -703,6 +709,9 @@ def compile_latex(tex_path, working_dir, dest_name):
         elif "ecuaciones_diferenciales" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_15")
             rel_path = f"pdfs/capitulo_15/{dest_name}"
+        elif "tecnicas_de_integracion" in tex_path:
+            chapter_dir = os.path.join(output_dir, "capitulo_7")
+            rel_path = f"pdfs/capitulo_7/{dest_name}"
         elif "integracion" in tex_path:
             chapter_dir = os.path.join(output_dir, "capitulo_4")
             rel_path = f"pdfs/capitulo_4/{dest_name}"

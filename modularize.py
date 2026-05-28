@@ -160,6 +160,18 @@ CONFIGS = {
     "problemas_adicionales.tex": [
         # Block 1: 1-25 single
         {"type": "single", "folders": [str(i) for i in range(1, 26)]}
+    ],
+    "seccion_07_1.tex": [
+        # Block 1: 1-36 single
+        {"type": "single", "folders": [str(i) for i in range(1, 37)]},
+        # Block 2: 37-40 single
+        {"type": "single", "folders": [str(i) for i in range(37, 41)]},
+        # Block 3: 41-46 single
+        {"type": "single", "folders": [str(i) for i in range(41, 47)]},
+        # Block 4: 47-50 single
+        {"type": "single", "folders": [str(i) for i in range(47, 51)]},
+        # Block 5: 51-61 single
+        {"type": "single", "folders": [str(i) for i in range(51, 62)]}
     ]
 }
 
@@ -305,9 +317,21 @@ def parse_block_elements(text):
     return tokens
 
 def process_section(filename, config_list):
-    sec_name = filename.replace(".tex", "")
-    sec_dir = os.path.join(TRANS_DIR, sec_name)
-    file_path = os.path.join(sec_dir, filename)
+    if "/" in filename or "\\" in filename:
+        file_path = os.path.join(BASE_DIR, filename)
+        sec_dir = os.path.dirname(file_path)
+        filename = os.path.basename(file_path)
+    else:
+        if filename.startswith("seccion_06") or filename in ("repaso.tex", "problemas_adicionales.tex"):
+            sec_name = filename.replace(".tex", "")
+            sec_dir = os.path.join(BASE_DIR, "funciones_trascendentes", sec_name)
+            file_path = os.path.join(sec_dir, filename)
+        elif filename.startswith("seccion_07"):
+            sec_name = filename.replace(".tex", "")
+            sec_dir = os.path.join(BASE_DIR, "tecnicas_de_integracion", sec_name)
+            file_path = os.path.join(sec_dir, filename)
+        else:
+            raise ValueError(f"Unknown chapter directory for {filename}")
     
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()

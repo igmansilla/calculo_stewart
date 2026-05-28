@@ -1,0 +1,36 @@
+\item Se llegó a la fórmula 5.10, $V = \int_{a}^{b} 2\pi x f(x) \, dx$, utilizando cortezas cilíndricas, pero ahora se puede emplear integración por partes para deducirla a partir de la fórmula 5.7, por lo menos para el caso en que $f$ es inyectiva y por lo tanto tiene función inversa $g$. Haga uso de la figura para demostrar que
+    \[ V = \pi b^2 d - \pi a^2 c - \int_{c}^{d} \pi [g(y)]^2 \, dy \]
+    Efectúe la sustitución $y = f(x)$ y luego use integración por partes sobre la integral resultante para probar la fórmula 5.10.
+
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Ejes
+        \draw[->] (-0.5,0) -- (3.5,0) node[below right] {$x$};
+        \draw[->] (0,-0.5) -- (0,3.5) node[above left] {$y$};
+        \node[below left] at (0,0) {$0$};
+
+        % Coordenadas a, b, c, d
+        \node[below] at (1,0) {$a$};
+        \node[below] at (3,0) {$b$};
+        \node[left] at (0,0.5) {$c$};
+        \node[left] at (0,2.5) {$d$};
+
+        % Relleno del área bajo la curva
+        \fill[gray!20] (1,0) -- (1,0.5) -- plot[domain=1:3] (\x, {0.25*\x*\x + 0.25}) -- (3,0) -- cycle;
+
+        % Curva
+        \draw[thick, domain=1:3, samples=100] plot (\x, {0.25*\x*\x + 0.25});
+
+        % Líneas punteadas
+        \draw[dashed] (1,0) -- (1,0.5) -- (0,0.5);
+        \draw[dashed] (3,0) -- (3,2.5) -- (0,2.5);
+
+        % Símbolo de rotación
+        \draw[->, thick] (-0.1, 1.6) arc (120:420:0.15 and 0.08);
+
+        % Etiquetas
+        \draw[<-] (3, 1.2) -- (3.3, 1.2) node[right] {$x = b$};
+        \draw[<-] (2.4, 1.7) -- (2.8, 2.4) node[above] {$y = f(x)$};
+        \draw[<-] (1.3, 0.7) -- (1.5, 2.4) node[above] {$x = g(y)$};
+    \end{tikzpicture}
+    \end{center}
