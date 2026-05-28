@@ -727,6 +727,42 @@ targets = {
         "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_2"),
         "dest_name": "Stewart_Seccion_8_2_Ejercicios.pdf",
         "description": "Capítulo 8 Sección 8.2 Standalone"
+    },
+    "seccion_8_3": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_3/seccion_08_3_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_3"),
+        "dest_name": "Stewart_Seccion_8_3_Ejercicios.pdf",
+        "description": "Capítulo 8 Sección 8.3 Standalone"
+    },
+    "seccion_8_4": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_4/seccion_08_4_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_4"),
+        "dest_name": "Stewart_Seccion_8_4_Ejercicios.pdf",
+        "description": "Capítulo 8 Sección 8.4 Standalone"
+    },
+    "seccion_8_5": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_5/seccion_08_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_5"),
+        "dest_name": "Stewart_Seccion_8_5_Ejercicios.pdf",
+        "description": "Capítulo 8 Sección 8.5 Standalone"
+    },
+    "seccion_8_6": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_6/seccion_08_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/seccion_08_6"),
+        "dest_name": "Stewart_Seccion_8_6_Ejercicios.pdf",
+        "description": "Capítulo 8 Sección 8.6 Standalone"
+    },
+    "repaso_8": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/repaso/repaso_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/repaso"),
+        "dest_name": "Stewart_Capitulo_8_Repaso.pdf",
+        "description": "Capítulo 8 Repaso Standalone"
+    },
+    "problemas_adicionales_8": {
+        "tex_path": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/problemas_adicionales/problemas_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mas_aplicaciones_de_la_integracion/problemas_adicionales"),
+        "dest_name": "Stewart_Capitulo_8_Problemas_Adicionales.pdf",
+        "description": "Capítulo 8 Problemas Adicionales Standalone"
     }
 }
 

@@ -1,0 +1,39 @@
+\item Sea $C$ el arco de la curva $y = f(x)$ comprendido entre los puntos $P(p, f(p))$ and $Q(q, f(q))$ y sea $\mathscr{R}$ la región limitada por $C$, por la recta $y = mx + b$ (la cual está situada completamente de un lado del arco $C$) y por las perpendiculares a la recta trazadas desde $P$ y $Q$.
+    \begin{enumerate}
+        \item[(a)] Demuestre que el área de $\mathscr{R}$ es
+        \[ \frac{1}{1 + m^2} \int_p^q [f(x) - mx - b][1 + m f'(x)] \, dx \]
+        \item[(b)] Encuentre una fórmula semejante a la de la parte (a) para el volumen del sólido que se obtiene al hacer girar $\mathscr{R}$ en torno a la recta $y = mx + b$.
+        \item[(c)] Obtenga una fórmula para el área de la superficie que se obtiene al hacer girar $C$ en torno a la recta $y = mx + b$. \\
+        {[}\textit{Sugerencia:} La fórmula de la parte (a) se puede verificar restando áreas, pero resulta más instructivo deducirla aproximando primeramente el área usando rectángulos perpendiculares a la recta, como se muestra en las figuras. Este procedimiento también será útil para encontrar las fórmulas de las partes (b) y (c). Haga uso de la figura como ayuda para expresar $\Delta u$ en términos de $\Delta x${]}.
+    \end{enumerate}
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        % Ejes
+        \draw[->] (-0.5,0) -- (6,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,4) node[left] {$y$};
+        \node[below left] at (0,0) {$0$};
+        \draw (0.5,0.1) -- (0.5,-0.1) node[below] {$p$};
+        \draw (4.5,0.1) -- (4.5,-0.1) node[below] {$q$};
+
+        % Line y=mx+b
+        \draw[thick] (1,0.5) -- (6,2.5) node[right] {$y = mx + b$};
+
+        % Curve y=f(x)
+        \draw[thick] (0.5, 1.5) .. controls (1.5, 1.5) and (2.5, 3.5) .. (4.5, 3.5);
+        \node[above] at (4.5, 3.5) {$Q$};
+        \node[above left] at (0.5, 1.5) {$P$};
+        \node[above left] at (2.2, 3.2) {$y = f(x)$};
+        \node at (2.5, 2) {$\mathscr{R}$};
+
+        % Perpendiculars
+        \draw[thick] (0.5, 1.5) -- (1.58, 0.74); 
+        \draw[thick] (4.5, 3.5) -- (5.33, 2.22); 
+        \node[above left] at (1.5, 1.5) {$C$};
+
+        % Rectangle approximation inside region
+        \fill[gray!30] (1.8, 2.1) -- (2.05, 2.45) -- (2.7, 1.4) -- (2.45, 1.1) -- cycle;
+        \draw[thick] (1.8, 2.1) -- (2.05, 2.45) -- (2.7, 1.4) -- (2.45, 1.1) -- cycle;
+        \node[below right] at (2.45, 1.1) {$\Delta u$};
+    \end{tikzpicture}
+    \end{center}

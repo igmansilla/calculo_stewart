@@ -1,0 +1,19 @@
+\item Un dique vertical tiene una compuerta semicircular como se ilustra en la figura. Encuentre la fuerza hidrostática que actúa contra la compuerta.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        % Tanque
+        \draw[thick] (0,0) -- (0,5) -- (4,5) -- (4,0) -- cycle;
+        % Nivel de agua
+        \draw[decorate, decoration={coil, segment length=5pt, amplitude=0.5pt}] (0,4) -- (4,4);
+        \node[right] at (4.5, 3.5) {nivel del agua};
+        \draw[->] (4.5, 3.5) -- (3.5, 4);
+        % Acotaciones
+        \draw[|<->|] (-0.8,0) -- (-0.8,5) node[midway, fill=white] {12 m};
+        \draw[decorate,decoration={brace,amplitude=4pt},xshift=2pt] (4,5) -- (4,4) node[midway,right=5pt] {2 m};
+        % Compuerta semicircular
+        \fill[gray!50] (1,0) arc (180:0:1) -- cycle;
+        \draw[thick] (1,0) arc (180:0:1);
+        \draw[|<->|] (1,-0.5) -- (3,-0.5) node[midway, fill=white] {4 m};
+    \end{tikzpicture}
+    \end{center}

@@ -298,6 +298,66 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(33, 37)]},
         # Block 7: 37-38 single
         {"type": "single", "folders": [str(i) for i in range(37, 39)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_3/seccion_08_3.tex": [
+        # Block 1: 1-14 single
+        {"type": "single", "folders": [str(i) for i in range(1, 15)]},
+        # Block 2: 15-22 single
+        {"type": "single", "folders": [str(i) for i in range(15, 23)]},
+        # Block 3: 23-24 single
+        {"type": "single", "folders": [str(i) for i in range(23, 25)]},
+        # Block 4: 25-34 single
+        {"type": "single", "folders": [str(i) for i in range(25, 35)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_4/seccion_08_4.tex": [
+        # Block 1: 1-4 single
+        {"type": "single", "folders": [str(i) for i in range(1, 5)]},
+        # Block 2: 5-18 single
+        {"type": "single", "folders": [str(i) for i in range(5, 19)]},
+        # Block 3: 19-22 single
+        {"type": "single", "folders": [str(i) for i in range(19, 23)]},
+        # Block 4: 23-23 single
+        {"type": "single", "folders": [str(i) for i in range(23, 24)]},
+        # Block 5: 24-27 single
+        {"type": "single", "folders": [str(i) for i in range(24, 28)]},
+        # Block 6: 28-30 single
+        {"type": "single", "folders": [str(i) for i in range(28, 31)]},
+        # Block 7: 31-31 single
+        {"type": "single", "folders": [str(i) for i in range(31, 32)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_5/seccion_08_5.tex": [
+        # Block 1: 1-2 single
+        {"type": "single", "folders": [str(i) for i in range(1, 3)]},
+        # Block 2: 3-12 single
+        {"type": "single", "folders": [str(i) for i in range(3, 13)]},
+        # Block 3: 13-22 single
+        {"type": "single", "folders": [str(i) for i in range(13, 23)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/seccion_08_6/seccion_08_6.tex": [
+        # Block 1: 1-20 single
+        {"type": "single", "folders": [str(i) for i in range(1, 21)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/repaso/repaso.tex": [
+        # Block 1: Temas Basicos 1-12 single
+        {"type": "single", "folders": [f"tema_{i:02d}" for i in range(1, 13)]},
+        # Block 2: Ejercicios 1-4 single
+        {"type": "single", "folders": [str(i) for i in range(1, 5)]},
+        # Block 3: Ejercicios 5-6 single
+        {"type": "single", "folders": [str(i) for i in range(5, 7)]},
+        # Block 4: Ejercicios 7-8 single
+        {"type": "single", "folders": [str(i) for i in range(7, 9)]},
+        # Block 5: Ejercicios 9-14 single
+        {"type": "single", "folders": [str(i) for i in range(9, 15)]},
+        # Block 6: Ejercicios 15-16 single
+        {"type": "single", "folders": [str(i) for i in range(15, 17)]},
+        # Block 7: Ejercicios 17-18 single
+        {"type": "single", "folders": [str(i) for i in range(17, 19)]},
+        # Block 8: Ejercicios 19-27 single
+        {"type": "single", "folders": [str(i) for i in range(19, 28)]}
+    ],
+    "mas_aplicaciones_de_la_integracion/problemas_adicionales/problemas_adicionales.tex": [
+        # Block 1: 1-16 single
+        {"type": "single", "folders": [str(i) for i in range(1, 17)]}
     ]
 }
 
