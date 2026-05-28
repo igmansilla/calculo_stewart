@@ -1,0 +1,28 @@
+\item Un pedal de bicicleta es impulsado por un pie con una fuerza de 60 N como se indica en la figura. El brazo del pedal tiene 18 cm de longitud. Encuentre la magnitud del momento de fuerza con respecto a $P$.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        \coordinate (P) at (0,0);
+        \coordinate (O) at (-4, 0.5); 
+        
+        % Línea horizontal punteada
+        \draw[dashed] (-4.5, 0) -- (1, 0);
+        
+        % Brazo del pedal
+        \draw[thick, double distance=1.5pt] (O) -- (P);
+        \draw[fill=white] (O) circle (0.1);
+        \draw[fill=white] (P) circle (0.1) node[below right] {$P$};
+        
+        % Ángulo de 10°
+        \draw (-2, 0) arc (180:173:2); 
+        \node at (-2.3, 0.15) {\small $10^\circ$};
+        
+        % Vector de fuerza
+        \draw[<-, thick] (O) -- ++(65:2) node[above left] {$60 \text{ N}$};
+        
+        % Ángulo de 70°
+        \draw[dashed] (O) -- ++(-7:1.5); 
+        \draw (O) ++(-7:0.8) arc (-7:65:0.8);
+        \node at ($(O) + (30:1.2)$) {\small $70^\circ$};
+    \end{tikzpicture}
+    \end{center}

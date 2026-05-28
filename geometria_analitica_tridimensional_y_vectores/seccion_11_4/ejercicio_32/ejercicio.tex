@@ -1,0 +1,26 @@
+\item Encuentre la magnitud del momento de fuerza con respecto a $P$ si se aplica una fuerza de 36 libras como se ilustra en la figura.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \coordinate (P) at (0,4);
+        \coordinate (C) at (4,4);
+        \coordinate (E) at (4,0);
+        
+        % Tubería
+        \draw[thick, double distance=3pt] (P) -- (C) -- (E);
+        
+        \fill (P) circle (1.5pt) node[left] {$P$};
+        
+        % Textos
+        \node[above] at (2,4) {$4 \text{ pies}$};
+        \node[right] at (4,2) {$4 \text{ pies}$};
+        
+        % Fuerza
+        \draw[->, thick] (E) -- ++(210:3) node[below right] {$36 \text{ lb}$};
+        
+        % Ángulo
+        \draw[dashed] (E) -- ++(-2,0);
+        \draw (E) ++(-1,0) arc (180:210:1);
+        \node at ($(E) + (195:1.5)$) {\small $30^\circ$};
+    \end{tikzpicture}
+    \end{center}

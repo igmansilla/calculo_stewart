@@ -1,0 +1,204 @@
+% Sección 11.5: Ecuaciones de Rectas y Planos
+
+\section*{SECCIÓN 11.5 \quad Ecuaciones de Rectas y Planos}
+
+Una recta en el plano $xy$ se determina cuando se da un punto de la recta y la dirección (pendiente o ángulo de inclinación) de la misma. La ecuación de la recta se puede entonces escribir utilizando la forma punto-pendiente.
+
+Del mismo modo, una recta $L$ en el espacio tridimensional se determina cuando se conoce un punto $P_0(x_0, y_0, z_0)$ de $L$ y la dirección de $L$. En tres dimensiones la dirección de una recta se describe convenientemente por medio de un vector, así que designemos por $\mathbf{v}$ a un vector paralelo a $L$. Sea $P(x, y, z)$ un punto arbitrario de...
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    % Ejes
+    \draw[->] (0,0,0) -- (2,0,0) node[below] {$y$};
+    \draw[->] (0,0,0) -- (0,2,0) node[left] {$z$};
+    \draw[->] (0,0,0) -- (0,0,2.5) node[left] {$x$};
+    \node[below left] at (0,0,0) {$0$};
+    
+    % Puntos
+    \coordinate (P0) at (0.3, 1, 1);
+    \coordinate (P) at (1.5, 1.3, -0.5);
+    
+    % Recta L
+    \draw[thick] (-0.3, 0.85, 1.75) -- (1.8, 1.375, -0.875) node[above] {$L$};
+    
+    % Vectores r0, r
+    \draw[->, thick] (0,0,0) -- (P0) node[midway, left] {$\mathbf{r}_0$};
+    \draw[->, thick] (0,0,0) -- (P) node[midway, below right] {$\mathbf{r}$};
+    
+    % Vector a
+    \draw[->, thick] (P0) -- ++(0.6, 0.15, -0.75) node[above left] {$\mathbf{a}$};
+    
+    % Etiquetas
+    \fill (P0) circle (1pt) node[above left] {$P_0(x_0, y_0, z_0)$};
+    \fill (P) circle (1pt) node[below right] {$P(x, y, z)$};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5cm}
+\noindent\textit{En los ejercicios 1-4 encuentre la ecuación vectorial y ecuaciones paramétricas de la recta que pasa por el punto dado y es paralela al vector $\mathbf{a}$.}
+
+\begin{enumerate}
+    \subimport{ejercicio_01/}{ejercicio.tex}
+\subimport{ejercicio_02/}{ejercicio.tex}
+\subimport{ejercicio_03/}{ejercicio.tex}
+\subimport{ejercicio_04/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 5-10 encuentre ecuaciones paramétricas y ecuaciones simétricas de la recta que pasa por los puntos dados.}
+
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \subimport{ejercicio_05/}{ejercicio.tex}
+\subimport{ejercicio_06/}{ejercicio.tex}
+\subimport{ejercicio_07/}{ejercicio.tex}
+\subimport{ejercicio_08/}{ejercicio.tex}
+\subimport{ejercicio_09/}{ejercicio.tex}
+\subimport{ejercicio_10/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \subimport{ejercicio_11/}{ejercicio.tex}
+\subimport{ejercicio_12/}{ejercicio.tex}
+\subimport{ejercicio_13/}{ejercicio.tex}
+\subimport{ejercicio_14/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 15-18 determine si las rectas $L_1$ y $L_2$ son paralelas, sesgadas o se intersectan. Si se intersectan, encuentre el punto de intersección.}
+
+\begin{enumerate}
+    \setcounter{enumi}{14}
+    \subimport{ejercicio_15/}{ejercicio.tex}
+\subimport{ejercicio_16/}{ejercicio.tex}
+\subimport{ejercicio_17/}{ejercicio.tex}
+\subimport{ejercicio_18/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 19-22 encuentre la ecuación del plano que pasa por el punto dado y tiene el vector normal indicado.}
+
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \subimport{ejercicio_19/}{ejercicio.tex}
+\subimport{ejercicio_20/}{ejercicio.tex}
+\subimport{ejercicio_21/}{ejercicio.tex}
+\subimport{ejercicio_22/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 23-26 encuentre la ecuación del plano que pasa por el punto dado y es paralelo al plano indicado.}
+
+\begin{enumerate}
+    \setcounter{enumi}{22}
+    \subimport{ejercicio_23/}{ejercicio.tex}
+\subimport{ejercicio_24/}{ejercicio.tex}
+\subimport{ejercicio_25/}{ejercicio.tex}
+\subimport{ejercicio_26/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 27-30 encuentre la ecuación del plano que pasa por los tres puntos dados.}
+
+\begin{enumerate}
+    \setcounter{enumi}{26}
+    \subimport{ejercicio_27/}{ejercicio.tex}
+\subimport{ejercicio_28/}{ejercicio.tex}
+\subimport{ejercicio_29/}{ejercicio.tex}
+\subimport{ejercicio_30/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 31-34 encuentre la ecuación del plano que pasa por el punto dado y contiene a la recta indicada.}
+
+\begin{enumerate}
+    \setcounter{enumi}{30}
+    \subimport{ejercicio_31/}{ejercicio.tex}
+\subimport{ejercicio_32/}{ejercicio.tex}
+\subimport{ejercicio_33/}{ejercicio.tex}
+\subimport{ejercicio_34/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 35-38 encuentre el punto en el que la recta intersecta al plano.}
+
+\begin{enumerate}
+    \setcounter{enumi}{34}
+    \subimport{ejercicio_35/}{ejercicio.tex}
+\subimport{ejercicio_36/}{ejercicio.tex}
+\subimport{ejercicio_37/}{ejercicio.tex}
+\subimport{ejercicio_38/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\begin{enumerate}
+    \setcounter{enumi}{38}
+    \subimport{ejercicio_39/}{ejercicio.tex}
+\subimport{ejercicio_40/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 41-46 determine si los planos dados son paralelos, perpendiculares o ninguna de las dos cosas. En este último caso, encuentre el ángulo comprendido entre ellos.}
+
+\begin{enumerate}
+    \setcounter{enumi}{40}
+    \subimport{ejercicio_41/}{ejercicio.tex}
+\subimport{ejercicio_42/}{ejercicio.tex}
+\subimport{ejercicio_43/}{ejercicio.tex}
+\subimport{ejercicio_44/}{ejercicio.tex}
+\subimport{ejercicio_45/}{ejercicio.tex}
+\subimport{ejercicio_46/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 47 y 48, (a) encuentre ecuaciones simétricas de la recta de intersección de los planos y (b) encuentre el ángulo comprendido entre los planos.}
+
+\begin{enumerate}
+    \setcounter{enumi}{46}
+    \subimport{ejercicio_47/}{ejercicio.tex}
+\subimport{ejercicio_48/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 49 y 50 encuentre ecuaciones paramétricas de la recta de intersección de los planos dados.}
+
+\begin{enumerate}
+    \setcounter{enumi}{48}
+    \subimport{ejercicio_49/}{ejercicio.tex}
+\subimport{ejercicio_50/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\begin{enumerate}
+    \setcounter{enumi}{50}
+    \subimport{ejercicio_51/}{ejercicio.tex}
+\subimport{ejercicio_52/}{ejercicio.tex}
+\subimport{ejercicio_53/}{ejercicio.tex}
+\subimport{ejercicio_54/}{ejercicio.tex}
+\subimport{ejercicio_55/}{ejercicio.tex}
+\subimport{ejercicio_56/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textit{En los ejercicios 57-60 encuentre la distancia del punto dado al plano indicado.}
+
+\begin{enumerate}
+    \setcounter{enumi}{56}
+    \subimport{ejercicio_57/}{ejercicio.tex}
+\subimport{ejercicio_58/}{ejercicio.tex}
+\subimport{ejercicio_59/}{ejercicio.tex}
+\subimport{ejercicio_60/}{ejercicio.tex}
+\end{enumerate}
+
+\vspace{0.3cm}
+\begin{enumerate}
+    \setcounter{enumi}{60}
+    \subimport{ejercicio_61/}{ejercicio.tex}
+\subimport{ejercicio_62/}{ejercicio.tex}
+\subimport{ejercicio_63/}{ejercicio.tex}
+\subimport{ejercicio_64/}{ejercicio.tex}
+\subimport{ejercicio_65/}{ejercicio.tex}
+\subimport{ejercicio_66/}{ejercicio.tex}
+\end{enumerate}

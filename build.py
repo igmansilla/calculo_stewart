@@ -913,6 +913,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_4"),
         "dest_name": "Stewart_Seccion_11_4_Producto_Cruz.pdf",
         "description": "Capítulo 11 Sección 11.4 Standalone"
+    },
+    "seccion_11_5": {
+        "tex_path": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_5/seccion_11_5_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "geometria_analitica_tridimensional_y_vectores/seccion_11_5"),
+        "dest_name": "Stewart_Seccion_11_5_Rectas_Planos.pdf",
+        "description": "Capítulo 11 Sección 11.5 Standalone"
     }
 }
 
