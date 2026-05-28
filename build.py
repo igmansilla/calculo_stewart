@@ -847,6 +847,18 @@ targets = {
         "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_5"),
         "dest_name": "Stewart_Seccion_10_5_Series_Alternantes.pdf",
         "description": "Capítulo 10 Sección 10.5 Standalone"
+    },
+    "seccion_10_6": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_6/seccion_10_6_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_6"),
+        "dest_name": "Stewart_Seccion_10_6_Convergencia_Absoluta.pdf",
+        "description": "Capítulo 10 Sección 10.6 Standalone"
+    },
+    "seccion_10_7": {
+        "tex_path": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_7/seccion_10_7_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "sucesiones_y_series_infinitas/seccion_10_7"),
+        "dest_name": "Stewart_Seccion_10_7_Estrategia.pdf",
+        "description": "Capítulo 10 Sección 10.7 Standalone"
     }
 }
 

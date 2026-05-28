@@ -528,6 +528,26 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(1, 39)]},
         # Block 2: Ejercicios 39-46 single
         {"type": "single", "folders": [str(i) for i in range(39, 47)]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_5/seccion_10_5.tex": [
+        # Block 1: Ejercicios 1-27 single
+        {"type": "single", "folders": [str(i) for i in range(1, 28)]},
+        # Block 2: Ejercicios 28-30 single
+        {"type": "single", "folders": [str(i) for i in range(28, 31)]},
+        # Block 3: Ejercicios 31-38 single
+        {"type": "single", "folders": [str(i) for i in range(31, 39)]},
+        # Block 4: Ejercicios 39 single
+        {"type": "single", "folders": ["39"]}
+    ],
+    "sucesiones_y_series_infinitas/seccion_10_6/seccion_10_6.tex": [
+        # Block 1: Ejercicios 1-28 single
+        {"type": "single", "folders": [str(i) for i in range(1, 29)]},
+        # Block 2: Ejercicios 29-30 single
+        {"type": "single", "folders": [str(i) for i in range(29, 31)]},
+        # Block 3: Ejercicios 31-36 single
+        {"type": "single", "folders": [str(i) for i in range(31, 37)]},
+        # Block 4: Ejercicios 37-42 single
+        {"type": "single", "folders": [str(i) for i in range(37, 43)]}
     ]
 }
 
