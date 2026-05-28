@@ -1,0 +1,26 @@
+\item Un arco $PQ$ de una circunferencia subtiende un ángulo central $\theta$, como se ilustra en la figura. Sea $A(\theta)$ el área comprendida entre la cuerda $PQ$ y el arco $PQ$. Sea $B(\theta)$ el área comprendida entre las tangentes $PR$, $QR$ y el arco. Encuentre 
+    \[ \lim_{\theta \to 0^+} \frac{A(\theta)}{B(\theta)} \]
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=2]
+        \coordinate (O) at (0,0);
+        \draw (O) circle (1cm);
+        
+        % Ángulo de 40 grados para la ilustración
+        \coordinate (P) at (40:1);
+        \coordinate (Q) at (-40:1);
+        % Intersección de las tangentes
+        \coordinate (R) at ({1/cos(40)},0);
+        
+        \draw (O) -- (P) node[above] {$P$};
+        \draw (O) -- (Q) node[below] {$Q$};
+        \draw (P) -- (R) node[right] {$R$};
+        \draw (Q) -- (R);
+        \draw (P) -- (Q);
+        
+        \pic [draw, "$\theta$", angle eccentricity=1.5, angle radius=0.4cm] {angle = Q--O--P};
+        
+        \node at (0.85,0) {\scriptsize $A(\theta)$};
+        \node at (1.15,0) {\scriptsize $B(\theta)$};
+    \end{tikzpicture}
+    \end{center}

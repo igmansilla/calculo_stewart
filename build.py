@@ -643,6 +643,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "funciones_trascendentes/repaso"),
         "dest_name": "Stewart_Capitulo_6_Repaso.pdf",
         "description": "Capítulo 6 Repaso Standalone"
+    },
+    "problemas_adicionales_6": {
+        "tex_path": os.path.join(base_dir, "funciones_trascendentes/problemas_adicionales/problemas_adicionales_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "funciones_trascendentes/problemas_adicionales"),
+        "dest_name": "Stewart_Capitulo_6_Problemas_Adicionales.pdf",
+        "description": "Capítulo 6 Problemas Adicionales Standalone"
     }
 }
 

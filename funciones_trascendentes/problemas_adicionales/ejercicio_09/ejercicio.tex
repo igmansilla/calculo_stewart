@@ -1,0 +1,31 @@
+\item Suponga que una recta corta a la parábola $y = x^2$ en dos puntos $A$ y $B$, como se muestra en la figura. Sea $C$ el punto de la parábola en donde la tangente es paralela a la recta que pasa por $A$ y $B$. Demuestre que el área del segmento parabólico formado por la parábola y la recta es igual a cuatro tercios del área del triángulo $ABC$.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+        % Ejes
+        \draw[->] (-1.5,0) -- (2.5,0) node[below] {$x$};
+        \draw[->] (0,-0.5) -- (0,4.5) node[left] {$y$};
+        \node[below left] at (0,0) {$0$};
+        
+        % Parábola
+        \draw[thick, domain=-1.2:2.1, samples=100] plot (\x, {\x*\x}) node[right] {$y = x^2$};
+        
+        % Puntos A, B y C
+        \coordinate (A) at (-1, 1);
+        \coordinate (B) at (2, 4);
+        \coordinate (C) at (0.5, 0.25);
+        
+        \fill (A) circle (1pt) node[left] {$A$};
+        \fill (B) circle (1pt) node[right] {$B$};
+        \fill (C) circle (1pt) node[below right] {$C$};
+        
+        % Recta AB
+        \draw (A) -- (B);
+        
+        % Triángulo ABC
+        \draw (A) -- (C) -- (B);
+        
+        % Tangente en C (paralela a AB, pendiente 1)
+        \draw[domain=-0.5:1.5] plot (\x, {\x - 0.25});
+    \end{tikzpicture}
+    \end{center}

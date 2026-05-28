@@ -156,6 +156,10 @@ CONFIGS = {
         {"type": "single", "folders": [str(i) for i in range(100, 110)]},
         # Block 12: 110-114 single
         {"type": "single", "folders": [str(i) for i in range(110, 115)]}
+    ],
+    "problemas_adicionales.tex": [
+        # Block 1: 1-25 single
+        {"type": "single", "folders": [str(i) for i in range(1, 26)]}
     ]
 }
 
